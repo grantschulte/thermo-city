@@ -1,7 +1,7 @@
 Elm Web Starter
 =======
 
-An Elm + Webpack web app starter.
+An Elm + Webpack web app starter. This starter uses Webpack for building the Elm app, and [surge](https://surge.sh/) (staging) or AWS S3 (production) to host your static build.
 
 # Table of Contents
 [Setup](#setup)  
