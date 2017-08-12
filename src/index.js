@@ -13,5 +13,6 @@ var mountNode = document.getElementById("main");
 // userID or some token.
 
 var app = Elm.Main.embed(mountNode, {
-  apiUrl: process.env.API_URL
+  nodeEnv: NODE_ENV,
+  apiUrl: API_URL
 });

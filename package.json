@@ -13,9 +13,12 @@
     "webpack-dev-server": "^2.7.1"
   },
   "scripts": {
-    "api": "node api.js",
-    "build": "webpack",
-    "client": "webpack-dev-server --port 4200",
+    "api": "node ./db/api.js",
+    "build:staging": "webpack --env=staging --progress --profile --colors",
+    "build:prod": "webpack --env=prod --progress --profile --colors",
+    "client": "webpack-dev-server --env=dev --port 4200",
+    "deploy:staging": "yarn build:staging; surge ./dist -d venomous-comb.surge.sh",
+    "deploy:prod": "yarn build:prod; aws s3 sync --acl public-read --sse --delete ./dist s3://www.mottoto.com",
     "start": "nf start"
   }
 }
