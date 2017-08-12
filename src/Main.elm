@@ -34,7 +34,7 @@ type alias Flags =
 
 initModel : Model
 initModel =
-    { greeting = "Hello from Mottoto"
+    { greeting = "Elm Web Starter"
     , apiUrl = ""
     , nodeEnv = ""
     }

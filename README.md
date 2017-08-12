@@ -1,7 +1,7 @@
-Mottoto
+Elm Web Starter
 =======
 
-A web app for expressing your daily motto.
+An Elm + Webpack web app starter.
 
 # Table of Contents
 [Setup](#setup)  
