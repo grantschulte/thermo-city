@@ -60,18 +60,26 @@ yarn build:prod
 
 ## Deploy
 ### Dependencies
-You must have [Surge CLI](https://surge.sh/) and [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) installed in order to deploy. Everything else is listed in `package.json` and will install with `yarn`.
+You must have [surge CLI](https://surge.sh/) and [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) installed in order to deploy.
+
+### Deploy Targets
+In `package.json` replace the url targets in the deploy commands.  
 
 ### Staging
 The staging deployment builds with staging environment variables
 and deploys the built site with Surge.
+
+In the `deploy:staging` script replace `your-domain.surge.sh` with your surge domain. If you don't have a custom domain you can remove `-d your-domain.surge.sh` altogether.
+
 ```
 yarn deploy:staging
 ```
 
 ### Production
-The production deployment builds with production environment variables
-and deploys the built site to S3.
+The production deployment builds with production environment variables and deploys the built site to AWS S3.
+
+In `deploy:prod` replace `s3://your-domain` with your AWS S3 bucket name. Make sure that AWS CLI is configured with the appropriate user access key and secret key for that bucket.
+
 ```
 yarn deploy:prod
 ```
