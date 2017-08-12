@@ -3,29 +3,29 @@ Mottoto
 
 A web app for expressing your daily motto.
 
-###### Table of Contents
+# Table of Contents
 [Setup](#setup)  
 [Develop](#develop)  
 [Build](#build)  
 [Deploy](#deploy)  
 [Configure](#configure)  
 
-# Setup
-## Install Elm Packages
+## Setup
+### Install Elm Packages
 ```
 elm-package install
 ```
 
-## Install External Packages
+### Install External Packages
 This project uses [yarn](https://yarnpkg.com/en/) for external package management. To install packages run:
 ```
 yarn
 ```
 
-# Develop
+## Develop
 In development we use Webpack Dev Server to serve our `index.html`. The app uses JSON Server to serve mock data from a JSON file.
 
-## Run Elm app + JSON Server (*recommended*)
+### Run Elm app + JSON Server (*recommended*)
 If you wish to start the mock JSON server and the Elm app simultaneously:
 ```
 yarn start
@@ -39,44 +39,44 @@ To run the the Elm app:
 yarn client
 ```
 
-## JSON Server
+### JSON Server
 To run the JSON Server:
 ```
 yarn api
 ```
 
-# Build
-## Staging
+## Build
+### Staging
 To build for staging run:  
 ```
 yarn build:staging
 ```
 
-## Production
+### Production
 To build for production run:   
 ```
 yarn build:prod
 ```
 
-# Deploy
-## Dependencies
+## Deploy
+### Dependencies
 You must have [Surge CLI](https://surge.sh/) and [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) installed in order to deploy. Everything else is listed in `package.json` and will install with `yarn`.
 
-## Staging
+### Staging
 The staging deployment builds with staging environment variables
 and deploys the built site with Surge.
 ```
 yarn deploy:staging
 ```
 
-## Production
+### Production
 The production deployment builds with production environment variables
 and deploys the built site to S3.
 ```
 yarn deploy:prod
 ```
 
-# Configure
+## Configure
 Environment Variables are set in each environments config file (`./config/webpack.[env].js`). Using Webpack's DefinePlugin plugin we can expose these values to our Elm embed method without polluting the global scope.
 ```javascript
 ..
