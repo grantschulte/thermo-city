@@ -3,9 +3,12 @@ module Main exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Messages exposing (..)
-import Models exposing (ApiUrl, Flags, Greeting, Model, NodeEnv, initialModel)
+import Models exposing (Flags, Model, initialModel)
 import Update exposing (update)
 import View exposing (view)
+
+
+-- INIT
 
 
 init : Flags -> ( Model, Cmd Msg )
