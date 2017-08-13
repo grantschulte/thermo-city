@@ -1,6 +1,6 @@
 module Models exposing (..)
 
--- MODEL
+-- TYPES
 
 
 type alias ApiUrl =
@@ -25,4 +25,16 @@ type alias Model =
 type alias Flags =
     { apiUrl : ApiUrl
     , nodeEnv : NodeEnv
+    }
+
+
+
+-- INITIAL MODEL
+
+
+initialModel : Model
+initialModel =
+    { greeting = "Elm Web Starter"
+    , apiUrl = ""
+    , nodeEnv = ""
     }

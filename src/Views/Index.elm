@@ -6,7 +6,7 @@ import Messages exposing (..)
 import Models exposing (ApiUrl, Model, NodeEnv)
 
 
--- VIEW
+-- VIEW: INDEX
 
 
 view : Model -> Html Msg
