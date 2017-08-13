@@ -64,48 +64,22 @@ type Msg
 
 view : Model -> Html Msg
 view model =
-    div [ pageWrapper ]
-        [ Html.h3 [] [ greetingText model.greeting ]
+    div [ class "page-wrapper" ]
+        [ Html.h3 [ class "mt0" ]
+            [ text model.greeting
+            , span [ class "material-icons color-warn" ] [ text "favorite" ]
+            ]
         , infoText model.apiUrl model.nodeEnv
-        ]
-
-
-greetingText : Greeting -> Html Msg
-greetingText greeting =
-    span []
-        [ text greeting
-        , span [ class "material-icons", redStyle ] [ text "favorite" ]
         ]
 
 
 infoText : ApiUrl -> NodeEnv -> Html Msg
 infoText apiUrl nodeEnv =
-    p []
+    p [ class "m0" ]
         [ text "Your are running in "
-        , em [ underlineStyle ] [ text nodeEnv ]
+        , em [ class "underline" ] [ text nodeEnv ]
         , text " and the api url is "
-        , em [ underlineStyle ] [ text apiUrl ]
-        ]
-
-
-underlineStyle : Attribute msg
-underlineStyle =
-    style
-        [ ( "text-decoration", "underline" )
-        ]
-
-
-redStyle : Attribute msg
-redStyle =
-    style
-        [ ( "color", "red" )
-        ]
-
-
-pageWrapper : Attribute msg
-pageWrapper =
-    style
-        [ ( "padding", "20px" )
+        , em [ class "underline" ] [ text apiUrl ]
         ]
 
 
