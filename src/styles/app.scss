@@ -1,17 +1,2 @@
 @import "./vars";
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  -webkit-font-smoothing: antialiased;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  background-color: #F9F9F9;
-  color: #222222;
-}
+@import "./global";
