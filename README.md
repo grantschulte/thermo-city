@@ -8,7 +8,7 @@ An Elm + Webpack web app starter. This starter uses Webpack for building the Elm
 [Develop](#develop)  
 [Build](#build)  
 [Deploy](#deploy)  
-[Configure](#configure)
+[Configure](#configure)  
 [Preview](#preview)
 
 ## Setup
