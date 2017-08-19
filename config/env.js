@@ -1,5 +1,11 @@
-module.exports = function(env) {
-  var config = {
+// Set your default environment here. This value will
+// be overwritten by env settings passed to webpack via
+// when it it called.
+
+const defaultEnvironment = "development";
+
+module.exports = (env = defaultEnvironment) => {
+  const config = {
     development: {
       "API_URL": JSON.stringify("http://localhost:5000"),
       "NODE_ENV": JSON.stringify("development")

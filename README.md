@@ -8,7 +8,8 @@ An Elm + Webpack web app starter. This starter uses Webpack for building the Elm
 [Develop](#develop)  
 [Build](#build)  
 [Deploy](#deploy)  
-[Configure](#configure)  
+[Configure](#configure)
+[Preview](#preview)
 
 ## Setup
 ### Install Elm Packages
@@ -93,15 +94,21 @@ yarn deploy:prod
 ```
 
 ## Configure
-Environment Variables are set in each environments config file (`./config/webpack.[env].js`). Using Webpack's DefinePlugin plugin we can expose these values to our Elm embed method without polluting the global scope.
+Environment Variables are set in `./config/env.js`. Using Webpack's DefinePlugin plugin we can expose these values to our Elm embed method without polluting the global scope.
 ```javascript
 ...
-plugins: [
-  new webpack.DefinePlugin({
-    "NODE_ENV": JSON.stringify("production"),
-    "API_URL": JSON.stringify("https://production.api.com")
-  })
-]
+development: {
+  "API_URL": JSON.stringify("http://localhost:5000"),
+  "NODE_ENV": JSON.stringify("development")
+},
+staging: {
+  "API_URL": JSON.stringify("http://staging.api.com"),
+  "NODE_ENV": JSON.stringify("staging")
+},
+production: {
+  "API_URL": JSON.stringify("http://prod.api.com"),
+  "NODE_ENV": JSON.stringify("production")
+}
 ...
 ```
 These variables can be accessed in the Elm app as flags in your `./src/index.js` file:
@@ -123,3 +130,8 @@ init flags =
     , Cmd.none
     )
 ```
+
+## Preview
+
+View the current state of the seed:
+[Elm Web Starter](http://elm-web-starter.surge.sh/)

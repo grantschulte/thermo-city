@@ -1,7 +1,10 @@
 module.exports = function(env) {
-  var path = require("path");
-  var webpack = require("webpack");
-  var config = require("./config/env")(env);
+  const path = require("path");
+  const webpack = require("webpack");
+  const config = require("./config/env")(env);
+  
+  const outputPath = "/dist";
+  const sourcePath = "/src";
 
   return {
     entry: {
@@ -11,7 +14,7 @@ module.exports = function(env) {
     },
 
     output: {
-      path: path.resolve(__dirname + "/dist"),
+      path: path.resolve(__dirname + outputPath),
       filename: "[name].js",
     },
 
@@ -31,7 +34,7 @@ module.exports = function(env) {
             sourceMap: true,
             data: "@import 'vars';",
             includePaths: [
-              path.join(__dirname, "/src")
+              path.join(__dirname, sourcePath)
             ]
           }
         },
@@ -64,7 +67,9 @@ module.exports = function(env) {
 
     devServer: {
       inline: true,
-      stats: { colors: true },
+      stats: {
+        colors: true
+      }
     }
   };
 }
