@@ -1,21 +1,27 @@
-"use strict";
+// Import global assets here. These assets will be used throughout
+// the app. For instance, I've included all app-specific styles
+// via the app.scss manifest, as well as our css helper library.
+// I've also included images that aren't imported into components,
+// but are being referenced by index.html.
 
-// Include stylesheets here. Import new scss stylesheets into app.scss
-// if you wish to keep this file clean.
+import "ace-css/css/ace.css";
+import "styles/app.scss";
 
-require("ace-css/css/ace.css");
-require("./styles/app.scss");
+// Import Favicons
 
-// Require index.html so it gets copied to dist
+// import "images/favicon.ico";
+// import "images/favicon-16x16.png";
+// import "images/favicon-32x32.png";
 
-require("./index.html");
+// Copy index.html to /dist
 
-// Elm initialization
+import "./index.html";
 
-var Elm = require("./Main.elm");
-var mountNode = document.getElementById("main");
+// Initialize Elm App
 
-var app = Elm.Main.embed(mountNode, {
+const Elm = require("./app/Main.elm");
+const mountNode = document.getElementById("main");
+const app = Elm.Mottoto.embed(mountNode, {
   nodeEnv: NODE_ENV,
   apiUrl: API_URL
 });
