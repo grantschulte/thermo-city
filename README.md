@@ -1,7 +1,7 @@
 Elm Web Starter
 =======
 
-An Elm + Webpack web app starter. This starter uses Webpack for building the Elm app, and [surge](https://surge.sh/) (staging) or AWS S3 (production) to host your static build.
+An Elm + Webpack web app starter. This starter uses Webpack for building the Elm app, and [surge](https://surge.sh/) or Github Pages for hosting your static build.
 
 # Table of Contents
 [Setup](#setup)  
@@ -65,18 +65,23 @@ yarn build:prod
 You must have [surge CLI](https://surge.sh/) and [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) installed in order to deploy.
 
 ### Deploy Targets
-In `package.json` replace the url targets in the deploy commands.
+
+
+
+
+### Deploy to surge.sh
+The staging deployment builds with staging environment variables
+and deploys to surge.sh.
+
+In `package.json` replace replace `your-domain.surge.sh` with your surge url,
+if you don't yet have one, run `surge` from the root of your project and copy
+the generated site url into this command.
 
 ```json
 ...
-"deploy:staging": "yarn build:staging; surge ./dist -d your-domain.surge.sh",
-"deploy:prod": "yarn build:prod; aws s3 sync --acl public-read --sse --delete ./dist s3://your-domain",
+"deploy:staging": "yarn build:staging; surge ./dist -d your-domain.surge.sh"
 ...
 ```
-
-### Staging
-The staging deployment builds with staging environment variables
-and deploys to surge.sh.
 
 In the `deploy:staging` script replace `your-domain.surge.sh` with your surge domain. If you don't have a custom domain you can remove `-d your-domain.surge.sh` altogether.
 
@@ -84,14 +89,14 @@ In the `deploy:staging` script replace `your-domain.surge.sh` with your surge do
 yarn deploy:staging
 ```
 
-### Production
-The production deployment builds with production environment variables and deploys to AWS S3.
-
-In `deploy:prod` replace `s3://your-domain` with your AWS S3 bucket name. Make sure that AWS CLI is configured with the appropriate user access key and secret key for that bucket.
+### Deploy to Github Pages
+You can deploy a production build to Github Pages with the following command.
 
 ```
-yarn deploy:prod
+yarn deploy:gh-pages
 ```
+*If you are using a custom domain you must set the CNAME variable in the deploy
+`deploy-gh-pages.sh` script because Github overwrites this on every push.*
 
 ## Configure
 Environment Variables are set in `./config/env.js`. Using Webpack's DefinePlugin plugin we can expose these values to our Elm embed method without polluting the global scope.
@@ -119,16 +124,14 @@ var app = Elm.Main.embed(mountNode, {
   apiUrl: API_URL
 });
 ```
-In order to use them in our Elm app we have to pass them as flags to Elm's init function.
+To use them in our Elm app we have to pass them to Elm's init function and
+construct our initial model with them. Elm's `Html.programWithFlags` allows us
+to do this.
+
 ```elm
-init : Flags -> ( Model, Cmd Msg )
-init flags =
-    ( { initModel
-        | apiUrl = flags.apiUrl
-        , nodeEnv = flags.nodeEnv
-      }
-    , Cmd.none
-    )
+init : Config -> ( Model, Cmd Msg )
+init config =
+    ( initialModel config, Cmd.none)
 ```
 
 ## Preview
