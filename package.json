@@ -1,4 +1,14 @@
 {
+  "name": "elm-webpack-starter",
+  "version": "0.0.1",
+  "description": "Elm + Webpack Starter Seed.",
+  "main": "./src/index.js",
+  "author": "Grant J. Schulte <schulte.grant@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grantschulte/elm-webpack-starter.git"
+  },
   "dependencies": {
     "ace-css": "1.1",
     "css-loader": "^0.28.4",
@@ -23,5 +33,8 @@
     "deploy:gh-pages": "./deploy-gh-pages.sh",
     "deploy:staging": "yarn build:staging; surge ./dist -d elm-web-starter.surge.sh",
     "start": "nf start"
+  },
+  "engines": {
+    "node": "8.4.0"
   }
 }
