@@ -11,10 +11,10 @@ import Models exposing (..)
 
 view : Model -> Html Msg
 view model =
-    div [ class "page-wrapper" ]
-        [ Html.h3 [ class "mt0" ]
-            [ text model.title
-            , span [ class "material-icons color-warn" ] [ text "favorite" ]
+    div [ class "p2" ]
+        [ div [ class "flex items-center pb2 mb2 border-bottom" ]
+            [ span [ class "material-icons mr1 h3" ] [ text "favorite" ]
+            , span [] [ text model.title ]
             ]
         , infoText model.config
         ]
@@ -22,9 +22,13 @@ view model =
 
 infoText : Config -> Html Msg
 infoText config =
-    p [ class "m0" ]
-        [ text "Your are running in "
-        , em [ class "underline" ] [ text config.nodeEnv ]
-        , text " and the api url is "
-        , em [ class "underline" ] [ text config.apiUrl ]
+    div []
+        [ p [ class "m0" ]
+            [ text "env: "
+            , em [ class "underline" ] [ text config.nodeEnv ]
+            ]
+        , p [ class "m0" ]
+            [ text "api: "
+            , em [ class "underline" ] [ text config.apiUrl ]
+            ]
         ]
