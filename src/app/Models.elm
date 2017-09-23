@@ -3,28 +3,19 @@ module Models exposing (..)
 -- TYPES
 
 
-type alias ApiUrl =
+type alias Title =
     String
 
 
-type alias NodeEnv =
-    String
-
-
-type alias Greeting =
-    String
-
-
-type alias Model =
-    { greeting : Greeting
-    , apiUrl : ApiUrl
-    , nodeEnv : NodeEnv
+type alias Config =
+    { apiUrl : String
+    , nodeEnv : String
     }
 
 
-type alias Flags =
-    { apiUrl : ApiUrl
-    , nodeEnv : NodeEnv
+type alias Model =
+    { title : Title
+    , config : Config
     }
 
 
@@ -32,9 +23,8 @@ type alias Flags =
 -- INITIAL MODEL
 
 
-initialModel : Model
-initialModel =
-    { greeting = "Elm Web Starter"
-    , apiUrl = ""
-    , nodeEnv = ""
+initialModel : Config -> Model
+initialModel config =
+    { title = "Elm Web Starter"
+    , config = config
     }

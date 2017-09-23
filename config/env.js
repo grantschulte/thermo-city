@@ -1,6 +1,6 @@
 // Set your default environment here. This value will
-// be overwritten by env settings passed to webpack via
-// when it it called.
+// be overwritten by env settings passed to webpack
+// via npm scripts.
 
 const defaultEnvironment = "development";
 

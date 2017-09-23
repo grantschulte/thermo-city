@@ -2,7 +2,7 @@ module Main exposing (..)
 
 import Html exposing (..)
 import Messages exposing (..)
-import Models exposing (Flags, Model, initialModel)
+import Models exposing (Config, Model, initialModel)
 import Update exposing (update)
 import View exposing (view)
 
@@ -10,14 +10,9 @@ import View exposing (view)
 -- INIT
 
 
-init : Flags -> ( Model, Cmd Msg )
-init flags =
-    ( { initialModel
-        | apiUrl = flags.apiUrl
-        , nodeEnv = flags.nodeEnv
-      }
-    , Cmd.none
-    )
+init : Config -> ( Model, Cmd Msg )
+init config =
+    ( initialModel config, Cmd.none )
 
 
 
@@ -33,7 +28,7 @@ subscriptions model =
 -- MAIN
 
 
-main : Program Flags Model Msg
+main : Program Config Model Msg
 main =
     Html.programWithFlags
         { init = init

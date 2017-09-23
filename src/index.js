@@ -21,7 +21,7 @@ import "./index.html";
 
 const Elm = require("./app/Main.elm");
 const mountNode = document.getElementById("main");
-const app = Elm.Mottoto.embed(mountNode, {
+const app = Elm.Main.embed(mountNode, {
   nodeEnv: NODE_ENV,
   apiUrl: API_URL
 });

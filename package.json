@@ -19,8 +19,8 @@
     "build:staging": "webpack --env=staging --progress --profile --colors",
     "build:prod": "webpack --env=production --progress --profile --colors",
     "client": "webpack-dev-server --env=development --port 4200",
+    "deploy:gh-pages": "./deploy-gh-pages.sh",
     "deploy:staging": "yarn build:staging; surge ./dist -d elm-web-starter.surge.sh",
-    "deploy:prod": "yarn build:prod; aws s3 sync --acl public-read --sse --delete ./dist s3://your-domain",
     "start": "nf start"
   }
 }
