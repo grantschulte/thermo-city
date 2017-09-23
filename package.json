@@ -1,7 +1,7 @@
 {
   "name": "elm-webpack-starter",
   "version": "0.0.1",
-  "description": "Elm + Webpack Starter Seed.",
+  "description": "An Elm + Webpack seed for the future.",
   "main": "./src/index.js",
   "author": "Grant J. Schulte <schulte.grant@gmail.com>",
   "license": "MIT",
