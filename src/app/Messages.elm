@@ -1,7 +1,10 @@
 module Messages exposing (..)
 
+import Models exposing (..)
+
+
 -- MESSAGES
 
 
 type Msg
-    = NoOp
+    = SetPage Page

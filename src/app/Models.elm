@@ -1,10 +1,16 @@
 module Models exposing (..)
 
+import Daily.Models exposing (..)
+import RemoteData exposing (..)
+import Weekly.Models exposing (..)
+
+
 -- TYPES
 
 
-type alias Title =
-    String
+type Page
+    = DailyPage
+    | WeeklyPage
 
 
 type alias Config =
@@ -14,8 +20,10 @@ type alias Config =
 
 
 type alias Model =
-    { title : Title
-    , config : Config
+    { config : Config
+    , daily : WebData DailyOutlook
+    , page : Page
+    , weekly : WebData WeeklyOutlook
     }
 
 
@@ -25,6 +33,8 @@ type alias Model =
 
 initialModel : Config -> Model
 initialModel config =
-    { title = "Elm Web Starter"
-    , config = config
+    { config = config
+    , daily = RemoteData.NotAsked
+    , page = WeeklyPage
+    , weekly = RemoteData.NotAsked
     }
