@@ -12,6 +12,7 @@ view model =
         [ id "page-daily"
         , class "page"
         ]
-        [ div []
+        [ div
+            [ class "" ]
             [ text "Daily" ]
         ]

@@ -1,0 +1,125 @@
+// Backgrounds
+
+.bg-primary {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &:hover {
+    background-color: darken($color-primary, 5%);
+  }
+
+  &:active,
+  &:focus {
+    background-color: darken($color-primary, 10%);
+  }
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+  color: $color-white;
+
+  &:hover {
+    background-color: darken($color-secondary, 5%);
+  }
+
+  &:active,
+  &:focus {
+    background-color: darken($color-secondary, 10%);
+  }
+}
+
+.bg-accent {
+  background-color: $color-accent;
+  color: $color-white;
+
+  &:hover {
+    background-color: darken($color-accent, 5%);
+  }
+
+  &:active,
+  &:focus {
+    background-color: darken($color-accent, 10%);
+  }
+}
+
+// Borders
+
+.border-primary {
+  border: 1px solid $color-primary;
+
+  &:hover {
+    border-color: darken($color-primary, 5%);
+  }
+
+  &:active,
+  &:focus {
+    border-color: darken($color-primary, 10%);
+  }
+}
+
+.border-secondary {
+  border: 1px solid $color-secondary;
+
+  &:hover {
+    border-color: darken($color-secondary, 5%);
+  }
+
+  &:active,
+  &:focus {
+    border-color: darken($color-secondary, 10%);
+  }
+}
+
+.border-accent {
+  border: 1px solid $color-accent;
+
+  &:hover {
+    border-color: darken($color-accent, 5%);
+  }
+
+  &:active,
+  &:focus {
+    border-color: darken($color-accent, 10%);
+  }
+}
+
+// Colors
+
+.color-primary {
+  color: $color-primary;
+
+  &:hover {
+    color: darken($color-primary, 5%);
+  }
+
+  &:active,
+  &:focus {
+    color: darken($color-primary, 10%);
+  }
+}
+
+.color-secondary {
+  color: $color-secondary;
+
+  &:hover {
+    color: darken($color-secondary, 5%);
+  }
+
+  &:active,
+  &:focus {
+    color: darken($color-secondary, 10%);
+  }
+}
+
+.color-accent {
+  color: $color-accent;
+
+  &:hover {
+    color: darken($color-accent, 5%);
+  }
+
+  &:active,
+  &:focus {
+    color: darken($color-accent, 10%);
+  }
+}

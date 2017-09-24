@@ -1,0 +1,13 @@
+#header {
+  #header__buttons {
+    span {
+      font-size: 1em;
+      cursor: pointer;
+
+      &.active {
+        color: $color-secondary;
+        text-decoration: underline;
+      }
+    }
+  }
+}

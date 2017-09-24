@@ -11,11 +11,11 @@ module.exports = (env = defaultEnvironment) => {
       "NODE_ENV": JSON.stringify("development")
     },
     staging: {
-      "API_URL": JSON.stringify("http://staging.api.com"),
+      "API_URL": JSON.stringify(""),
       "NODE_ENV": JSON.stringify("staging")
     },
     production: {
-      "API_URL": JSON.stringify("http://prod.api.com"),
+      "API_URL": JSON.stringify(""),
       "NODE_ENV": JSON.stringify("production")
     }
   };

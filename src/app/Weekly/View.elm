@@ -12,11 +12,11 @@ view model =
         [ id "page-seven-day"
         , class "page"
         ]
-        [ dailyOutlookRow model
+        [ dayRow model
         ]
 
 
-dailyOutlookRow : Model -> Html Msg
-dailyOutlookRow model =
-    div [ class "daily-outlook-row p2 border-bottom" ]
-        [ text "Seven Day" ]
+dayRow : Model -> Html Msg
+dayRow model =
+    div [ class "daily-outlook-row" ]
+        [ text "Weekly" ]
