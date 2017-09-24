@@ -1,13 +1,13 @@
 {
-  "name": "elm-webpack-starter",
+  "name": "thermo-city",
   "version": "0.0.1",
-  "description": "An Elm + Webpack seed for the future.",
+  "description": "A city-based weather app focused on essential weather data, a sleek UI, and weather-based wardrobe suggestions.",
   "main": "./src/index.js",
   "author": "Grant J. Schulte <schulte.grant@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grantschulte/elm-webpack-starter.git"
+    "url": "https://github.com/grantschulte/thermo-city.git"
   },
   "dependencies": {
     "ace-css": "1.1",
@@ -31,7 +31,7 @@
     "build:prod": "webpack --env=production --progress --profile --colors",
     "client": "webpack-dev-server --env=development --port 4200",
     "deploy:gh-pages": "./deploy-gh-pages.sh",
-    "deploy:staging": "yarn build:staging; surge ./dist -d elm-web-starter.surge.sh",
+    "deploy:staging": "yarn build:staging; surge ./dist -d thermo-city.surge.sh",
     "start": "nf start"
   },
   "engines": {
