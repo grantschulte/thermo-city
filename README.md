@@ -1,7 +1,7 @@
-Elm Web Starter
+thermo.city
 =======
 
-An Elm + Webpack web app starter. This starter uses Webpack for building the Elm app, and [surge](https://surge.sh/) or Github Pages for hosting your static build.
+An Elm + Webpack web app starter. This starter uses the [Elm + Webpack web app starter](https://github.com/grantschulte/elm-web-starter).
 
 # Table of Contents
 [Setup](#setup)  
@@ -63,11 +63,6 @@ yarn build:prod
 ## Deploy
 ### Dependencies
 You must have [surge CLI](https://surge.sh/) and [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) installed in order to deploy.
-
-### Deploy Targets
-
-
-
 
 ### Deploy to surge.sh
 The staging deployment builds with staging environment variables
@@ -133,8 +128,3 @@ init : Config -> ( Model, Cmd Msg )
 init config =
     ( initialModel config, Cmd.none)
 ```
-
-## Preview
-
-View the current state of the seed:
-[Elm Web Starter](http://elm-web-starter.surge.sh/)
