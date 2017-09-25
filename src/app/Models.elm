@@ -1,29 +1,36 @@
 module Models exposing (..)
 
+import Current.Models exposing (..)
 import Daily.Models exposing (..)
 import RemoteData exposing (..)
-import Weekly.Models exposing (..)
 
 
 -- TYPES
 
 
+type alias Coordinates =
+    { latitude : Float
+    , longitude : Float
+    }
+
+
 type Page
-    = DailyPage
-    | WeeklyPage
+    = CurrentPage
+    | DailyPage
 
 
 type alias Config =
     { apiUrl : String
+    , coordinates : Coordinates
     , nodeEnv : String
     }
 
 
 type alias Model =
     { config : Config
-    , daily : WebData DailyOutlook
+    , current : WebData CurrentWeather
+    , daily : WebData (List DailyWeather)
     , page : Page
-    , weekly : WebData WeeklyOutlook
     }
 
 
@@ -34,7 +41,7 @@ type alias Model =
 initialModel : Config -> Model
 initialModel config =
     { config = config
-    , daily = RemoteData.NotAsked
-    , page = WeeklyPage
-    , weekly = RemoteData.NotAsked
+    , current = RemoteData.Loading
+    , daily = RemoteData.Loading
+    , page = DailyPage
     }

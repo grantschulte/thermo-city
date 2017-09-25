@@ -1,6 +1,8 @@
 module Messages exposing (..)
 
+import Daily.Models exposing (..)
 import Models exposing (..)
+import RemoteData exposing (..)
 
 
 -- MESSAGES
@@ -8,3 +10,4 @@ import Models exposing (..)
 
 type Msg
     = SetPage Page
+    | DailyWeatherResponse (WebData (List DailyWeather))

@@ -12,3 +12,6 @@ update msg model =
     case msg of
         SetPage page ->
             ( { model | page = page }, Cmd.none )
+
+        DailyWeatherResponse response ->
+            ( { model | daily = response }, Cmd.none )

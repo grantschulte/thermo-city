@@ -1,10 +1,11 @@
 module Daily.Models exposing (..)
 
 
-type alias DailyOutlook =
-    { humidity : Float
+type alias DailyWeather =
+    { highTemperature : Float
+    , humidity : Float
     , icon : String
-    , summary : String
+    , lowTemperature : Float
     , precipProbability : Float
-    , temperature : Float
+    , precipType : String
     }

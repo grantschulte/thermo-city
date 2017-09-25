@@ -1,5 +1,6 @@
 module Main exposing (..)
 
+import Daily.Commands exposing (..)
 import Html exposing (..)
 import Messages exposing (..)
 import Models exposing (Config, Model, initialModel)
@@ -12,7 +13,11 @@ import View exposing (view)
 
 init : Config -> ( Model, Cmd Msg )
 init config =
-    ( initialModel config, Cmd.none )
+    let
+        model =
+            initialModel config
+    in
+    ( model, Daily.Commands.getDailyWeather model )
 
 
 

@@ -1,4 +1,4 @@
-module Weekly.View exposing (..)
+module Current.View exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -9,14 +9,10 @@ import Models exposing (..)
 view : Model -> Html Msg
 view model =
     div
-        [ id "page-seven-day"
+        [ id "page-current"
         , class "page"
         ]
-        [ dayRow model
+        [ div
+            [ class "" ]
+            [ text "Current Weather" ]
         ]
-
-
-dayRow : Model -> Html Msg
-dayRow model =
-    div [ class "daily-outlook-row" ]
-        [ text "Weekly" ]

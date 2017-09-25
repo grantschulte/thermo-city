@@ -12,7 +12,11 @@ view model =
         [ id "page-daily"
         , class "page"
         ]
-        [ div
-            [ class "" ]
-            [ text "Daily" ]
+        [ dayRow model
         ]
+
+
+dayRow : Model -> Html Msg
+dayRow model =
+    div [ class "daily-outlook-row" ]
+        [ text "Daily" ]

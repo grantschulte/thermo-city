@@ -17,11 +17,27 @@ import "styles/app.scss";
 
 import "./index.html";
 
-// Initialize Elm App
+function getUserCoords() {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    let { latitude, longitude } = position.coords;
 
-const Elm = require("./app/Main.elm");
-const mountNode = document.getElementById("main");
-const app = Elm.Main.embed(mountNode, {
-  nodeEnv: NODE_ENV,
-  apiUrl: API_URL
-});
+    let coords = {
+      latitude,
+      longitude
+    };
+
+    // Initialize Elm App
+
+    const Elm = require("./app/Main.elm");
+    const mountNode = document.getElementById("main");
+    const app = Elm.Main.embed(mountNode, {
+      apiUrl: API_URL,
+      coordinates: coords,
+      dsApiKey: DS_API_KEY,
+      dsApiRoot: DS_API_ROOT,
+      nodeEnv: NODE_ENV
+    });
+  });
+}
+
+getUserCoords();

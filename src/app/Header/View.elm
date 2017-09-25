@@ -30,17 +30,17 @@ view model =
             ]
             [ span
                 [ classList
-                    [ ( "active", model.page == DailyPage )
+                    [ ( "active", model.page == CurrentPage )
                     ]
-                , onClick (SetPage DailyPage)
+                , onClick (SetPage CurrentPage)
                 ]
                 [ text "Current" ]
             , span
                 [ classList
                     [ ( "ml2", True )
-                    , ( "active", model.page == WeeklyPage )
+                    , ( "active", model.page == DailyPage )
                     ]
-                , onClick (SetPage WeeklyPage)
+                , onClick (SetPage DailyPage)
                 ]
                 [ text "This Week" ]
             ]
