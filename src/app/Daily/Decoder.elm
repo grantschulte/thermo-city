@@ -9,27 +9,14 @@ import Models exposing (..)
 dailyWeather : Decode.Decoder DailyWeather
 dailyWeather =
     decode DailyWeather
-        |> required "highTemperature" Decode.float
-        |> required "humidity" Decode.float
+        |> required "summary" Decode.string
         |> required "icon" Decode.string
-        |> required "lowTemperature" Decode.float
         |> required "precipProbability" Decode.float
-        |> required "precipType" Decode.string
+        |> required "temperatureHigh" Decode.float
+        |> required "temperatureLow" Decode.float
+        |> required "humidity" Decode.float
 
 
 dailyWeatherResponse : Decode.Decoder (List DailyWeather)
 dailyWeatherResponse =
-    Decode.list dailyWeather
-
-
-
--- dailyWeatherDecoder : Decode.Decoder WeatherResponse
--- dailyWeatherDecoder =
---     let
---         decoder =
---             decode WeatherResponse
---                 |> required "summary" Decode.string
---                 |> required "icon" Decode.string
---                 |> required "data" (Decode.list dailyWeather)
---     in
---     Decode.at [ "daily" ] decoder
+    Decode.at [ "data" ] (Decode.list dailyWeather)

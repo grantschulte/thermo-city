@@ -33,8 +33,6 @@ function getUserCoords() {
     const app = Elm.Main.embed(mountNode, {
       apiUrl: API_URL,
       coordinates: coords,
-      dsApiKey: DS_API_KEY,
-      dsApiRoot: DS_API_ROOT,
       nodeEnv: NODE_ENV
     });
   });

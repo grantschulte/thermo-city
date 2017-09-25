@@ -2,10 +2,10 @@ module Daily.Models exposing (..)
 
 
 type alias DailyWeather =
-    { highTemperature : Float
-    , humidity : Float
+    { summary : String
     , icon : String
-    , lowTemperature : Float
     , precipProbability : Float
-    , precipType : String
+    , temperatureHigh : Float
+    , temperatureLow : Float
+    , humidity : Float
     }
