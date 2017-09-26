@@ -26,22 +26,28 @@ view model =
             ]
         , div
             [ id "header__buttons"
-            , class "right-align"
+            , class "center"
             ]
             [ span
                 [ classList
-                    [ ( "active", model.page == CurrentPage )
+                    [ ( "mx1", True )
+                    , ( "active", model.page == CurrentPage )
                     ]
                 , onClick (SetPage CurrentPage)
                 ]
                 [ text "Current" ]
             , span
                 [ classList
-                    [ ( "ml2", True )
+                    [ ( "mx1", True )
                     , ( "active", model.page == DailyPage )
                     ]
                 , onClick (SetPage DailyPage)
                 ]
-                [ text "This Week" ]
+                [ text "Daily" ]
             ]
+        , div
+            [ id "header__location"
+            , class "ml-auto align-right"
+            ]
+            [ text "Location Name" ]
         ]

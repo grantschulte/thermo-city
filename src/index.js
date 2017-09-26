@@ -6,6 +6,7 @@
 
 import "ace-css/css/ace.css";
 import "styles/app.scss";
+// import "styles/climacons.scss"
 
 // Import Favicons
 
@@ -18,7 +19,7 @@ import "styles/app.scss";
 import "./index.html";
 
 function getUserCoords() {
-  navigator.geolocation.getCurrentPosition(function(position) {
+  navigator.geolocation.getCurrentPosition((position) => {
     let { latitude, longitude } = position.coords;
 
     let coords = {
@@ -35,7 +36,7 @@ function getUserCoords() {
       coordinates: coords,
       nodeEnv: NODE_ENV
     });
-  });
+  }, (error) => {}, { enableHighAccuracy: false });
 }
 
 getUserCoords();

@@ -16,7 +16,7 @@ view model =
         [ Header.View.view model
         , div
             [ id "container"
-            , class "p2"
+            , class "p0"
             ]
             [ page model ]
         ]

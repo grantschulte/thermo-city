@@ -1,5 +1,6 @@
 module Daily.View exposing (..)
 
+import Commands exposing (iconClass)
 import Daily.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -37,13 +38,28 @@ dailyList daily =
 daysList : List DailyWeather -> Html Msg
 daysList days =
     ul
-        [ id "day-list"
-        , class "list-reset"
+        [ id "weather-card-list"
+        , class "list-reset mt0 mb0 flex flex-wrap px1"
+        , style [ ( "height", "calc(100% - 48px)" ) ]
         ]
         (List.map dayRow days)
 
 
 dayRow : DailyWeather -> Html Msg
 dayRow day =
-    li [ class "day-list__item" ]
-        [ text day.summary ]
+    li [ class "weather-card col-12 sm-col-6 md-col-6 lg-col-3 p1" ]
+        [ div
+            [ class "weather-card__inner" ]
+            [ div
+                [ class "weather-card__icon" ]
+                [ span
+                    [ classList
+                        [ ( iconClass day.icon, True ) ]
+                    ]
+                    []
+                ]
+            , p
+                [ class "weather-card__summary" ]
+                [ text day.summary ]
+            ]
+        ]
