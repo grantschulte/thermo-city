@@ -11,26 +11,31 @@ view : Model -> Html Msg
 view model =
     header
         [ id "header"
-        , class "flex items-center p2"
+        , class "flex items-center px2 pt2"
         ]
         [ div
             [ id "header__logo"
             , class "flex items-center mr-auto left-align"
             ]
             [ span
-                [ class "material-icons mr1 color-primary display-none" ]
+                [ class "material-icons mr1 display-none" ]
                 [ text "location_city" ]
             , span
-                [ class "color-accent" ]
+                []
                 [ text "Thermo.city" ]
             ]
         , div
-            [ id "header__buttons"
+            [ id "header__location"
             , class "center"
+            ]
+            [ text model.config.address ]
+        , div
+            [ id "header__buttons"
+            , class "ml-auto"
             ]
             [ span
                 [ classList
-                    [ ( "mx1", True )
+                    [ ( "btn btn-small bg-secondary", True )
                     , ( "active", model.page == CurrentPage )
                     ]
                 , onClick (SetPage CurrentPage)
@@ -38,16 +43,11 @@ view model =
                 [ text "Current" ]
             , span
                 [ classList
-                    [ ( "mx1", True )
+                    [ ( "btn btn-small bg-secondary ml1", True )
                     , ( "active", model.page == DailyPage )
                     ]
                 , onClick (SetPage DailyPage)
                 ]
                 [ text "Daily" ]
             ]
-        , div
-            [ id "header__location"
-            , class "ml-auto align-right"
-            ]
-            [ text "Location Name" ]
         ]

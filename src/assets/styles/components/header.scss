@@ -1,13 +1,15 @@
 #header {
-  #header__buttons {
-    span {
-      font-size: 1em;
-      cursor: pointer;
+  color: $color-white;
 
-      &.active {
-        color: $color-secondary;
-        text-decoration: underline;
-      }
-    }
+  &__location {
+    padding: 0 2em;
+    max-width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__buttons {
+
   }
 }

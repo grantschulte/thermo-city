@@ -20,7 +20,8 @@ type Page
 
 
 type alias Config =
-    { apiUrl : String
+    { address : String
+    , apiUrl : String
     , coordinates : Coordinates
     , nodeEnv : String
     }

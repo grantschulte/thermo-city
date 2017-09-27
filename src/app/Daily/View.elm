@@ -39,8 +39,8 @@ daysList : List DailyWeather -> Html Msg
 daysList days =
     ul
         [ id "weather-card-list"
-        , class "list-reset mt0 mb0 flex flex-wrap px1"
-        , style [ ( "height", "calc(100% - 48px)" ) ]
+        , class "list-reset mt0 mb0 flex flex-wrap p1"
+        , style [ ( "height", "calc(100% - 42px)" ) ]
         ]
         (List.map dayRow days)
 
@@ -59,7 +59,16 @@ dayRow day =
                     []
                 ]
             , p
-                [ class "weather-card__summary" ]
-                [ text day.summary ]
+                [ class "weather-card__summary mt1" ]
+                [ span
+                    [ class "weather-card__summary__low" ]
+                    [ text (toString (ceiling day.temperatureLow)) ]
+                , span
+                    [ class "weather-card__summary__slash" ]
+                    [ text "/" ]
+                , span
+                    [ class "weather-card__summary__high" ]
+                    [ text (toString (ceiling day.temperatureHigh)) ]
+                ]
             ]
         ]
