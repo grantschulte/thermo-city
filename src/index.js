@@ -6,7 +6,6 @@
 
 import "ace-css/css/ace.css";
 import "styles/app.scss";
-// import "styles/climacons.scss"
 
 // Import Favicons
 
@@ -17,6 +16,10 @@ import "styles/app.scss";
 // Copy index.html to /dist
 
 import "./index.html";
+
+// Import key for development. This key is not in source code.
+
+import key from "../key";
 
 function getUserCoords() {
   let coordsFromStorage = window.localStorage.getItem("thermo-city-coords");
@@ -38,7 +41,7 @@ function getLocationAndAddress() {
       longitude
     };
 
-    fetch(`http://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&sensor=false`)
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&sensor=false&key=${key}`)
       .then(res => res.json())
       .then(data => data.results[0])
       .then(result => {

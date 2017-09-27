@@ -17,12 +17,17 @@ view model =
             [ id "header__logo"
             , class "flex items-center mr-auto left-align"
             ]
-            [ span
-                [ class "material-icons mr1 display-none" ]
-                [ text "location_city" ]
-            , span
-                []
-                [ text "Thermo.city" ]
+            [ a
+                [ href "/"
+                , class "flex items-center"
+                ]
+                [ span
+                    [ class "weather-icon-sun mr1 h3" ]
+                    []
+                , span
+                    []
+                    [ text "Thermo.city" ]
+                ]
             ]
         , div
             [ id "header__location"
