@@ -19,52 +19,51 @@ import "./index.html";
 
 // Import key for development. This key is not in source code.
 
-import key from "../key";
+// import key from "../key";
 
-function getUserCoords() {
-  let coordsFromStorage = window.localStorage.getItem("thermo-city-coords");
-  let addressFromStorage = window.localStorage.getItem("thermo-city-address");
+// function getUserCoords() {
+//   let coordsFromStorage = window.localStorage.getItem("thermo-city-coords");
+//   let addressFromStorage = window.localStorage.getItem("thermo-city-address");
+//
+//   if (coordsFromStorage && addressFromStorage) {
+//     initElmApp(JSON.parse(coordsFromStorage), addressFromStorage);
+//   } else {
+//     getLocationAndAddress();
+//   }
+// }
 
-  if (coordsFromStorage && addressFromStorage) {
-    initElmApp(JSON.parse(coordsFromStorage), addressFromStorage);
-  } else {
-    getLocationAndAddress();
-  }
-}
-
-function getLocationAndAddress() {
-  navigator.geolocation.getCurrentPosition((position) => {
-    let { latitude, longitude } = position.coords;
-
-    let coordinates = {
-      latitude,
-      longitude
-    };
-
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&sensor=false&key=${key}`)
-      .then(res => res.json())
-      .then(data => data.results[0])
-      .then(result => {
-        window.localStorage.setItem("thermo-city-coords", JSON.stringify(coordinates));
-        window.localStorage.setItem("thermo-city-address", result.formatted_address);
-        initElmApp(coordinates, result.formatted_address);
-      })
-      .catch(error => console.log(error));
-
-  }, (error) => {
-    console.log(error)
-  });
-}
+// function getLocationAndAddress() {
+//   navigator.geolocation.getCurrentPosition((position) => {
+//     let { latitude, longitude } = position.coords;
+//
+//     let coordinates = {
+//       latitude,
+//       longitude
+//     };
+//
+//     fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&sensor=false&key=${key}`)
+//       .then(res => res.json())
+//       .then(data => data.results[0])
+//       .then(result => {
+//         window.localStorage.setItem("thermo-city-coords", JSON.stringify(coordinates));
+//         window.localStorage.setItem("thermo-city-address", result.formatted_address);
+//         initElmApp(coordinates, result.formatted_address);
+//       })
+//       .catch(error => console.log(error));
+//
+//   }, (error) => {
+//     console.log(error)
+//   });
+// }
 
 function initElmApp(coordinates, address) {
   const Elm = require("./app/Main.elm");
   const mountNode = document.getElementById("main");
   const app = Elm.Main.embed(mountNode, {
-    address,
     apiUrl: API_URL,
-    coordinates,
     nodeEnv: NODE_ENV
   });
 }
 
-getUserCoords();
+// getUserCoords();
+initElmApp();

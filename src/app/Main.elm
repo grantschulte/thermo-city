@@ -1,6 +1,8 @@
 module Main exposing (..)
 
-import Daily.Commands exposing (..)
+-- import Daily.Commands exposing (..)
+-- import GeoLocation.Commands exposing (..)
+
 import Html exposing (..)
 import Messages exposing (..)
 import Models exposing (Config, Model, initialModel)
@@ -17,7 +19,7 @@ init config =
         model =
             initialModel config
     in
-    ( model, Daily.Commands.getDailyWeather model )
+    ( model, Cmd.none )
 
 
 

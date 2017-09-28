@@ -33,7 +33,7 @@ view model =
             [ id "header__location"
             , class "center"
             ]
-            [ text model.config.address ]
+            [ text model.geoData.address ]
         , div
             [ id "header__buttons"
             , class "ml-auto"

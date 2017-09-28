@@ -5,6 +5,7 @@ import Daily.View exposing (..)
 import Header.View exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Loading.View exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
 
@@ -13,13 +14,23 @@ view : Model -> Html Msg
 view model =
     div
         [ id "wrapper" ]
-        [ Header.View.view model
+        [ header model
         , div
             [ id "container"
             , class "p0"
             ]
             [ page model ]
         ]
+
+
+header : Model -> Html Msg
+header model =
+    case model.page of
+        LoadingPage ->
+            div [ class "display-none" ] []
+
+        _ ->
+            Header.View.view model
 
 
 page : Model -> Html Msg
@@ -30,3 +41,6 @@ page model =
 
         DailyPage ->
             Daily.View.view model
+
+        LoadingPage ->
+            Loading.View.view model

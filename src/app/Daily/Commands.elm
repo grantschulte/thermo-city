@@ -1,6 +1,7 @@
 module Daily.Commands exposing (..)
 
 import Daily.Decoder exposing (..)
+import GeoLocation.Models exposing (..)
 import Http exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
@@ -21,8 +22,3 @@ dailyWeatherUrl config =
 
 
 -- config.dsApiRoot ++ "/forecast/" ++ config.dsApiKey ++ "/" ++ makeCoordinates config.coordinates ++ "?exclude=[currently,minutely,hourly,flags]"
-
-
-makeCoordinates : Coordinates -> String
-makeCoordinates coordinates =
-    toString coordinates.latitude ++ "," ++ toString coordinates.longitude
