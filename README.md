@@ -1,7 +1,7 @@
 thermo.city
 =======
 
-An Elm + Webpack web app starter. This starter uses the [Elm + Webpack web app starter](https://github.com/grantschulte/elm-web-starter).
+A geolocating weather app focused on essential weather data and a sleek UI. This app uses the [Elm + Webpack web app starter](https://github.com/grantschulte/elm-web-starter).
 
 # Table of Contents
 [Setup](#setup)  

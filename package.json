@@ -1,7 +1,7 @@
 {
   "name": "thermo-city",
   "version": "0.0.1",
-  "description": "A city-based weather app focused on essential weather data, a sleek UI, and weather-based wardrobe suggestions.",
+  "description": "A geolocating weather app focused on essential weather data and a sleek UI.",
   "main": "./src/index.js",
   "author": "Grant J. Schulte <schulte.grant@gmail.com>",
   "license": "MIT",
