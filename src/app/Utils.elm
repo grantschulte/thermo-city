@@ -5,4 +5,4 @@ import Geolocation exposing (..)
 
 locationQuery : Location -> String
 locationQuery location =
-    "lat=" ++ toString location.latitude ++ "long=" ++ toString location.longitude
+    "coords=" ++ toString location.latitude ++ "," ++ toString location.longitude

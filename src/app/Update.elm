@@ -28,7 +28,10 @@ update msg model =
                 | location = Ok (Just result)
                 , page = DailyPage
               }
-            , fetchGeoData model result
+            , Cmd.batch
+                [ fetchGeoData model result
+                , fetchDailyWeather model result
+                ]
             )
 
         FetchLocation (Err error) ->
@@ -40,17 +43,14 @@ update msg model =
             )
 
         SetPage page ->
-            ( { model | page = page }, setPageCmd page )
+            ( { model | page = page }, setPageCmd model page )
 
 
-setPageCmd : Page -> Cmd Msg
-setPageCmd page =
+setPageCmd : Model -> Page -> Cmd Msg
+setPageCmd model page =
     case page of
-        CurrentPage ->
-            Cmd.none
-
-        DailyPage ->
-            Cmd.none
-
         GeoDataPage ->
             Task.attempt FetchLocation Geolocation.now
+
+        _ ->
+            Cmd.none
