@@ -2,7 +2,9 @@ module Models exposing (..)
 
 import Current.Models exposing (..)
 import Daily.Models exposing (..)
-import GeoLocation.Models exposing (..)
+import GeoData.Models exposing (..)
+import Geolocation exposing (Location)
+import Http exposing (..)
 import RemoteData exposing (..)
 
 
@@ -12,7 +14,7 @@ import RemoteData exposing (..)
 type Page
     = CurrentPage
     | DailyPage
-    | LoadingPage
+    | GeoDataPage
 
 
 type alias Config =
@@ -23,10 +25,10 @@ type alias Config =
 
 type alias Model =
     { config : Config
-    , coordinates : Coordinates
     , current : WebData CurrentWeather
     , daily : WebData (List DailyWeather)
-    , geoData : GeoData
+    , geoData : Result Http.Error (Maybe GeoData)
+    , location : Result Geolocation.Error (Maybe Location)
     , page : Page
     }
 
@@ -38,9 +40,9 @@ type alias Model =
 initialModel : Config -> Model
 initialModel config =
     { config = config
-    , coordinates = Coordinates 40.7192833 -73.94524799999999
     , current = RemoteData.Loading
     , daily = RemoteData.Loading
-    , geoData = GeoData "442-448 Meeker Ave, Brooklyn, NY 11222"
-    , page = LoadingPage
+    , geoData = Ok Nothing
+    , location = Ok Nothing
+    , page = GeoDataPage
     }

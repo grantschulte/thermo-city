@@ -4,6 +4,7 @@ import Commands exposing (iconClass)
 import Daily.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
@@ -15,18 +16,18 @@ view model =
         [ id "page-daily"
         , class "page"
         ]
-        [ dailyList model.daily
+        [ page model.daily
         ]
 
 
-dailyList : WebData (List DailyWeather) -> Html Msg
-dailyList daily =
+page : WebData (List DailyWeather) -> Html Msg
+page daily =
     case daily of
         NotAsked ->
-            text "Initializing"
+            loader
 
         Loading ->
-            text "Loading"
+            loader
 
         Failure error ->
             text (toString error)

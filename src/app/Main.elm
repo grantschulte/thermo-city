@@ -3,9 +3,11 @@ module Main exposing (..)
 -- import Daily.Commands exposing (..)
 -- import GeoLocation.Commands exposing (..)
 
+import Geolocation
 import Html exposing (..)
 import Messages exposing (..)
 import Models exposing (Config, Model, initialModel)
+import Task
 import Update exposing (update)
 import View exposing (view)
 
@@ -19,7 +21,7 @@ init config =
         model =
             initialModel config
     in
-    ( model, Cmd.none )
+    ( model, Task.attempt FetchLocation Geolocation.now )
 
 
 

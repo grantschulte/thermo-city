@@ -2,10 +2,10 @@ module View exposing (..)
 
 import Current.View
 import Daily.View exposing (..)
+import GeoData.View exposing (..)
 import Header.View exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
-import Loading.View exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
 
@@ -26,7 +26,7 @@ view model =
 header : Model -> Html Msg
 header model =
     case model.page of
-        LoadingPage ->
+        GeoDataPage ->
             div [ class "display-none" ] []
 
         _ ->
@@ -42,5 +42,5 @@ page model =
         DailyPage ->
             Daily.View.view model
 
-        LoadingPage ->
-            Loading.View.view model
+        GeoDataPage ->
+            GeoData.View.view model
