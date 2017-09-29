@@ -11,7 +11,7 @@ import Utils exposing (..)
 
 fetchDailyWeather : Model -> Location -> Cmd Msg
 fetchDailyWeather model location =
-    Http.get (dailyWeatherUrl model.config location) dailyWeatherResponse
+    Http.get (dailyWeatherUrl model.config location) dailyWeatherDecoder
         |> RemoteData.sendRequest
         |> Cmd.map DailyWeatherResponse
 

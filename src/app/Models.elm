@@ -27,7 +27,7 @@ type alias Model =
     { config : Config
     , current : WebData CurrentWeather
     , daily : WebData (List DailyWeather)
-    , geoData : Result Http.Error (Maybe GeoData)
+    , geoData : WebData GeoData
     , location : Result Geolocation.Error (Maybe Location)
     , page : Page
     }
@@ -42,7 +42,7 @@ initialModel config =
     { config = config
     , current = RemoteData.Loading
     , daily = RemoteData.Loading
-    , geoData = Ok Nothing
+    , geoData = RemoteData.Loading
     , location = Ok Nothing
     , page = GeoDataPage
     }

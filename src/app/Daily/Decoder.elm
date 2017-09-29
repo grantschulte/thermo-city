@@ -17,6 +17,6 @@ dailyWeather =
         |> required "humidity" Decode.float
 
 
-dailyWeatherResponse : Decode.Decoder (List DailyWeather)
-dailyWeatherResponse =
+dailyWeatherDecoder : Decode.Decoder (List DailyWeather)
+dailyWeatherDecoder =
     Decode.at [ "data" ] (Decode.list dailyWeather)

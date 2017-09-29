@@ -329,5 +329,8 @@
         "apparentTemperatureMaxTime": 1506884400
       }
     ]
+  },
+  "geoData": {
+    "address": "455 Graham Ave. Brooklyn, NY 11222"
   }
 }

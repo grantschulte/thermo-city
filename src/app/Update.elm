@@ -17,11 +17,8 @@ update msg model =
         DailyWeatherResponse response ->
             ( { model | daily = response }, Cmd.none )
 
-        FetchGeoData (Ok result) ->
-            ( { model | geoData = Ok (Just result) }, Cmd.none )
-
-        FetchGeoData (Err error) ->
-            ( { model | geoData = Err error }, Cmd.none )
+        GeoDataResponse response ->
+            ( { model | geoData = response }, Cmd.none )
 
         FetchLocation (Ok result) ->
             ( { model

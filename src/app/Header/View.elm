@@ -1,10 +1,12 @@
 module Header.View exposing (..)
 
+import GeoData.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
+import RemoteData exposing (..)
 
 
 view : Model -> Html Msg
@@ -34,7 +36,7 @@ view model =
             , class "flex items-center justify-center col-4"
             ]
             [ span [ class "address" ]
-                [ text "Location name" ]
+                [ text (address model.geoData) ]
             ]
         , div
             [ id "header__buttons"
@@ -58,3 +60,19 @@ view model =
                 [ text "Daily" ]
             ]
         ]
+
+
+address : WebData GeoData -> String
+address geoData =
+    case geoData of
+        NotAsked ->
+            ""
+
+        Loading ->
+            "Locating..."
+
+        Failure error ->
+            ""
+
+        Success data ->
+            data.address
