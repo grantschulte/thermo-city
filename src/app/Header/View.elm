@@ -15,7 +15,7 @@ view model =
         ]
         [ div
             [ id "header__logo"
-            , class "flex items-center mr-auto left-align"
+            , class "flex items-center left-align col-4"
             ]
             [ a
                 [ href "/"
@@ -31,12 +31,14 @@ view model =
             ]
         , div
             [ id "header__location"
-            , class "center"
+            , class "flex items-center justify-center col-4"
             ]
-            [ text "" ]
+            [ span [ class "address" ]
+                [ text "Location name" ]
+            ]
         , div
             [ id "header__buttons"
-            , class "ml-auto"
+            , class "col-4 flex justify-end"
             ]
             [ span
                 [ classList
