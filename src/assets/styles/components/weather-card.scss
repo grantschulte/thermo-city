@@ -1,19 +1,22 @@
 .weather-card {
   display: flex;
   overflow: hidden;
-  color: $color-secondary;
 
   &__inner {
     background-color: $color-white;
     display: flex;
     width: 100%;
     padding: 1em;
-    border-radius: 8px;
-    color: $color-secondary;
+    border-radius: 4px;
+    color: $color-primary;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.175);
+
+    @media screen and (max-width: $sm) {
+      padding: 0.75rem;
+    }
 
     @media screen and (max-width: $md) {
       flex-direction: row;
@@ -24,7 +27,8 @@
   &__time {
     @media screen and (max-width: $md) {
       margin: 0;
-      font-size: 1.6em;
+      width: 100px;
+      font-size: 1.4em;
     }
   }
 
@@ -37,6 +41,7 @@
 
     @media screen and (max-width: $md) {
       height: auto;
+      width: 100px;
       font-size: 2em;
     }
   }
@@ -51,18 +56,24 @@
 
     @media screen and (max-width: $md) {
       margin: 0;
+      width: 100px;
+      text-align: right;
 
       span {
         margin: 0;
-        font-size: 1.6em;
+        font-size: 1.4em;
       }
     }
   }
 
   &:first-of-type {
     .weather-card__inner {
-      color: $color-accent;
-      background-color: $color-tertiary;
+      color: $color-white;
+      background-color: $color-accent;
     }
+  }
+
+  @media screen and (max-width: $md) {
+    padding-bottom: 0;
   }
 }

@@ -23,13 +23,13 @@ page : WebData CurrentWeather -> Html Msg
 page current =
     case current of
         NotAsked ->
-            loader
+            div [ class "flex items-center hc100" ] [ loader ]
 
         Loading ->
-            loader
+            div [ class "flex items-center hc100" ] [ loader ]
 
         Failure error ->
-            text (toString error)
+            div [ class "flex items-center hc100" ] [ text (toString error) ]
 
         Success current ->
             div [] []

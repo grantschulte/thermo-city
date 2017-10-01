@@ -15,9 +15,16 @@
 
   &__buttons {
     button {
-      border: 2px solid darken($color-secondary, 5%);
-      // background-color: darken($color-secondary, 2.5%);
+      background-color: darken($color-primary, 10%);
       font-size: 0.8em;
+
+      &:last-child {
+        margin-left: 0.5rem;
+      }
+
+      &.active {
+        background-color: darken($color-secondary, 10%);
+      }
     }
 
     @media screen and (max-width: 40em) {
@@ -26,7 +33,11 @@
       button {
         width: 50%;
         height: 36px;
-        font-size: 1em;
+        font-size: 1rem;
+
+        &:last-child {
+          margin-left: 1rem;
+        }
       }
     }
   }

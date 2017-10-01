@@ -39,7 +39,7 @@ view model =
                 [ class "col-12 flex justify-end right-align" ]
                 [ button
                     [ classList
-                        [ ( "btn btn-small bg-secondary", True )
+                        [ ( "btn btn-small bg-primary", True )
                         , ( "active", model.page == CurrentPage )
                         ]
                     , onClick (SetPage CurrentPage)
@@ -47,7 +47,7 @@ view model =
                     [ text "Current" ]
                 , button
                     [ classList
-                        [ ( "btn btn-small bg-secondary ml1", True )
+                        [ ( "btn btn-small bg-primary ml2", True )
                         , ( "active", model.page == DailyPage )
                         ]
                     , onClick (SetPage DailyPage)

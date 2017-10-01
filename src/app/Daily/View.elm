@@ -25,13 +25,13 @@ page : WebData (List DailyWeather) -> Html Msg
 page daily =
     case daily of
         NotAsked ->
-            loader
+            div [ class "flex items-center hc100" ] [ loader ]
 
         Loading ->
-            loader
+            div [ class "flex items-center hc100" ] [ loader ]
 
         Failure error ->
-            text (toString error)
+            div [ class "flex items-center hc100" ] [ text (toString error) ]
 
         Success days ->
             daysList days

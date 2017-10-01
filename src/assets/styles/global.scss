@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   font-family: $font-primary;
   line-height: 1;
-  background-color: $color-secondary;
+  background-color: $color-primary;
   color: $color-white;
 }
 
@@ -25,7 +25,7 @@ a {
   transition: $easeInOut;
 
   &:hover {
-    color: $color-tertiary;
+    color: darken($color-white, 10%);
     text-decoration: none;
   }
 }
@@ -35,5 +35,9 @@ a {
 
   @media screen and (max-width: $sm) {
     height: auto;
+  }
+
+  @media screen and (max-width: $md) {
+    padding-bottom: 1rem;
   }
 }
