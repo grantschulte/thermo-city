@@ -19,4 +19,4 @@ fetchGeoData model location =
 
 geoDataUrl : Config -> Location -> String
 geoDataUrl config location =
-    config.apiUrl ++ "/geoData?" ++ locationQuery location
+    config.apiUrl ++ "/geo-data?" ++ locationQuery location

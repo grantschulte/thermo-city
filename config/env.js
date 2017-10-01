@@ -11,11 +11,11 @@ module.exports = (env = defaultEnvironment) => {
       "NODE_ENV": JSON.stringify("development")
     },
     staging: {
-      "API_URL": JSON.stringify(""),
+      "API_URL": JSON.stringify("https://thermo-city-api.herokuapp.com"),
       "NODE_ENV": JSON.stringify("staging")
     },
     production: {
-      "API_URL": JSON.stringify(""),
+      "API_URL": JSON.stringify("https://thermo-city-api.herokuapp.com"),
       "NODE_ENV": JSON.stringify("production")
     }
   };

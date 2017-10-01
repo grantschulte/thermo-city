@@ -8,14 +8,16 @@
   border-radius: $button-radius;
   transition: $easeInOut;
 
-  &:focus {
+  &:focus,
+  &:active {
     outline: 0;
+    border: none;
     box-shadow: none;
   }
 
   &--small {
     height: 28px;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: 700;
   }
 

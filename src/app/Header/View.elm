@@ -13,11 +13,11 @@ view : Model -> Html Msg
 view model =
     header
         [ id "header"
-        , class "flex items-center px2 pt2"
+        , class "flex flex-wrap items-center px2 pt2"
         ]
         [ div
             [ id "header__logo"
-            , class "flex items-center left-align col-4"
+            , class "flex items-center col-12 sm-col-6 left-align"
             ]
             [ a
                 [ href "/"
@@ -28,36 +28,32 @@ view model =
                     []
                 , span
                     []
-                    [ text "Thermo.city" ]
+                    [ text (address model.geoData) ]
                 ]
-            ]
-        , div
-            [ id "header__location"
-            , class "flex items-center justify-center col-4"
-            ]
-            [ span [ class "address" ]
-                [ text (address model.geoData) ]
             ]
         , div
             [ id "header__buttons"
-            , class "col-4 flex justify-end"
+            , class "flex  items-center col-12 sm-col-6"
             ]
-            [ span
-                [ classList
-                    [ ( "btn btn-small bg-secondary", True )
-                    , ( "active", model.page == CurrentPage )
+            [ div
+                [ class "col-12 flex justify-end right-align" ]
+                [ button
+                    [ classList
+                        [ ( "btn btn-small bg-secondary", True )
+                        , ( "active", model.page == CurrentPage )
+                        ]
+                    , onClick (SetPage CurrentPage)
                     ]
-                , onClick (SetPage CurrentPage)
-                ]
-                [ text "Current" ]
-            , span
-                [ classList
-                    [ ( "btn btn-small bg-secondary ml1", True )
-                    , ( "active", model.page == DailyPage )
+                    [ text "Current" ]
+                , button
+                    [ classList
+                        [ ( "btn btn-small bg-secondary ml1", True )
+                        , ( "active", model.page == DailyPage )
+                        ]
+                    , onClick (SetPage DailyPage)
                     ]
-                , onClick (SetPage DailyPage)
+                    [ text "Daily" ]
                 ]
-                [ text "Daily" ]
             ]
         ]
 
@@ -75,4 +71,4 @@ address geoData =
             ""
 
         Success data ->
-            data.address
+            " " ++ data.address

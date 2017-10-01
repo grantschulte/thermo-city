@@ -8,6 +8,7 @@ import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
+import Utils exposing (getDay)
 
 
 view : Model -> Html Msg
@@ -48,10 +49,13 @@ daysList days =
 
 dayRow : DailyWeather -> Html Msg
 dayRow day =
-    li [ class "weather-card col-12 sm-col-6 md-col-6 lg-col-3 p1" ]
+    li [ class "weather-card col-12 sm-col-12 md-col-6 lg-col-3 p1" ]
         [ div
             [ class "weather-card__inner" ]
             [ div
+                [ class "weather-card__time mb2 h3" ]
+                [ text (getDay day.time) ]
+            , div
                 [ class "weather-card__icon" ]
                 [ span
                     [ classList

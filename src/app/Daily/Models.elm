@@ -1,8 +1,12 @@
 module Daily.Models exposing (..)
 
+import Date exposing (..)
+import Time exposing (..)
+
 
 type alias DailyWeather =
-    { summary : String
+    { time : Time
+    , summary : String
     , icon : String
     , precipProbability : Float
     , temperatureHigh : Float

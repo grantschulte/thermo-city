@@ -9,6 +9,7 @@ import Models exposing (..)
 dailyWeather : Decode.Decoder DailyWeather
 dailyWeather =
     decode DailyWeather
+        |> required "time" Decode.float
         |> required "summary" Decode.string
         |> required "icon" Decode.string
         |> required "precipProbability" Decode.float

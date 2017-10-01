@@ -8,4 +8,22 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
+  &__buttons {
+    button {
+      border: 2px solid darken($color-secondary, 5%);
+      // background-color: darken($color-secondary, 2.5%);
+      font-size: 0.8em;
+    }
+
+    @media screen and (max-width: 40em) {
+      margin-top: 0.8em;
+
+      button {
+        width: 50%;
+        height: 36px;
+        font-size: 1em;
+      }
+    }
+  }
 }
