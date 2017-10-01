@@ -42,7 +42,6 @@ daysList days =
     ul
         [ id "weather-card-list"
         , class "list-reset mt0 mb0 flex flex-wrap p1"
-        , style [ ( "height", "calc(100% - 42px)" ) ]
         ]
         (List.map dayRow days)
 

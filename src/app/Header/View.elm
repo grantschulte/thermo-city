@@ -27,7 +27,7 @@ view model =
                     [ class "weather-icon-sun mr1 h3" ]
                     []
                 , span
-                    []
+                    [ id "header__logo__location-name" ]
                     [ text (address model.geoData) ]
                 ]
             ]

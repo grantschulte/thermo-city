@@ -29,3 +29,11 @@ a {
     text-decoration: none;
   }
 }
+
+#weather-card-list {
+  height: calc(100% - 42px);
+
+  @media screen and (max-width: $sm) {
+    height: auto;
+  }
+}

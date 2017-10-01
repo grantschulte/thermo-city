@@ -1,12 +1,16 @@
 #header {
   color: $color-white;
 
-  &__location {
-    padding: 0 2em;
-    max-width: 400px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  &__logo {
+    a {
+      overflow: hidden;
+    }
+
+    &__location-name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   &__buttons {
