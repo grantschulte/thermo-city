@@ -12672,6 +12672,7 @@ var _user$project$Models$initialModel = function (config) {
 		page: _user$project$Models$GeoDataPage
 	};
 };
+var _user$project$Models$ErrorPage = {ctor: 'ErrorPage'};
 var _user$project$Models$DailyPage = {ctor: 'DailyPage'};
 var _user$project$Models$CurrentPage = {ctor: 'CurrentPage'};
 
@@ -12990,6 +12991,26 @@ var _user$project$Daily_View$view = function (model) {
 		});
 };
 
+var _user$project$Error_View$view = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('page-error'),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class(''),
+				_1: {ctor: '[]'}
+			}
+		},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text(
+				_elm_lang$core$Basics$toString(model.location)),
+			_1: {ctor: '[]'}
+		});
+};
+
 var _user$project$GeoData_Decoder$geoDataDecoder = A3(
 	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
 	'address',
@@ -13288,7 +13309,7 @@ var _user$project$Update$update = F2(
 							model,
 							{
 								location: _elm_lang$core$Result$Err(_p1._0._0),
-								page: _user$project$Models$DailyPage
+								page: _user$project$Models$ErrorPage
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none
 					};
@@ -13312,23 +13333,35 @@ var _user$project$View$page = function (model) {
 			return _user$project$Current_View$view(model);
 		case 'DailyPage':
 			return _user$project$Daily_View$view(model);
+		case 'ErrorPage':
+			return _user$project$Error_View$view(model);
 		default:
 			return _user$project$GeoData_View$view(model);
 	}
 };
 var _user$project$View$header = function (model) {
 	var _p1 = model.page;
-	if (_p1.ctor === 'GeoDataPage') {
-		return A2(
-			_elm_lang$html$Html$div,
-			{
-				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$class('display-none'),
-				_1: {ctor: '[]'}
-			},
-			{ctor: '[]'});
-	} else {
-		return _user$project$Header_View$view(model);
+	switch (_p1.ctor) {
+		case 'GeoDataPage':
+			return A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('display-none'),
+					_1: {ctor: '[]'}
+				},
+				{ctor: '[]'});
+		case 'ErrorPage':
+			return A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('display-none'),
+					_1: {ctor: '[]'}
+				},
+				{ctor: '[]'});
+		default:
+			return _user$project$Header_View$view(model);
 	}
 };
 var _user$project$View$view = function (model) {
