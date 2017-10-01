@@ -2,6 +2,7 @@ module View exposing (..)
 
 import Current.View
 import Daily.View exposing (..)
+import Error.View exposing (..)
 import GeoData.View exposing (..)
 import Header.View exposing (..)
 import Html exposing (..)
@@ -29,6 +30,9 @@ header model =
         GeoDataPage ->
             div [ class "display-none" ] []
 
+        ErrorPage ->
+            div [ class "display-none" ] []
+
         _ ->
             Header.View.view model
 
@@ -41,6 +45,9 @@ page model =
 
         DailyPage ->
             Daily.View.view model
+
+        ErrorPage ->
+            Error.View.view model
 
         GeoDataPage ->
             GeoData.View.view model

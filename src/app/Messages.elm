@@ -14,6 +14,5 @@ import RemoteData exposing (..)
 type Msg
     = DailyWeatherResponse (WebData (List DailyWeather))
     | GeoDataResponse (WebData GeoData)
-      -- | FetchGeoData (Result Http.Error GeoData)
     | FetchLocation (Result Geolocation.Error Location)
     | SetPage Page

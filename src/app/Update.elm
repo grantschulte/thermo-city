@@ -34,7 +34,7 @@ update msg model =
         FetchLocation (Err error) ->
             ( { model
                 | location = Err error
-                , page = DailyPage
+                , page = ErrorPage
               }
             , Cmd.none
             )

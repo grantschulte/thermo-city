@@ -14,6 +14,7 @@ import RemoteData exposing (..)
 type Page
     = CurrentPage
     | DailyPage
+    | ErrorPage
     | GeoDataPage
 
 
