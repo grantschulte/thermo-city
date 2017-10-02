@@ -1,6 +1,4 @@
 #header {
-  color: $color-white;
-
   &__logo {
     a {
       overflow: hidden;
@@ -15,7 +13,7 @@
 
   &__buttons {
     button {
-      background-color: darken($color-primary, 10%);
+      background-color: $color-primary;
       font-size: 0.8em;
 
       &:last-child {

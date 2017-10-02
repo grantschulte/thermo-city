@@ -1,0 +1,19 @@
+#wrapper.theme-night {
+  background-color: $color-primary;
+
+  a {
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  #header {
+    button {
+      background-color: darken($color-primary, 10%);
+
+      &.active {
+        background-color: darken($color-secondary, 10%);
+      }
+    }
+  }
+}

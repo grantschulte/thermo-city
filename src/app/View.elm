@@ -14,7 +14,11 @@ import Models exposing (..)
 view : Model -> Html Msg
 view model =
     div
-        [ id "wrapper" ]
+        [ id "wrapper"
+        , classList
+            [ ( "theme-night", True )
+            ]
+        ]
         [ header model
         , div
             [ id "container"
