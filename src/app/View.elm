@@ -16,7 +16,7 @@ view model =
     div
         [ id "wrapper"
         , classList
-            [ ( "theme-night", True )
+            [ ( "theme-night", False )
             ]
         ]
         [ header model
