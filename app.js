@@ -13441,7 +13441,7 @@ var _user$project$View$view = function (model) {
 				_0: _elm_lang$html$Html_Attributes$classList(
 					{
 						ctor: '::',
-						_0: {ctor: '_Tuple2', _0: 'theme-night', _1: true},
+						_0: {ctor: '_Tuple2', _0: 'theme-night', _1: false},
 						_1: {ctor: '[]'}
 					}),
 				_1: {ctor: '[]'}
