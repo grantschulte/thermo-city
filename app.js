@@ -12633,15 +12633,15 @@ var _user$project$Commands$iconClass = function (name) {
 		case 'cloudy':
 			return 'weather-icon-cloud';
 		case 'partly-cloudy-day':
-			return 'weather-icon-cloud-snow';
+			return 'weather-icon-cloud-sun';
 		default:
 			return 'weather-icon-cloud';
 	}
 };
 
-var _user$project$Current_Models$CurrentWeather = F5(
-	function (a, b, c, d, e) {
-		return {humidity: a, icon: b, summary: c, precipProbability: d, temperature: e};
+var _user$project$Current_Models$CurrentWeather = F6(
+	function (a, b, c, d, e, f) {
+		return {humidity: a, icon: b, precipProbability: c, summary: d, temperature: e, time: f};
 	});
 
 var _user$project$Daily_Models$DailyWeather = F7(
@@ -12687,6 +12687,9 @@ var _user$project$Messages$GeoDataResponse = function (a) {
 };
 var _user$project$Messages$DailyWeatherResponse = function (a) {
 	return {ctor: 'DailyWeatherResponse', _0: a};
+};
+var _user$project$Messages$CurrentWeatherResponse = function (a) {
+	return {ctor: 'CurrentWeatherResponse', _0: a};
 };
 
 var _user$project$Loader_View$loader = A2(
@@ -13329,6 +13332,14 @@ var _user$project$Update$update = F2(
 	function (msg, model) {
 		var _p1 = msg;
 		switch (_p1.ctor) {
+			case 'CurrentWeatherResponse':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{current: _p1._0}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
 			case 'DailyWeatherResponse':
 				return {
 					ctor: '_Tuple2',
