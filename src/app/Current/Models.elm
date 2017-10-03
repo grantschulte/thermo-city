@@ -1,6 +1,6 @@
 module Current.Models exposing (..)
 
-import Time exposing (..)
+import Time exposing (Time)
 
 
 type alias CurrentWeather =

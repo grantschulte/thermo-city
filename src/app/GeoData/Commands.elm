@@ -1,7 +1,6 @@
 module GeoData.Commands exposing (..)
 
 import GeoData.Decoder exposing (..)
-import GeoData.Models exposing (..)
 import Geolocation exposing (..)
 import Http exposing (..)
 import Messages exposing (..)
