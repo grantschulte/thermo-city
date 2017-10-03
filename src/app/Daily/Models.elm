@@ -1,6 +1,5 @@
 module Daily.Models exposing (..)
 
-import Date exposing (..)
 import Time exposing (..)
 
 

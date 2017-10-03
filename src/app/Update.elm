@@ -14,6 +14,9 @@ import Task
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
+        CurrentWeatherResponse response ->
+            ( { model | current = response }, Cmd.none )
+
         DailyWeatherResponse response ->
             ( { model | daily = response }, Cmd.none )
 

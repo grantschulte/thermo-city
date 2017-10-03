@@ -29,7 +29,7 @@ iconClass name =
             "weather-icon-cloud"
 
         "partly-cloudy-day" ->
-            "weather-icon-cloud-snow"
+            "weather-icon-cloud-sun"
 
         _ ->
             "weather-icon-cloud"
