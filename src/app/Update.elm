@@ -1,5 +1,6 @@
 module Update exposing (..)
 
+import Current.Commands exposing (..)
 import Daily.Commands exposing (..)
 import GeoData.Commands exposing (..)
 import Geolocation
@@ -31,6 +32,7 @@ update msg model =
             , Cmd.batch
                 [ fetchGeoData model result
                 , fetchDailyWeather model result
+                , fetchCurrentWeather model result
                 ]
             )
 

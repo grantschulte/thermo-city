@@ -6,8 +6,8 @@ import Json.Decode.Pipeline exposing (decode, required)
 import Models exposing (..)
 
 
-currentWeather : Decode.Decoder CurrentWeather
-currentWeather =
+currentWeatherDecoder : Decode.Decoder CurrentWeather
+currentWeatherDecoder =
     decode CurrentWeather
         |> required "humidity" Decode.float
         |> required "icon" Decode.string

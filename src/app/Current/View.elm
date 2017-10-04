@@ -32,4 +32,11 @@ page current =
             div [ class "flex items-center hc100" ] [ text (toString error) ]
 
         Success current ->
-            div [] []
+            currentView current
+
+
+currentView : CurrentWeather -> Html Msg
+currentView current =
+    div
+        [ class "flex flex-wrap p1 mt0 mb0 items-center hc100" ]
+        [ text current.summary ]
