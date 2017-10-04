@@ -4,4 +4,10 @@ import Time exposing (Time)
 
 
 type alias HourlyWeather =
-    { time : Time }
+    { humidity : Float
+    , icon : String
+    , precipProbability : Float
+    , summary : String
+    , temperature : Float
+    , time : Time
+    }

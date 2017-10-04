@@ -5,6 +5,7 @@ import Daily.View exposing (..)
 import Error.View exposing (..)
 import GeoData.View exposing (..)
 import Header.View exposing (..)
+import Hourly.View exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Messages exposing (..)
@@ -49,6 +50,9 @@ page model =
 
         DailyPage ->
             Daily.View.view model
+
+        HourlyPage ->
+            Hourly.View.view model
 
         ErrorPage ->
             Error.View.view model

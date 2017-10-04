@@ -47,12 +47,20 @@ view model =
                     [ text "Current" ]
                 , button
                     [ classList
-                        [ ( "btn btn-small bg-primary ml2", True )
+                        [ ( "btn btn-small bg-primary ml1", True )
                         , ( "active", model.page == DailyPage )
                         ]
                     , onClick (SetPage DailyPage)
                     ]
                     [ text "Daily" ]
+                , button
+                    [ classList
+                        [ ( "btn btn-small bg-primary ml1", True )
+                        , ( "active", model.page == HourlyPage )
+                        ]
+                    , onClick (SetPage HourlyPage)
+                    ]
+                    [ text "Hourly" ]
                 ]
             ]
         ]

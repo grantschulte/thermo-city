@@ -4,6 +4,7 @@ import Current.Models exposing (..)
 import Daily.Models exposing (..)
 import GeoData.Models exposing (..)
 import Geolocation exposing (Location)
+import Hourly.Models exposing (..)
 import Http exposing (..)
 import RemoteData exposing (..)
 
@@ -14,6 +15,7 @@ import RemoteData exposing (..)
 type Page
     = CurrentPage
     | DailyPage
+    | HourlyPage
     | ErrorPage
     | GeoDataPage
 
@@ -29,6 +31,7 @@ type alias Model =
     , current : WebData CurrentWeather
     , daily : WebData (List DailyWeather)
     , geoData : WebData GeoData
+    , hourly : WebData HourlyWeather
     , location : Result Geolocation.Error (Maybe Location)
     , page : Page
     }
@@ -44,6 +47,7 @@ initialModel config =
     , current = RemoteData.Loading
     , daily = RemoteData.Loading
     , geoData = RemoteData.Loading
+    , hourly = RemoteData.Loading
     , location = Ok Nothing
     , page = GeoDataPage
     }

@@ -13,15 +13,11 @@
 
   &__buttons {
     button {
-      background-color: $color-primary;
+      background-color: darken($color-secondary, 5%);
       font-size: 0.8em;
 
-      &:last-child {
-        margin-left: 0.5rem;
-      }
-
       &.active {
-        background-color: darken($color-secondary, 10%);
+        background-color: darken($color-secondary, 15%);
       }
     }
 
@@ -32,10 +28,6 @@
         width: 50%;
         height: 36px;
         font-size: 1rem;
-
-        &:last-child {
-          margin-left: 1rem;
-        }
       }
     }
   }
