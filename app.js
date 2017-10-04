@@ -521,8 +521,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ace_css_css_ace_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_ace_css_css_ace_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styles_app_scss__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styles_app_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styles_app_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index_html__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__index_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_favicon_ico__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_favicon_ico___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_images_favicon_ico__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_favicon_16x16_png__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_favicon_16x16_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_images_favicon_16x16_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_favicon_32x32_png__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_favicon_32x32_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_images_favicon_32x32_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_images_favicon_96x96_png__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_images_favicon_96x96_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_images_favicon_96x96_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_images_favicon_128_png__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_images_favicon_128_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_images_favicon_128_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_images_favicon_196x196_png__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_images_favicon_196x196_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_images_favicon_196x196_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_images_apple_touch_icon_57x57_png__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_images_apple_touch_icon_57x57_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_images_apple_touch_icon_57x57_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_images_apple_touch_icon_60x60_png__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_images_apple_touch_icon_60x60_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_images_apple_touch_icon_60x60_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_images_apple_touch_icon_72x72_png__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_images_apple_touch_icon_72x72_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_images_apple_touch_icon_72x72_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_images_apple_touch_icon_76x76_png__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_images_apple_touch_icon_76x76_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_images_apple_touch_icon_76x76_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_images_apple_touch_icon_114x114_png__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_images_apple_touch_icon_114x114_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_images_apple_touch_icon_114x114_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_images_apple_touch_icon_120x120_png__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_images_apple_touch_icon_120x120_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_images_apple_touch_icon_120x120_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_images_apple_touch_icon_144x144_png__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_images_apple_touch_icon_144x144_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_images_apple_touch_icon_144x144_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_images_apple_touch_icon_152x152_png__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_images_apple_touch_icon_152x152_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_images_apple_touch_icon_152x152_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__index_html__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__index_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__index_html__);
 // Import global assets here. These assets will be used throughout
 // the app. For instance, I've included all app-specific styles
 // via the app.scss manifest, as well as our css helper library.
@@ -534,9 +562,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // Import Favicons
 
-// import "images/favicon.ico";
-// import "images/favicon-16x16.png";
-// import "images/favicon-32x32.png";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Copy index.html to /dist
 
@@ -544,7 +583,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // Initialize Elm App
 
-const Elm = __webpack_require__(13);
+const Elm = __webpack_require__(27);
 const mountNode = document.getElementById("main");
 const app = Elm.Main.embed(mountNode, {
   apiUrl: "https://thermo-city-api.herokuapp.com",
@@ -759,10 +798,94 @@ module.exports = __webpack_require__.p + "./assets/fonts/climacons.svg";
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "index.html";
+module.exports = __webpack_require__.p + "./assets/images/favicon.ico";
 
 /***/ }),
 /* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/favicon-16x16.png";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/favicon-32x32.png";
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/favicon-96x96.png";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/favicon-128.png";
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/favicon-196x196.png";
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/apple-touch-icon-57x57.png";
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/apple-touch-icon-60x60.png";
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/apple-touch-icon-72x72.png";
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/apple-touch-icon-76x76.png";
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/apple-touch-icon-114x114.png";
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/apple-touch-icon-120x120.png";
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/apple-touch-icon-144x144.png";
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./assets/images/apple-touch-icon-152x152.png";
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "index.html";
+
+/***/ }),
+/* 27 */
 /***/ (function(module, exports) {
 
 
@@ -12685,6 +12808,32 @@ var _user$project$Models$HourlyPage = {ctor: 'HourlyPage'};
 var _user$project$Models$DailyPage = {ctor: 'DailyPage'};
 var _user$project$Models$CurrentPage = {ctor: 'CurrentPage'};
 
+var _user$project$Current_Decoder$currentWeatherDecoder = A3(
+	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+	'time',
+	_elm_lang$core$Json_Decode$float,
+	A3(
+		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+		'temperature',
+		_elm_lang$core$Json_Decode$float,
+		A3(
+			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+			'summary',
+			_elm_lang$core$Json_Decode$string,
+			A3(
+				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+				'precipProbability',
+				_elm_lang$core$Json_Decode$float,
+				A3(
+					_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+					'icon',
+					_elm_lang$core$Json_Decode$string,
+					A3(
+						_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+						'humidity',
+						_elm_lang$core$Json_Decode$float,
+						_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_user$project$Current_Models$CurrentWeather)))))));
+
 var _user$project$Messages$SetPage = function (a) {
 	return {ctor: 'SetPage', _0: a};
 };
@@ -12701,6 +12850,46 @@ var _user$project$Messages$CurrentWeatherResponse = function (a) {
 	return {ctor: 'CurrentWeatherResponse', _0: a};
 };
 
+var _user$project$Utils$getDay = function (timeInt) {
+	return _elm_lang$core$Basics$toString(
+		_Bogdanp$elm_time$Time_DateTime$weekday(
+			_Bogdanp$elm_time$Time_DateTime$fromTimestamp(timeInt * 1000)));
+};
+var _user$project$Utils$locationQuery = function (location) {
+	return A2(
+		_elm_lang$core$Basics_ops['++'],
+		'coords=',
+		A2(
+			_elm_lang$core$Basics_ops['++'],
+			_elm_lang$core$Basics$toString(location.latitude),
+			A2(
+				_elm_lang$core$Basics_ops['++'],
+				',',
+				_elm_lang$core$Basics$toString(location.longitude))));
+};
+
+var _user$project$Current_Commands$currentWeatherUrl = F2(
+	function (config, location) {
+		return A2(
+			_elm_lang$core$Basics_ops['++'],
+			config.apiUrl,
+			A2(
+				_elm_lang$core$Basics_ops['++'],
+				'/current?',
+				_user$project$Utils$locationQuery(location)));
+	});
+var _user$project$Current_Commands$fetchCurrentWeather = F2(
+	function (model, location) {
+		return A2(
+			_elm_lang$core$Platform_Cmd$map,
+			_user$project$Messages$CurrentWeatherResponse,
+			_krisajenkins$remotedata$RemoteData$sendRequest(
+				A2(
+					_elm_lang$http$Http$get,
+					A2(_user$project$Current_Commands$currentWeatherUrl, model.config, location),
+					_user$project$Current_Decoder$currentWeatherDecoder)));
+	});
+
 var _user$project$Loader_View$loader = A2(
 	_elm_lang$html$Html$div,
 	{
@@ -12714,6 +12903,20 @@ var _user$project$Loader_View$loader = A2(
 		_1: {ctor: '[]'}
 	});
 
+var _user$project$Current_View$currentView = function (current) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('flex flex-wrap p1 mt0 mb0 items-center hc100'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text(current.summary),
+			_1: {ctor: '[]'}
+		});
+};
 var _user$project$Current_View$page = function (current) {
 	var _p0 = current;
 	switch (_p0.ctor) {
@@ -12758,10 +12961,7 @@ var _user$project$Current_View$page = function (current) {
 					_1: {ctor: '[]'}
 				});
 		default:
-			return A2(
-				_elm_lang$html$Html$div,
-				{ctor: '[]'},
-				{ctor: '[]'});
+			return _user$project$Current_View$currentView(_p0._0);
 	}
 };
 var _user$project$Current_View$view = function (model) {
@@ -12820,24 +13020,6 @@ var _user$project$Daily_Decoder$dailyWeatherDecoder = A2(
 		_1: {ctor: '[]'}
 	},
 	_elm_lang$core$Json_Decode$list(_user$project$Daily_Decoder$dailyWeather));
-
-var _user$project$Utils$getDay = function (timeInt) {
-	return _elm_lang$core$Basics$toString(
-		_Bogdanp$elm_time$Time_DateTime$weekday(
-			_Bogdanp$elm_time$Time_DateTime$fromTimestamp(timeInt * 1000)));
-};
-var _user$project$Utils$locationQuery = function (location) {
-	return A2(
-		_elm_lang$core$Basics_ops['++'],
-		'coords=',
-		A2(
-			_elm_lang$core$Basics_ops['++'],
-			_elm_lang$core$Basics$toString(location.latitude),
-			A2(
-				_elm_lang$core$Basics_ops['++'],
-				',',
-				_elm_lang$core$Basics$toString(location.longitude))));
-};
 
 var _user$project$Daily_Commands$dailyWeatherUrl = F2(
 	function (config, location) {
@@ -13486,7 +13668,11 @@ var _user$project$Update$update = F2(
 								_1: {
 									ctor: '::',
 									_0: A2(_user$project$Daily_Commands$fetchDailyWeather, model, _p2),
-									_1: {ctor: '[]'}
+									_1: {
+										ctor: '::',
+										_0: A2(_user$project$Current_Commands$fetchCurrentWeather, model, _p2),
+										_1: {ctor: '[]'}
+									}
 								}
 							})
 					};
