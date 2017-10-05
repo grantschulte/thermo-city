@@ -13546,6 +13546,62 @@ var _user$project$Header_View$view = function (model) {
 		});
 };
 
+var _user$project$Hourly_Decoder$hourlyDecoder = A3(
+	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+	'time',
+	_elm_lang$core$Json_Decode$float,
+	A3(
+		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+		'temperature',
+		_elm_lang$core$Json_Decode$float,
+		A3(
+			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+			'summary',
+			_elm_lang$core$Json_Decode$string,
+			A3(
+				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+				'precipProbability',
+				_elm_lang$core$Json_Decode$float,
+				A3(
+					_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+					'icon',
+					_elm_lang$core$Json_Decode$string,
+					A3(
+						_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+						'humidity',
+						_elm_lang$core$Json_Decode$float,
+						_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_user$project$Hourly_Models$HourlyWeather)))))));
+var _user$project$Hourly_Decoder$hourlyListDecoder = A2(
+	_elm_lang$core$Json_Decode$at,
+	{
+		ctor: '::',
+		_0: 'data',
+		_1: {ctor: '[]'}
+	},
+	_elm_lang$core$Json_Decode$list(_user$project$Hourly_Decoder$hourlyDecoder));
+
+var _user$project$Hourly_Commands$hourlyWeatherUrl = F2(
+	function (config, location) {
+		return A2(
+			_elm_lang$core$Basics_ops['++'],
+			config.apiUrl,
+			A2(
+				_elm_lang$core$Basics_ops['++'],
+				'/hourly?',
+				_user$project$Utils$locationQuery(location)));
+	});
+var _user$project$Hourly_Commands$fetchHourlyWeather = F2(
+	function (model, location) {
+		return A2(
+			_elm_lang$core$Platform_Cmd$map,
+			_user$project$Messages$HourlyWeatherResponse,
+			_krisajenkins$remotedata$RemoteData$sendRequest(
+				A2(
+					_elm_lang$http$Http$get,
+					A2(_user$project$Hourly_Commands$hourlyWeatherUrl, model.config, location),
+					_user$project$Hourly_Decoder$hourlyListDecoder)));
+	});
+
 var _user$project$Hourly_View$page = function (current) {
 	var _p0 = current;
 	switch (_p0.ctor) {
@@ -13666,7 +13722,11 @@ var _user$project$Update$update = F2(
 									_1: {
 										ctor: '::',
 										_0: A2(_user$project$Current_Commands$fetchCurrentWeather, model, _p2),
-										_1: {ctor: '[]'}
+										_1: {
+											ctor: '::',
+											_0: A2(_user$project$Hourly_Commands$fetchHourlyWeather, model, _p2),
+											_1: {ctor: '[]'}
+										}
 									}
 								}
 							})
