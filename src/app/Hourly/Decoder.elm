@@ -15,3 +15,8 @@ hourlyDecoder =
         |> required "summary" Decode.string
         |> required "temperature" Decode.float
         |> required "time" Decode.float
+
+
+hourlyListDecoder : Decode.Decoder (List HourlyWeather)
+hourlyListDecoder =
+    Decode.at [ "data" ] (Decode.list hourlyDecoder)

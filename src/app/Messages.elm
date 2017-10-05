@@ -4,6 +4,7 @@ import Current.Models exposing (..)
 import Daily.Models exposing (..)
 import GeoData.Models exposing (..)
 import Geolocation exposing (..)
+import Hourly.Models exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
 
@@ -14,6 +15,7 @@ import RemoteData exposing (..)
 type Msg
     = CurrentWeatherResponse (WebData CurrentWeather)
     | DailyWeatherResponse (WebData (List DailyWeather))
-    | GeoDataResponse (WebData GeoData)
     | FetchLocation (Result Geolocation.Error Location)
+    | GeoDataResponse (WebData GeoData)
+    | HourlyWeatherResponse (WebData (List HourlyWeather))
     | SetPage Page

@@ -19,7 +19,7 @@ view model =
         ]
 
 
-page : WebData HourlyWeather -> Html Msg
+page : WebData (List HourlyWeather) -> Html Msg
 page current =
     case current of
         NotAsked ->

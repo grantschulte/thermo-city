@@ -18,4 +18,4 @@ fetchCurrentWeather model location =
 
 currentWeatherUrl : Config -> Location -> String
 currentWeatherUrl config location =
-    config.apiUrl ++ "/current?" ++ locationQuery location
+    config.apiUrl ++ "/currently?" ++ locationQuery location

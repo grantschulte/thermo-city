@@ -11,7 +11,7 @@ import Utils exposing (..)
 
 fetchHourlyWeather : Model -> Location -> Cmd Msg
 fetchHourlyWeather model location =
-    Http.get (hourlyWeatherUrl model.config location) hourlyWeatherDecoder
+    Http.get (hourlyWeatherUrl model.config location) hourlyListDecoder
         |> RemoteData.sendRequest
         |> Cmd.map HourlyWeatherResponse
 

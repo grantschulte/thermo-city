@@ -31,7 +31,7 @@ type alias Model =
     , current : WebData CurrentWeather
     , daily : WebData (List DailyWeather)
     , geoData : WebData GeoData
-    , hourly : WebData HourlyWeather
+    , hourly : WebData (List HourlyWeather)
     , location : Result Geolocation.Error (Maybe Location)
     , page : Page
     }

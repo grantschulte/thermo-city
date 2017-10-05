@@ -21,9 +21,6 @@ update msg model =
         DailyWeatherResponse response ->
             ( { model | daily = response }, Cmd.none )
 
-        GeoDataResponse response ->
-            ( { model | geoData = response }, Cmd.none )
-
         FetchLocation (Ok result) ->
             ( { model
                 | location = Ok (Just result)
@@ -43,6 +40,12 @@ update msg model =
               }
             , Cmd.none
             )
+
+        GeoDataResponse response ->
+            ( { model | geoData = response }, Cmd.none )
+
+        HourlyWeatherResponse response ->
+            ( { model | hourly = response }, Cmd.none )
 
         SetPage page ->
             ( { model | page = page }, setPageCmd model page )

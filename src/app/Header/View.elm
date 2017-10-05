@@ -44,7 +44,7 @@ view model =
                         ]
                     , onClick (SetPage CurrentPage)
                     ]
-                    [ text "Current" ]
+                    [ text "Currently" ]
                 , button
                     [ classList
                         [ ( "btn btn-small bg-primary ml1", True )
