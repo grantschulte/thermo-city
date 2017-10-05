@@ -4,6 +4,7 @@ import Current.Commands exposing (..)
 import Daily.Commands exposing (..)
 import GeoData.Commands exposing (..)
 import Geolocation
+import Hourly.Commands exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
 import Task
@@ -30,6 +31,7 @@ update msg model =
                 [ fetchGeoData model result
                 , fetchDailyWeather model result
                 , fetchCurrentWeather model result
+                , fetchHourlyWeather model result
                 ]
             )
 

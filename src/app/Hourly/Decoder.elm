@@ -6,7 +6,7 @@ import Json.Decode.Pipeline exposing (decode, required)
 import Models exposing (..)
 
 
-hourlyDecoder : Nothing
+hourlyDecoder : Decode.Decoder HourlyWeather
 hourlyDecoder =
     decode HourlyWeather
         |> required "humidity" Decode.float
