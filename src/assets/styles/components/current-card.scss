@@ -1,0 +1,30 @@
+#current-card {
+  background-color: $color-white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  border-radius: 4px;
+  color: $color-primary;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.175);
+  transition: $easeInOut;
+
+  &__icon {
+    font-size: 6em;
+
+    @media screen and (min-width: $md) {
+      font-size: 8em;
+    }
+  }
+
+  &__temp {
+    font-size: 4em;
+  }
+
+  @media screen and (max-width: $sm) {
+    padding: 0.75rem;
+  }
+}

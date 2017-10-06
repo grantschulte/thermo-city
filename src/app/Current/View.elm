@@ -1,5 +1,6 @@
 module Current.View exposing (..)
 
+import Commands exposing (iconClass)
 import Current.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -38,5 +39,31 @@ page current =
 currentView : CurrentWeather -> Html Msg
 currentView current =
     div
-        [ class "flex flex-wrap p1 mt0 mb0 items-center hc100" ]
-        [ text current.summary ]
+        [ class "flex flex-wrap p2 mt0 mb0 items-center hc100" ]
+        [ div
+            [ id "current-card"
+            , class "col-12 md-col-6 flex flex-column items-center justify-center"
+            ]
+            [ div
+                []
+                [ span
+                    [ id "current-card__icon"
+                    , classList
+                        [ ( iconClass current.icon, True ) ]
+                    ]
+                    []
+                ]
+            , div
+                [ class "mt2" ]
+                [ span
+                    [ id "current-card__temp" ]
+                    [ text (toString (ceiling current.temperature)) ]
+                ]
+            , p
+                [ class "mt2 mb0" ]
+                [ text current.summary ]
+            ]
+        , div
+            [ class "col-12 md-col-6 flex items-center justify-center" ]
+            []
+        ]

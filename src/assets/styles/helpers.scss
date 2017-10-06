@@ -6,6 +6,22 @@
 
 .hc100 {
   height: calc(100% - 42px);
+
+  @media screen and (max-width: $sm) {
+    height: calc(100% - 84px);
+  }
+}
+
+.icon--sm {
+  font-size: 1em;
+}
+
+.icon--md {
+  font-size: 2em;
+}
+
+.icon--lg {
+  font-size: 3em;
 }
 
 // Element Colors
