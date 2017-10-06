@@ -1,5 +1,7 @@
 module Header.View exposing (..)
 
+import Commands exposing (iconClass)
+import Current.Models exposing (..)
 import GeoData.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -24,7 +26,10 @@ view model =
                 , class "flex items-center"
                 ]
                 [ span
-                    [ class "weather-icon-sun mr1 h3" ]
+                    [ classList
+                        [ ( headerIcon model.current, True ) ]
+                    , class "mr1 h3"
+                    ]
                     []
                 , span
                     [ id "header__logo__location-name" ]
@@ -80,3 +85,13 @@ address geoData =
 
         Success data ->
             " " ++ data.address
+
+
+headerIcon : WebData CurrentWeather -> String
+headerIcon current =
+    case current of
+        Success current ->
+            iconClass current.icon
+
+        _ ->
+            "weather-icon-sun"
