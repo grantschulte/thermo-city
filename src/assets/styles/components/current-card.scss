@@ -13,15 +13,19 @@
   transition: $easeInOut;
 
   &__icon {
-    font-size: 6em;
+    font-size: 8em;
 
     @media screen and (min-width: $md) {
-      font-size: 8em;
+      font-size: 12em;
     }
   }
 
   &__temp {
     font-size: 4em;
+
+    @media screen and (min-width: $md) {
+      font-size: 6em;
+    }
   }
 
   @media screen and (max-width: $sm) {

@@ -4,6 +4,7 @@ import Commands exposing (iconClass)
 import Current.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Json.Encode exposing (string)
 import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
@@ -45,6 +46,9 @@ currentView current =
             , class "col-12 md-col-6 flex flex-column items-center justify-center"
             ]
             [ div
+                [ class "mb3 h3" ]
+                [ text current.summary ]
+            , div
                 []
                 [ span
                     [ id "current-card__icon"
@@ -54,14 +58,13 @@ currentView current =
                     []
                 ]
             , div
-                [ class "mt2" ]
+                [ class "mt3" ]
                 [ span
                     [ id "current-card__temp" ]
-                    [ text (toString (ceiling current.temperature)) ]
+                    [ text (toString (ceiling current.temperature))
+                    , span [ property "innerHTML" (string "&deg;") ] []
+                    ]
                 ]
-            , p
-                [ class "mt2 mb0" ]
-                [ text current.summary ]
             ]
         , div
             [ class "col-12 md-col-6 flex items-center justify-center" ]
