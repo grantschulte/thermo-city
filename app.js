@@ -771,7 +771,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  margin: 0;\n  padding: 0;\n  -webkit-font-smoothing: antialiased; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 16px;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  line-height: 1;\n  color: #FAFFFD;\n  background-color: #57B8FF; }\n\na {\n  text-decoration: none;\n  color: #FAFFFD;\n  transition: all 200ms ease-in-out; }\n  a:hover {\n    color: #c7ffe9;\n    text-decoration: none; }\n\n#weather-card-list {\n  height: calc(100% - 42px); }\n  @media screen and (max-width: 40em) {\n    #weather-card-list {\n      height: auto; } }\n  @media screen and (max-width: 52em) {\n    #weather-card-list {\n      padding-bottom: 1rem; } }\n\n.btn {\n  display: inline-block;\n  padding: 0.2em 1em;\n  font-size: 1em;\n  font-weight: normal;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  text-align: center;\n  border: none;\n  border-radius: 2px;\n  transition: all 200ms ease-in-out; }\n  .btn:focus, .btn:active {\n    outline: 0;\n    border: none;\n    box-shadow: none; }\n  .btn--small {\n    height: 28px;\n    font-size: 0.6em;\n    font-weight: 700; }\n  .btn--large {\n    height: 36px;\n    font-size: 1em; }\n\n.h100 {\n  height: 100%; }\n\n.hc100 {\n  height: calc(100% - 42px); }\n  @media screen and (max-width: 40em) {\n    .hc100 {\n      height: calc(100% - 84px); } }\n\n.icon--sm {\n  font-size: 1em; }\n\n.icon--md {\n  font-size: 2em; }\n\n.icon--lg {\n  font-size: 3em; }\n\n.bg-primary {\n  background-color: #342E37;\n  color: #FAFFFD; }\n  .bg-primary:hover, .bg-primary.active {\n    background-color: #272229; }\n  .bg-primary:active, .bg-primary:focus {\n    background-color: #1a171b; }\n\n.bg-secondary {\n  background-color: #57B8FF;\n  color: #FAFFFD; }\n  .bg-secondary:hover, .bg-secondary.active {\n    background-color: #3eadff; }\n  .bg-secondary:active, .bg-secondary:focus {\n    background-color: #24a2ff; }\n\n.bg-accent {\n  background-color: #FA824C;\n  color: #FAFFFD; }\n  .bg-accent:hover, .bg-accent.active {\n    background-color: #f97133; }\n  .bg-accent:active, .bg-accent:focus {\n    background-color: #f95f1a; }\n\n.border-primary {\n  border: 1px solid #342E37; }\n  .border-primary:hover, .border-primary.active {\n    border-color: #272229; }\n  .border-primary:active, .border-primary:focus {\n    border-color: #1a171b; }\n\n.border-secondary {\n  border: 1px solid #57B8FF; }\n  .border-secondary:hover, .border-secondary.active {\n    border-color: #3eadff; }\n  .border-secondary:active, .border-secondary:focus {\n    border-color: #24a2ff; }\n\n.border-accent {\n  border: 1px solid #FA824C; }\n  .border-accent:hover, .border-accent.active {\n    border-color: #f97133; }\n  .border-accent:active, .border-accent:focus {\n    border-color: #f95f1a; }\n\n.color-primary {\n  color: #342E37; }\n  .color-primary:hover, .color-primary.active {\n    color: #272229; }\n  .color-primary:active, .color-primary:focus {\n    color: #1a171b; }\n\n.color-secondary {\n  color: #57B8FF; }\n  .color-secondary:hover, .color-secondary.active {\n    color: #3eadff; }\n  .color-secondary:active, .color-secondary:focus {\n    color: #24a2ff; }\n\n.color-accent {\n  color: #FA824C; }\n  .color-accent:hover, .color-accent.active {\n    color: #f97133; }\n  .color-accent:active, .color-accent:focus {\n    color: #f95f1a; }\n\n@font-face {\n  font-family: 'climacons';\n  src: url(" + __webpack_require__(9) + ") format(\"truetype\"), url(" + __webpack_require__(10) + ") format(\"woff\"), url(" + __webpack_require__(11) + "#climacons) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n[class^=\"weather-icon-\"], [class*=\" weather-icon-\"] {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'climacons' !important;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.weather-icon-cloud-download:before {\n  content: \"\\E900\"; }\n\n.weather-icon-cloud-drizzle-alt:before {\n  content: \"\\E901\"; }\n\n.weather-icon-cloud-drizzle-moon-alt:before {\n  content: \"\\E902\"; }\n\n.weather-icon-cloud-drizzle-moon:before {\n  content: \"\\E903\"; }\n\n.weather-icon-cloud-drizzle-sun-alt:before {\n  content: \"\\E904\"; }\n\n.weather-icon-cloud-drizzle-sun:before {\n  content: \"\\E905\"; }\n\n.weather-icon-cloud-drizzle:before {\n  content: \"\\E906\"; }\n\n.weather-icon-cloud-fog-alt:before {\n  content: \"\\E907\"; }\n\n.weather-icon-cloud-fog-moon-alt:before {\n  content: \"\\E908\"; }\n\n.weather-icon-cloud-fog-moon:before {\n  content: \"\\E909\"; }\n\n.weather-icon-cloud-fog-sun-alt:before {\n  content: \"\\E90A\"; }\n\n.weather-icon-cloud-fog-sun:before {\n  content: \"\\E90B\"; }\n\n.weather-icon-cloud-fog:before {\n  content: \"\\E90C\"; }\n\n.weather-icon-cloud-hail-alt:before {\n  content: \"\\E90D\"; }\n\n.weather-icon-cloud-hail-moon-alt:before {\n  content: \"\\E90E\"; }\n\n.weather-icon-cloud-hail-moon:before {\n  content: \"\\E90F\"; }\n\n.weather-icon-cloud-hail-sun-alt:before {\n  content: \"\\E910\"; }\n\n.weather-icon-cloud-hail-sun:before {\n  content: \"\\E911\"; }\n\n.weather-icon-cloud-hail:before {\n  content: \"\\E912\"; }\n\n.weather-icon-cloud-lightning-moon:before {\n  content: \"\\E913\"; }\n\n.weather-icon-cloud-lightning-sun:before {\n  content: \"\\E914\"; }\n\n.weather-icon-cloud-lightning:before {\n  content: \"\\E915\"; }\n\n.weather-icon-cloud-moon:before {\n  content: \"\\E916\"; }\n\n.weather-icon-cloud-rain-alt:before {\n  content: \"\\E917\"; }\n\n.weather-icon-cloud-rain-moon-alt:before {\n  content: \"\\E918\"; }\n\n.weather-icon-cloud-rain-moon:before {\n  content: \"\\E919\"; }\n\n.weather-icon-cloud-rain-sun-alt:before {\n  content: \"\\E91A\"; }\n\n.weather-icon-cloud-rain-sun:before {\n  content: \"\\E91B\"; }\n\n.weather-icon-cloud-rain:before {\n  content: \"\\E91C\"; }\n\n.weather-icon-cloud-refresh:before {\n  content: \"\\E91D\"; }\n\n.weather-icon-cloud-snow-alt:before {\n  content: \"\\E91E\"; }\n\n.weather-icon-cloud-snow-moon-alt:before {\n  content: \"\\E91F\"; }\n\n.weather-icon-cloud-snow-moon:before {\n  content: \"\\E920\"; }\n\n.weather-icon-cloud-snow-sun-alt:before {\n  content: \"\\E921\"; }\n\n.weather-icon-cloud-snow-sun:before {\n  content: \"\\E922\"; }\n\n.weather-icon-cloud-snow:before {\n  content: \"\\E923\"; }\n\n.weather-icon-cloud-sun:before {\n  content: \"\\E924\"; }\n\n.weather-icon-cloud-upload:before {\n  content: \"\\E925\"; }\n\n.weather-icon-cloud-wind-moon:before {\n  content: \"\\E926\"; }\n\n.weather-icon-cloud-wind-sun:before {\n  content: \"\\E927\"; }\n\n.weather-icon-cloud-wind:before {\n  content: \"\\E928\"; }\n\n.weather-icon-cloud:before {\n  content: \"\\E929\"; }\n\n.weather-icon-compass-east:before {\n  content: \"\\E92A\"; }\n\n.weather-icon-compass-north:before {\n  content: \"\\E92B\"; }\n\n.weather-icon-compass-south:before {\n  content: \"\\E92C\"; }\n\n.weather-icon-compass-west:before {\n  content: \"\\E92D\"; }\n\n.weather-icon-compass:before {\n  content: \"\\E92E\"; }\n\n.weather-icon-degrees-celcius:before {\n  content: \"\\E92F\"; }\n\n.weather-icon-degrees-fahrenheit:before {\n  content: \"\\E930\"; }\n\n.weather-icon-moon-first-quarter:before {\n  content: \"\\E931\"; }\n\n.weather-icon-moon-full:before {\n  content: \"\\E932\"; }\n\n.weather-icon-moon-last-quarter:before {\n  content: \"\\E933\"; }\n\n.weather-icon-moon-new:before {\n  content: \"\\E934\"; }\n\n.weather-icon-moon-waning-crescent:before {\n  content: \"\\E935\"; }\n\n.weather-icon-moon-waning-gibbous:before {\n  content: \"\\E936\"; }\n\n.weather-icon-moon-waxing-crescent:before {\n  content: \"\\E937\"; }\n\n.weather-icon-moon-waxing-gibbous:before {\n  content: \"\\E938\"; }\n\n.weather-icon-moon:before {\n  content: \"\\E939\"; }\n\n.weather-icon-shades:before {\n  content: \"\\E93A\"; }\n\n.weather-icon-snowflake:before {\n  content: \"\\E93B\"; }\n\n.weather-icon-sun-low:before {\n  content: \"\\E93C\"; }\n\n.weather-icon-sun-lower:before {\n  content: \"\\E93D\"; }\n\n.weather-icon-sun:before {\n  content: \"\\E93E\"; }\n\n.weather-icon-sunrise:before {\n  content: \"\\E93F\"; }\n\n.weather-icon-sunset:before {\n  content: \"\\E940\"; }\n\n.weather-icon-thermometer-25:before {\n  content: \"\\E941\"; }\n\n.weather-icon-thermometer-50:before {\n  content: \"\\E942\"; }\n\n.weather-icon-thermometer-75:before {\n  content: \"\\E943\"; }\n\n.weather-icon-thermometer-100:before {\n  content: \"\\E944\"; }\n\n.weather-icon-thermometer-zero:before {\n  content: \"\\E945\"; }\n\n.weather-icon-thermometer:before {\n  content: \"\\E946\"; }\n\n.weather-icon-tornado:before {\n  content: \"\\E947\"; }\n\n.weather-icon-umbrella:before {\n  content: \"\\E948\"; }\n\n.weather-icon-wind:before {\n  content: \"\\E949\"; }\n\n/**\n * Components\n */\n#loader,\n#loader:after {\n  border-radius: 50%;\n  width: 10em;\n  height: 10em; }\n\n#loader {\n  margin: 30px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #FFFFFF;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear; }\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n#header__logo a {\n  overflow: hidden; }\n\n#header__logo__location-name {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\n#header__buttons button {\n  background-color: #3eadff;\n  font-size: 0.8em; }\n  #header__buttons button.active {\n    background-color: #0b98ff; }\n\n@media screen and (max-width: 40em) {\n  #header__buttons {\n    margin-top: 0.8em; }\n    #header__buttons button {\n      width: 50%;\n      height: 36px;\n      font-size: 0.9em; } }\n\n.weather-card {\n  display: flex; }\n  .weather-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .weather-card__inner {\n        padding: 0.75rem; } }\n    @media screen and (max-width: 52em) {\n      .weather-card__inner {\n        flex-direction: row;\n        justify-content: space-between; } }\n  @media screen and (max-width: 52em) {\n    .weather-card__time {\n      margin: 0;\n      width: 100px;\n      font-size: 1.4em; } }\n  .weather-card__icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100px;\n    font-size: 80px; }\n    @media screen and (max-width: 52em) {\n      .weather-card__icon {\n        height: auto;\n        width: 100px;\n        font-size: 2em; } }\n  .weather-card__summary {\n    margin-top: 1em; }\n    .weather-card__summary span {\n      margin: 0.2em;\n      font-size: 2em; }\n    @media screen and (max-width: 52em) {\n      .weather-card__summary {\n        margin: 0;\n        width: 100px;\n        text-align: right; }\n        .weather-card__summary span {\n          margin: 0;\n          font-size: 1.4em; } }\n  .weather-card:first-of-type .weather-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .weather-card {\n      padding-bottom: 0; } }\n\n#current-card {\n  background-color: #FAFFFD;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  padding: 1em;\n  border-radius: 4px;\n  color: #342E37;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n  transition: all 200ms ease-in-out; }\n  #current-card__icon {\n    font-size: 8em; }\n    @media screen and (min-width: 52em) {\n      #current-card__icon {\n        font-size: 12em; } }\n  #current-card__temp {\n    font-size: 4em; }\n    @media screen and (min-width: 52em) {\n      #current-card__temp {\n        font-size: 6em; } }\n  @media screen and (max-width: 40em) {\n    #current-card {\n      padding: 0.75rem; } }\n\n/**\n * Themes\n */\n#wrapper.theme-night {\n  background-color: #342E37; }\n  #wrapper.theme-night a:hover {\n    color: #57B8FF; }\n  #wrapper.theme-night #header button {\n    background-color: #1a171b; }\n    #wrapper.theme-night #header button.active {\n      background-color: #24a2ff; }\n", ""]);
+exports.push([module.i, "/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  margin: 0;\n  padding: 0;\n  -webkit-font-smoothing: antialiased; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 16px;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  line-height: 1;\n  color: #FAFFFD;\n  background-color: #57B8FF; }\n\na {\n  text-decoration: none;\n  color: #FAFFFD;\n  transition: all 200ms ease-in-out; }\n  a:hover {\n    color: #c7ffe9;\n    text-decoration: none; }\n\n#weather-card-list {\n  height: calc(100% - 42px); }\n  @media screen and (max-width: 40em) {\n    #weather-card-list {\n      height: auto; } }\n  @media screen and (max-width: 52em) {\n    #weather-card-list {\n      padding-bottom: 1rem; } }\n\n.btn {\n  display: inline-block;\n  padding: 0.2em 1em;\n  font-size: 1em;\n  font-weight: normal;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  text-align: center;\n  border: none;\n  border-radius: 2px;\n  transition: all 200ms ease-in-out; }\n  .btn:focus, .btn:active {\n    outline: 0;\n    border: none;\n    box-shadow: none; }\n  .btn--small {\n    height: 28px;\n    font-size: 0.6em;\n    font-weight: 700; }\n  .btn--large {\n    height: 36px;\n    font-size: 1em; }\n\n.h100 {\n  height: 100%; }\n\n.hc100 {\n  height: calc(100% - 42px); }\n  @media screen and (max-width: 40em) {\n    .hc100 {\n      height: calc(100% - 84px); } }\n\n.icon--sm {\n  font-size: 1em; }\n\n.icon--md {\n  font-size: 2em; }\n\n.icon--lg {\n  font-size: 3em; }\n\n.bg-primary {\n  background-color: #342E37;\n  color: #FAFFFD; }\n  .bg-primary:hover, .bg-primary.active {\n    background-color: #272229; }\n  .bg-primary:active, .bg-primary:focus {\n    background-color: #1a171b; }\n\n.bg-secondary {\n  background-color: #57B8FF;\n  color: #FAFFFD; }\n  .bg-secondary:hover, .bg-secondary.active {\n    background-color: #3eadff; }\n  .bg-secondary:active, .bg-secondary:focus {\n    background-color: #24a2ff; }\n\n.bg-accent {\n  background-color: #FA824C;\n  color: #FAFFFD; }\n  .bg-accent:hover, .bg-accent.active {\n    background-color: #f97133; }\n  .bg-accent:active, .bg-accent:focus {\n    background-color: #f95f1a; }\n\n.border-primary {\n  border: 1px solid #342E37; }\n  .border-primary:hover, .border-primary.active {\n    border-color: #272229; }\n  .border-primary:active, .border-primary:focus {\n    border-color: #1a171b; }\n\n.border-secondary {\n  border: 1px solid #57B8FF; }\n  .border-secondary:hover, .border-secondary.active {\n    border-color: #3eadff; }\n  .border-secondary:active, .border-secondary:focus {\n    border-color: #24a2ff; }\n\n.border-accent {\n  border: 1px solid #FA824C; }\n  .border-accent:hover, .border-accent.active {\n    border-color: #f97133; }\n  .border-accent:active, .border-accent:focus {\n    border-color: #f95f1a; }\n\n.color-primary {\n  color: #342E37; }\n  .color-primary:hover, .color-primary.active {\n    color: #272229; }\n  .color-primary:active, .color-primary:focus {\n    color: #1a171b; }\n\n.color-secondary {\n  color: #57B8FF; }\n  .color-secondary:hover, .color-secondary.active {\n    color: #3eadff; }\n  .color-secondary:active, .color-secondary:focus {\n    color: #24a2ff; }\n\n.color-accent {\n  color: #FA824C; }\n  .color-accent:hover, .color-accent.active {\n    color: #f97133; }\n  .color-accent:active, .color-accent:focus {\n    color: #f95f1a; }\n\n@font-face {\n  font-family: 'climacons';\n  src: url(" + __webpack_require__(9) + ") format(\"truetype\"), url(" + __webpack_require__(10) + ") format(\"woff\"), url(" + __webpack_require__(11) + "#climacons) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n[class^=\"weather-icon-\"], [class*=\" weather-icon-\"] {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'climacons' !important;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.weather-icon-cloud-download:before {\n  content: \"\\E900\"; }\n\n.weather-icon-cloud-drizzle-alt:before {\n  content: \"\\E901\"; }\n\n.weather-icon-cloud-drizzle-moon-alt:before {\n  content: \"\\E902\"; }\n\n.weather-icon-cloud-drizzle-moon:before {\n  content: \"\\E903\"; }\n\n.weather-icon-cloud-drizzle-sun-alt:before {\n  content: \"\\E904\"; }\n\n.weather-icon-cloud-drizzle-sun:before {\n  content: \"\\E905\"; }\n\n.weather-icon-cloud-drizzle:before {\n  content: \"\\E906\"; }\n\n.weather-icon-cloud-fog-alt:before {\n  content: \"\\E907\"; }\n\n.weather-icon-cloud-fog-moon-alt:before {\n  content: \"\\E908\"; }\n\n.weather-icon-cloud-fog-moon:before {\n  content: \"\\E909\"; }\n\n.weather-icon-cloud-fog-sun-alt:before {\n  content: \"\\E90A\"; }\n\n.weather-icon-cloud-fog-sun:before {\n  content: \"\\E90B\"; }\n\n.weather-icon-cloud-fog:before {\n  content: \"\\E90C\"; }\n\n.weather-icon-cloud-hail-alt:before {\n  content: \"\\E90D\"; }\n\n.weather-icon-cloud-hail-moon-alt:before {\n  content: \"\\E90E\"; }\n\n.weather-icon-cloud-hail-moon:before {\n  content: \"\\E90F\"; }\n\n.weather-icon-cloud-hail-sun-alt:before {\n  content: \"\\E910\"; }\n\n.weather-icon-cloud-hail-sun:before {\n  content: \"\\E911\"; }\n\n.weather-icon-cloud-hail:before {\n  content: \"\\E912\"; }\n\n.weather-icon-cloud-lightning-moon:before {\n  content: \"\\E913\"; }\n\n.weather-icon-cloud-lightning-sun:before {\n  content: \"\\E914\"; }\n\n.weather-icon-cloud-lightning:before {\n  content: \"\\E915\"; }\n\n.weather-icon-cloud-moon:before {\n  content: \"\\E916\"; }\n\n.weather-icon-cloud-rain-alt:before {\n  content: \"\\E917\"; }\n\n.weather-icon-cloud-rain-moon-alt:before {\n  content: \"\\E918\"; }\n\n.weather-icon-cloud-rain-moon:before {\n  content: \"\\E919\"; }\n\n.weather-icon-cloud-rain-sun-alt:before {\n  content: \"\\E91A\"; }\n\n.weather-icon-cloud-rain-sun:before {\n  content: \"\\E91B\"; }\n\n.weather-icon-cloud-rain:before {\n  content: \"\\E91C\"; }\n\n.weather-icon-cloud-refresh:before {\n  content: \"\\E91D\"; }\n\n.weather-icon-cloud-snow-alt:before {\n  content: \"\\E91E\"; }\n\n.weather-icon-cloud-snow-moon-alt:before {\n  content: \"\\E91F\"; }\n\n.weather-icon-cloud-snow-moon:before {\n  content: \"\\E920\"; }\n\n.weather-icon-cloud-snow-sun-alt:before {\n  content: \"\\E921\"; }\n\n.weather-icon-cloud-snow-sun:before {\n  content: \"\\E922\"; }\n\n.weather-icon-cloud-snow:before {\n  content: \"\\E923\"; }\n\n.weather-icon-cloud-sun:before {\n  content: \"\\E924\"; }\n\n.weather-icon-cloud-upload:before {\n  content: \"\\E925\"; }\n\n.weather-icon-cloud-wind-moon:before {\n  content: \"\\E926\"; }\n\n.weather-icon-cloud-wind-sun:before {\n  content: \"\\E927\"; }\n\n.weather-icon-cloud-wind:before {\n  content: \"\\E928\"; }\n\n.weather-icon-cloud:before {\n  content: \"\\E929\"; }\n\n.weather-icon-compass-east:before {\n  content: \"\\E92A\"; }\n\n.weather-icon-compass-north:before {\n  content: \"\\E92B\"; }\n\n.weather-icon-compass-south:before {\n  content: \"\\E92C\"; }\n\n.weather-icon-compass-west:before {\n  content: \"\\E92D\"; }\n\n.weather-icon-compass:before {\n  content: \"\\E92E\"; }\n\n.weather-icon-degrees-celcius:before {\n  content: \"\\E92F\"; }\n\n.weather-icon-degrees-fahrenheit:before {\n  content: \"\\E930\"; }\n\n.weather-icon-moon-first-quarter:before {\n  content: \"\\E931\"; }\n\n.weather-icon-moon-full:before {\n  content: \"\\E932\"; }\n\n.weather-icon-moon-last-quarter:before {\n  content: \"\\E933\"; }\n\n.weather-icon-moon-new:before {\n  content: \"\\E934\"; }\n\n.weather-icon-moon-waning-crescent:before {\n  content: \"\\E935\"; }\n\n.weather-icon-moon-waning-gibbous:before {\n  content: \"\\E936\"; }\n\n.weather-icon-moon-waxing-crescent:before {\n  content: \"\\E937\"; }\n\n.weather-icon-moon-waxing-gibbous:before {\n  content: \"\\E938\"; }\n\n.weather-icon-moon:before {\n  content: \"\\E939\"; }\n\n.weather-icon-shades:before {\n  content: \"\\E93A\"; }\n\n.weather-icon-snowflake:before {\n  content: \"\\E93B\"; }\n\n.weather-icon-sun-low:before {\n  content: \"\\E93C\"; }\n\n.weather-icon-sun-lower:before {\n  content: \"\\E93D\"; }\n\n.weather-icon-sun:before {\n  content: \"\\E93E\"; }\n\n.weather-icon-sunrise:before {\n  content: \"\\E93F\"; }\n\n.weather-icon-sunset:before {\n  content: \"\\E940\"; }\n\n.weather-icon-thermometer-25:before {\n  content: \"\\E941\"; }\n\n.weather-icon-thermometer-50:before {\n  content: \"\\E942\"; }\n\n.weather-icon-thermometer-75:before {\n  content: \"\\E943\"; }\n\n.weather-icon-thermometer-100:before {\n  content: \"\\E944\"; }\n\n.weather-icon-thermometer-zero:before {\n  content: \"\\E945\"; }\n\n.weather-icon-thermometer:before {\n  content: \"\\E946\"; }\n\n.weather-icon-tornado:before {\n  content: \"\\E947\"; }\n\n.weather-icon-umbrella:before {\n  content: \"\\E948\"; }\n\n.weather-icon-wind:before {\n  content: \"\\E949\"; }\n\n/**\n * Components\n */\n#loader,\n#loader:after {\n  border-radius: 50%;\n  width: 10em;\n  height: 10em; }\n\n#loader {\n  margin: 30px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #FFFFFF;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear; }\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n#header__logo a {\n  overflow: hidden; }\n\n#header__logo__location-name {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\n#header__buttons button {\n  background-color: #3eadff;\n  font-size: 0.8em; }\n  #header__buttons button.active {\n    background-color: #0b98ff; }\n\n@media screen and (max-width: 40em) {\n  #header__buttons {\n    margin-top: 0.8em; }\n    #header__buttons button {\n      width: 50%;\n      height: 36px;\n      font-size: 0.9em; } }\n\n.daily-card {\n  display: flex; }\n  .daily-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .daily-card__inner {\n        padding: 0.75rem; } }\n    @media screen and (max-width: 52em) {\n      .daily-card__inner {\n        flex-direction: row;\n        justify-content: space-between; } }\n  @media screen and (max-width: 52em) {\n    .daily-card__time {\n      margin: 0;\n      width: 100px;\n      font-size: 1.2em; } }\n  .daily-card__icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100px;\n    font-size: 80px; }\n    @media screen and (max-width: 52em) {\n      .daily-card__icon {\n        height: auto;\n        width: 100px;\n        font-size: 2em; } }\n  .daily-card__summary {\n    margin-top: 1em; }\n    .daily-card__summary span {\n      margin: 0.2em;\n      font-size: 2em; }\n    @media screen and (max-width: 52em) {\n      .daily-card__summary {\n        margin: 0;\n        width: 100px;\n        text-align: right; }\n        .daily-card__summary span {\n          margin: 0;\n          font-size: 1.4em; } }\n  .daily-card:first-of-type .daily-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .daily-card {\n      padding-bottom: 0; } }\n\n.hourly-card {\n  display: flex; }\n  .hourly-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .hourly-card__inner {\n        padding: 0.75rem; } }\n  @media screen and (max-width: 52em) {\n    .hourly-card__time {\n      margin: 0;\n      font-size: 1.2em; } }\n  .hourly-card__icon {\n    font-size: 3em; }\n    @media screen and (max-width: 52em) {\n      .hourly-card__icon {\n        font-size: 2em; } }\n  .hourly-card:first-of-type .hourly-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .hourly-card {\n      padding-bottom: 0; } }\n\n#currently-card {\n  background-color: #FAFFFD;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  padding: 1em;\n  border-radius: 4px;\n  color: #342E37;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n  transition: all 200ms ease-in-out; }\n  #currently-card__icon {\n    font-size: 8em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__icon {\n        font-size: 12em; } }\n  #currently-card__temp {\n    font-size: 4em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__temp {\n        font-size: 6em; } }\n  @media screen and (max-width: 40em) {\n    #currently-card {\n      padding: 0.75rem; } }\n\n/**\n * Themes\n */\n#wrapper.theme-night {\n  background-color: #342E37; }\n  #wrapper.theme-night a:hover {\n    color: #57B8FF; }\n  #wrapper.theme-night #header button {\n    background-color: #1a171b; }\n    #wrapper.theme-night #header button.active {\n      background-color: #24a2ff; }\n", ""]);
 
 // exports
 
@@ -12527,6 +12527,1701 @@ var _elm_lang$http$Http$StringPart = F2(
 	});
 var _elm_lang$http$Http$stringPart = _elm_lang$http$Http$StringPart;
 
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerSecond = 1000;
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute = 60 * _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerSecond;
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerHour = 60 * _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute;
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerDay = 24 * _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerHour;
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$dayOfWeekFromWeekdayNumber = function (n) {
+	var _p0 = n;
+	switch (_p0) {
+		case 1:
+			return _elm_lang$core$Date$Mon;
+		case 2:
+			return _elm_lang$core$Date$Tue;
+		case 3:
+			return _elm_lang$core$Date$Wed;
+		case 4:
+			return _elm_lang$core$Date$Thu;
+		case 5:
+			return _elm_lang$core$Date$Fri;
+		case 6:
+			return _elm_lang$core$Date$Sat;
+		default:
+			return _elm_lang$core$Date$Sun;
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$weekdayNumberFromDayOfWeek = function (d) {
+	var _p1 = d;
+	switch (_p1.ctor) {
+		case 'Mon':
+			return 1;
+		case 'Tue':
+			return 2;
+		case 'Wed':
+			return 3;
+		case 'Thu':
+			return 4;
+		case 'Fri':
+			return 5;
+		case 'Sat':
+			return 6;
+		default:
+			return 7;
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$monthFromMonthNumber = function (n) {
+	var _p2 = n;
+	switch (_p2) {
+		case 1:
+			return _elm_lang$core$Date$Jan;
+		case 2:
+			return _elm_lang$core$Date$Feb;
+		case 3:
+			return _elm_lang$core$Date$Mar;
+		case 4:
+			return _elm_lang$core$Date$Apr;
+		case 5:
+			return _elm_lang$core$Date$May;
+		case 6:
+			return _elm_lang$core$Date$Jun;
+		case 7:
+			return _elm_lang$core$Date$Jul;
+		case 8:
+			return _elm_lang$core$Date$Aug;
+		case 9:
+			return _elm_lang$core$Date$Sep;
+		case 10:
+			return _elm_lang$core$Date$Oct;
+		case 11:
+			return _elm_lang$core$Date$Nov;
+		default:
+			return _elm_lang$core$Date$Dec;
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$monthNumberFromMonth = function (m) {
+	var _p3 = m;
+	switch (_p3.ctor) {
+		case 'Jan':
+			return 1;
+		case 'Feb':
+			return 2;
+		case 'Mar':
+			return 3;
+		case 'Apr':
+			return 4;
+		case 'May':
+			return 5;
+		case 'Jun':
+			return 6;
+		case 'Jul':
+			return 7;
+		case 'Aug':
+			return 8;
+		case 'Sep':
+			return 9;
+		case 'Oct':
+			return 10;
+		case 'Nov':
+			return 11;
+		default:
+			return 12;
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$months = {
+	ctor: '::',
+	_0: _elm_lang$core$Date$Jan,
+	_1: {
+		ctor: '::',
+		_0: _elm_lang$core$Date$Feb,
+		_1: {
+			ctor: '::',
+			_0: _elm_lang$core$Date$Mar,
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$core$Date$Apr,
+				_1: {
+					ctor: '::',
+					_0: _elm_lang$core$Date$May,
+					_1: {
+						ctor: '::',
+						_0: _elm_lang$core$Date$Jun,
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$core$Date$Jul,
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$core$Date$Aug,
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$core$Date$Sep,
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$core$Date$Oct,
+										_1: {
+											ctor: '::',
+											_0: _elm_lang$core$Date$Nov,
+											_1: {
+												ctor: '::',
+												_0: _elm_lang$core$Date$Dec,
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear = function (y) {
+	return (_elm_lang$core$Native_Utils.eq(
+		A2(_elm_lang$core$Basics_ops['%'], y, 4),
+		0) && (!_elm_lang$core$Native_Utils.eq(
+		A2(_elm_lang$core$Basics_ops['%'], y, 100),
+		0))) || _elm_lang$core$Native_Utils.eq(
+		A2(_elm_lang$core$Basics_ops['%'], y, 400),
+		0);
+};
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$daysInMonth = F2(
+	function (y, m) {
+		var _p4 = m;
+		switch (_p4.ctor) {
+			case 'Jan':
+				return 31;
+			case 'Feb':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 29 : 28;
+			case 'Mar':
+				return 31;
+			case 'Apr':
+				return 30;
+			case 'May':
+				return 31;
+			case 'Jun':
+				return 30;
+			case 'Jul':
+				return 31;
+			case 'Aug':
+				return 31;
+			case 'Sep':
+				return 30;
+			case 'Oct':
+				return 31;
+			case 'Nov':
+				return 30;
+			default:
+				return 31;
+		}
+	});
+var _justinmimbs$elm_date_extra$Date_Extra_Facts$daysBeforeStartOfMonth = F2(
+	function (y, m) {
+		var _p5 = m;
+		switch (_p5.ctor) {
+			case 'Jan':
+				return 0;
+			case 'Feb':
+				return 31;
+			case 'Mar':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 60 : 59;
+			case 'Apr':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 91 : 90;
+			case 'May':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 121 : 120;
+			case 'Jun':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 152 : 151;
+			case 'Jul':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 182 : 181;
+			case 'Aug':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 213 : 212;
+			case 'Sep':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 244 : 243;
+			case 'Oct':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 274 : 273;
+			case 'Nov':
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 305 : 304;
+			default:
+				return _justinmimbs$elm_date_extra$Date_Extra_Facts$isLeapYear(y) ? 335 : 334;
+		}
+	});
+
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$toUnixTime = function (rd) {
+	return (rd - 719163) * _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerDay;
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$weekdayNumber = function (rd) {
+	var _p0 = A2(_elm_lang$core$Basics_ops['%'], rd, 7);
+	if (_p0 === 0) {
+		return 7;
+	} else {
+		return _p0;
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$leapYearsInCommonEra = function (y) {
+	return (((y / 4) | 0) - ((y / 100) | 0)) + ((y / 400) | 0);
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$rataDieBeforeStartOfYear = function (y) {
+	return (365 * (y - 1)) + _justinmimbs$elm_date_extra$Date_Internal_RataDie$leapYearsInCommonEra(y - 1);
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$fromOrdinalDate = F2(
+	function (y, d) {
+		return _justinmimbs$elm_date_extra$Date_Internal_RataDie$rataDieBeforeStartOfYear(y) + d;
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$week1Day1OfWeekYear = function (y) {
+	var jan4RD = A2(_justinmimbs$elm_date_extra$Date_Internal_RataDie$fromOrdinalDate, y, 4);
+	return (jan4RD - _justinmimbs$elm_date_extra$Date_Internal_RataDie$weekdayNumber(jan4RD)) + 1;
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$fromWeekDate = F3(
+	function (y, w, d) {
+		var week1Day0RD = _justinmimbs$elm_date_extra$Date_Internal_RataDie$week1Day1OfWeekYear(y) - 1;
+		return (week1Day0RD + ((w - 1) * 7)) + d;
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$fromCalendarDate = F3(
+	function (y, m, d) {
+		var md = A2(_justinmimbs$elm_date_extra$Date_Extra_Facts$daysBeforeStartOfMonth, y, m);
+		var yd = _justinmimbs$elm_date_extra$Date_Internal_RataDie$rataDieBeforeStartOfYear(y);
+		return (yd + md) + d;
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$divideInt = F2(
+	function (a, b) {
+		return {
+			ctor: '_Tuple2',
+			_0: (a / b) | 0,
+			_1: A2(_elm_lang$core$Basics$rem, a, b)
+		};
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$year = function (rd) {
+	var _p1 = A2(_justinmimbs$elm_date_extra$Date_Internal_RataDie$divideInt, rd, 146097);
+	var q400 = _p1._0;
+	var r400 = _p1._1;
+	var _p2 = A2(_justinmimbs$elm_date_extra$Date_Internal_RataDie$divideInt, r400, 36524);
+	var q100 = _p2._0;
+	var r100 = _p2._1;
+	var _p3 = A2(_justinmimbs$elm_date_extra$Date_Internal_RataDie$divideInt, r100, 1461);
+	var q4 = _p3._0;
+	var r4 = _p3._1;
+	var _p4 = A2(_justinmimbs$elm_date_extra$Date_Internal_RataDie$divideInt, r4, 365);
+	var q1 = _p4._0;
+	var r1 = _p4._1;
+	var n = _elm_lang$core$Native_Utils.eq(r1, 0) ? 0 : 1;
+	return ((((q400 * 400) + (q100 * 100)) + (q4 * 4)) + q1) + n;
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$ordinalDay = function (rd) {
+	return rd - _justinmimbs$elm_date_extra$Date_Internal_RataDie$rataDieBeforeStartOfYear(
+		_justinmimbs$elm_date_extra$Date_Internal_RataDie$year(rd));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$weekYear = function (rd) {
+	var daysToThursday = 4 - _justinmimbs$elm_date_extra$Date_Internal_RataDie$weekdayNumber(rd);
+	return _justinmimbs$elm_date_extra$Date_Internal_RataDie$year(rd + daysToThursday);
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$weekNumber = function (rd) {
+	var week1Day1RD = _justinmimbs$elm_date_extra$Date_Internal_RataDie$week1Day1OfWeekYear(
+		_justinmimbs$elm_date_extra$Date_Internal_RataDie$weekYear(rd));
+	return (((rd - week1Day1RD) / 7) | 0) + 1;
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$find = F2(
+	function (pred, list) {
+		find:
+		while (true) {
+			var _p5 = list;
+			if (_p5.ctor === '[]') {
+				return _elm_lang$core$Maybe$Nothing;
+			} else {
+				var _p6 = _p5._0;
+				if (pred(_p6)) {
+					return _elm_lang$core$Maybe$Just(_p6);
+				} else {
+					var _v2 = pred,
+						_v3 = _p5._1;
+					pred = _v2;
+					list = _v3;
+					continue find;
+				}
+			}
+		}
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$month = function (rd) {
+	var od = _justinmimbs$elm_date_extra$Date_Internal_RataDie$ordinalDay(rd);
+	var y = _justinmimbs$elm_date_extra$Date_Internal_RataDie$year(rd);
+	return A2(
+		_elm_lang$core$Maybe$withDefault,
+		_elm_lang$core$Date$Jan,
+		A2(
+			_justinmimbs$elm_date_extra$Date_Internal_RataDie$find,
+			function (m) {
+				return _elm_lang$core$Native_Utils.cmp(
+					A2(_justinmimbs$elm_date_extra$Date_Extra_Facts$daysBeforeStartOfMonth, y, m),
+					od) < 0;
+			},
+			_elm_lang$core$List$reverse(_justinmimbs$elm_date_extra$Date_Extra_Facts$months)));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_RataDie$day = function (rd) {
+	var od = _justinmimbs$elm_date_extra$Date_Internal_RataDie$ordinalDay(rd);
+	var m = _justinmimbs$elm_date_extra$Date_Internal_RataDie$month(rd);
+	var y = _justinmimbs$elm_date_extra$Date_Internal_RataDie$year(rd);
+	return od - A2(_justinmimbs$elm_date_extra$Date_Extra_Facts$daysBeforeStartOfMonth, y, m);
+};
+
+var _justinmimbs$elm_date_extra$Date_Internal_Core$weekNumberFromCalendarDate = F3(
+	function (y, m, d) {
+		return _justinmimbs$elm_date_extra$Date_Internal_RataDie$weekNumber(
+			A3(_justinmimbs$elm_date_extra$Date_Internal_RataDie$fromCalendarDate, y, m, d));
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Core$weekYearFromCalendarDate = F3(
+	function (y, m, d) {
+		return _justinmimbs$elm_date_extra$Date_Internal_RataDie$weekYear(
+			A3(_justinmimbs$elm_date_extra$Date_Internal_RataDie$fromCalendarDate, y, m, d));
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromOrdinalDate = F2(
+	function (y, d) {
+		return _justinmimbs$elm_date_extra$Date_Internal_RataDie$toUnixTime(
+			A2(_justinmimbs$elm_date_extra$Date_Internal_RataDie$fromOrdinalDate, y, d));
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromWeekDate = F3(
+	function (y, w, d) {
+		return _justinmimbs$elm_date_extra$Date_Internal_RataDie$toUnixTime(
+			A3(_justinmimbs$elm_date_extra$Date_Internal_RataDie$fromWeekDate, y, w, d));
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromCalendarDate = F3(
+	function (y, m, d) {
+		return _justinmimbs$elm_date_extra$Date_Internal_RataDie$toUnixTime(
+			A3(_justinmimbs$elm_date_extra$Date_Internal_RataDie$fromCalendarDate, y, m, d));
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Core$msFromTimeParts = F4(
+	function (hh, mm, ss, ms) {
+		return ((ms + (_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerSecond * ss)) + (_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute * mm)) + (_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerHour * hh);
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromParts = F7(
+	function (y, m, d, hh, mm, ss, ms) {
+		return _justinmimbs$elm_date_extra$Date_Internal_RataDie$toUnixTime(
+			A3(_justinmimbs$elm_date_extra$Date_Internal_RataDie$fromCalendarDate, y, m, d)) + A4(_justinmimbs$elm_date_extra$Date_Internal_Core$msFromTimeParts, hh, mm, ss, ms);
+	});
+
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$msOffsetFromUtc = function (date) {
+	var utcTime = _elm_lang$core$Date$toTime(date);
+	var localTime = _elm_lang$core$Basics$toFloat(
+		A7(
+			_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromParts,
+			_elm_lang$core$Date$year(date),
+			_elm_lang$core$Date$month(date),
+			_elm_lang$core$Date$day(date),
+			_elm_lang$core$Date$hour(date),
+			_elm_lang$core$Date$minute(date),
+			_elm_lang$core$Date$second(date),
+			_elm_lang$core$Date$millisecond(date)));
+	return _elm_lang$core$Basics$floor(localTime - utcTime);
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$offsetFromUtc = function (date) {
+	return (_justinmimbs$elm_date_extra$Date_Internal_Extract$msOffsetFromUtc(date) / _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute) | 0;
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$weekYear = function (date) {
+	return A3(
+		_justinmimbs$elm_date_extra$Date_Internal_Core$weekYearFromCalendarDate,
+		_elm_lang$core$Date$year(date),
+		_elm_lang$core$Date$month(date),
+		_elm_lang$core$Date$day(date));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$weekNumber = function (date) {
+	return A3(
+		_justinmimbs$elm_date_extra$Date_Internal_Core$weekNumberFromCalendarDate,
+		_elm_lang$core$Date$year(date),
+		_elm_lang$core$Date$month(date),
+		_elm_lang$core$Date$day(date));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$weekdayNumber = function (_p0) {
+	return _justinmimbs$elm_date_extra$Date_Extra_Facts$weekdayNumberFromDayOfWeek(
+		_elm_lang$core$Date$dayOfWeek(_p0));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$fractionalDay = function (date) {
+	var timeOfDayMS = A4(
+		_justinmimbs$elm_date_extra$Date_Internal_Core$msFromTimeParts,
+		_elm_lang$core$Date$hour(date),
+		_elm_lang$core$Date$minute(date),
+		_elm_lang$core$Date$second(date),
+		_elm_lang$core$Date$millisecond(date));
+	return _elm_lang$core$Basics$toFloat(timeOfDayMS) / _elm_lang$core$Basics$toFloat(_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerDay);
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$ordinalDay = function (date) {
+	return A2(
+		_justinmimbs$elm_date_extra$Date_Extra_Facts$daysBeforeStartOfMonth,
+		_elm_lang$core$Date$year(date),
+		_elm_lang$core$Date$month(date)) + _elm_lang$core$Date$day(date);
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$monthNumber = function (_p1) {
+	return _justinmimbs$elm_date_extra$Date_Extra_Facts$monthNumberFromMonth(
+		_elm_lang$core$Date$month(_p1));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Extract$quarter = function (date) {
+	return _elm_lang$core$Basics$ceiling(
+		function (n) {
+			return n / 3;
+		}(
+			_elm_lang$core$Basics$toFloat(
+				_justinmimbs$elm_date_extra$Date_Internal_Extract$monthNumber(date))));
+};
+
+var _justinmimbs$elm_date_extra$Date_Internal_Format$toUtc = function (date) {
+	return _elm_lang$core$Date$fromTime(
+		_elm_lang$core$Date$toTime(date) - _elm_lang$core$Basics$toFloat(
+			_justinmimbs$elm_date_extra$Date_Internal_Extract$offsetFromUtc(date) * _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$nameForm = function (length) {
+	var _p0 = length;
+	switch (_p0) {
+		case 1:
+			return 'abbreviated';
+		case 2:
+			return 'abbreviated';
+		case 3:
+			return 'abbreviated';
+		case 4:
+			return 'full';
+		case 5:
+			return 'narrow';
+		case 6:
+			return 'short';
+		default:
+			return 'invalid';
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$patternMatches = _elm_lang$core$Regex$regex('([yYQMwdDEeabhHmsSXx])\\1*|\'(?:[^\']|\'\')*?\'(?!\')');
+var _justinmimbs$elm_date_extra$Date_Internal_Format$formatTimeOffset = F3(
+	function (separator, minutesOptional, offset) {
+		var mm = A3(
+			_elm_lang$core$String$padLeft,
+			2,
+			_elm_lang$core$Native_Utils.chr('0'),
+			_elm_lang$core$Basics$toString(
+				A2(
+					_elm_lang$core$Basics_ops['%'],
+					_elm_lang$core$Basics$abs(offset),
+					60)));
+		var hh = A3(
+			_elm_lang$core$String$padLeft,
+			2,
+			_elm_lang$core$Native_Utils.chr('0'),
+			_elm_lang$core$Basics$toString(
+				(_elm_lang$core$Basics$abs(offset) / 60) | 0));
+		var sign = (_elm_lang$core$Native_Utils.cmp(offset, 0) > -1) ? '+' : '-';
+		return (minutesOptional && _elm_lang$core$Native_Utils.eq(mm, '00')) ? A2(_elm_lang$core$Basics_ops['++'], sign, hh) : A2(
+			_elm_lang$core$Basics_ops['++'],
+			sign,
+			A2(
+				_elm_lang$core$Basics_ops['++'],
+				hh,
+				A2(_elm_lang$core$Basics_ops['++'], separator, mm)));
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Format$ordinalSuffix = function (n) {
+	var nn = A2(_elm_lang$core$Basics_ops['%'], n, 100);
+	var _p1 = A2(
+		_elm_lang$core$Basics$min,
+		(_elm_lang$core$Native_Utils.cmp(nn, 20) < 0) ? nn : A2(_elm_lang$core$Basics_ops['%'], nn, 10),
+		4);
+	switch (_p1) {
+		case 0:
+			return 'th';
+		case 1:
+			return 'st';
+		case 2:
+			return 'nd';
+		case 3:
+			return 'rd';
+		case 4:
+			return 'th';
+		default:
+			return '';
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$withOrdinalSuffix = function (n) {
+	return A2(
+		_elm_lang$core$Basics_ops['++'],
+		_elm_lang$core$Basics$toString(n),
+		_justinmimbs$elm_date_extra$Date_Internal_Format$ordinalSuffix(n));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$hour12 = function (date) {
+	var _p2 = A2(
+		_elm_lang$core$Basics_ops['%'],
+		_elm_lang$core$Date$hour(date),
+		12);
+	if (_p2 === 0) {
+		return 12;
+	} else {
+		return _p2;
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$dayOfWeekName = function (d) {
+	var _p3 = d;
+	switch (_p3.ctor) {
+		case 'Mon':
+			return 'Monday';
+		case 'Tue':
+			return 'Tuesday';
+		case 'Wed':
+			return 'Wednesday';
+		case 'Thu':
+			return 'Thursday';
+		case 'Fri':
+			return 'Friday';
+		case 'Sat':
+			return 'Saturday';
+		default:
+			return 'Sunday';
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$monthName = function (m) {
+	var _p4 = m;
+	switch (_p4.ctor) {
+		case 'Jan':
+			return 'January';
+		case 'Feb':
+			return 'February';
+		case 'Mar':
+			return 'March';
+		case 'Apr':
+			return 'April';
+		case 'May':
+			return 'May';
+		case 'Jun':
+			return 'June';
+		case 'Jul':
+			return 'July';
+		case 'Aug':
+			return 'August';
+		case 'Sep':
+			return 'September';
+		case 'Oct':
+			return 'October';
+		case 'Nov':
+			return 'November';
+		default:
+			return 'December';
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$PM = {ctor: 'PM'};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$Noon = {ctor: 'Noon'};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$AM = {ctor: 'AM'};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$Midnight = {ctor: 'Midnight'};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$dayPeriod = function (date) {
+	var onTheHour = _elm_lang$core$Native_Utils.eq(
+		_elm_lang$core$Date$minute(date),
+		0) && (_elm_lang$core$Native_Utils.eq(
+		_elm_lang$core$Date$second(date),
+		0) && _elm_lang$core$Native_Utils.eq(
+		_elm_lang$core$Date$millisecond(date),
+		0));
+	var hh = _elm_lang$core$Date$hour(date);
+	return (_elm_lang$core$Native_Utils.eq(hh, 0) && onTheHour) ? _justinmimbs$elm_date_extra$Date_Internal_Format$Midnight : ((_elm_lang$core$Native_Utils.cmp(hh, 12) < 0) ? _justinmimbs$elm_date_extra$Date_Internal_Format$AM : ((_elm_lang$core$Native_Utils.eq(hh, 12) && onTheHour) ? _justinmimbs$elm_date_extra$Date_Internal_Format$Noon : _justinmimbs$elm_date_extra$Date_Internal_Format$PM));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Format$format = F3(
+	function (asUtc, date, match) {
+		format:
+		while (true) {
+			var length = _elm_lang$core$String$length(match);
+			var $char = A2(_elm_lang$core$String$left, 1, match);
+			var _p5 = $char;
+			switch (_p5) {
+				case 'y':
+					var _p6 = length;
+					if (_p6 === 2) {
+						return A2(
+							_elm_lang$core$String$right,
+							2,
+							A3(
+								_elm_lang$core$String$padLeft,
+								length,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_elm_lang$core$Date$year(date))));
+					} else {
+						return A3(
+							_elm_lang$core$String$padLeft,
+							length,
+							_elm_lang$core$Native_Utils.chr('0'),
+							_elm_lang$core$Basics$toString(
+								_elm_lang$core$Date$year(date)));
+					}
+				case 'Y':
+					var _p7 = length;
+					if (_p7 === 2) {
+						return A2(
+							_elm_lang$core$String$right,
+							2,
+							A3(
+								_elm_lang$core$String$padLeft,
+								length,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_justinmimbs$elm_date_extra$Date_Internal_Extract$weekYear(date))));
+					} else {
+						return A3(
+							_elm_lang$core$String$padLeft,
+							length,
+							_elm_lang$core$Native_Utils.chr('0'),
+							_elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$weekYear(date)));
+					}
+				case 'Q':
+					var _p8 = length;
+					switch (_p8) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$quarter(date));
+						case 2:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$quarter(date));
+						case 3:
+							return A2(
+								F2(
+									function (x, y) {
+										return A2(_elm_lang$core$Basics_ops['++'], x, y);
+									}),
+								'Q',
+								_elm_lang$core$Basics$toString(
+									_justinmimbs$elm_date_extra$Date_Internal_Extract$quarter(date)));
+						case 4:
+							return _justinmimbs$elm_date_extra$Date_Internal_Format$withOrdinalSuffix(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$quarter(date));
+						case 5:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$quarter(date));
+						default:
+							return '';
+					}
+				case 'M':
+					var _p9 = length;
+					switch (_p9) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$monthNumber(date));
+						case 2:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								2,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_justinmimbs$elm_date_extra$Date_Internal_Extract$monthNumber(date)));
+						case 3:
+							return A2(
+								_elm_lang$core$String$left,
+								3,
+								_justinmimbs$elm_date_extra$Date_Internal_Format$monthName(
+									_elm_lang$core$Date$month(date)));
+						case 4:
+							return _justinmimbs$elm_date_extra$Date_Internal_Format$monthName(
+								_elm_lang$core$Date$month(date));
+						case 5:
+							return A2(
+								_elm_lang$core$String$left,
+								1,
+								_justinmimbs$elm_date_extra$Date_Internal_Format$monthName(
+									_elm_lang$core$Date$month(date)));
+						default:
+							return '';
+					}
+				case 'w':
+					var _p10 = length;
+					switch (_p10) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$weekNumber(date));
+						case 2:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								2,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_justinmimbs$elm_date_extra$Date_Internal_Extract$weekNumber(date)));
+						default:
+							return '';
+					}
+				case 'd':
+					var _p11 = length;
+					switch (_p11) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_elm_lang$core$Date$day(date));
+						case 2:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								2,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_elm_lang$core$Date$day(date)));
+						case 3:
+							return _justinmimbs$elm_date_extra$Date_Internal_Format$withOrdinalSuffix(
+								_elm_lang$core$Date$day(date));
+						default:
+							return '';
+					}
+				case 'D':
+					var _p12 = length;
+					switch (_p12) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$ordinalDay(date));
+						case 2:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								2,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_justinmimbs$elm_date_extra$Date_Internal_Extract$ordinalDay(date)));
+						case 3:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								3,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_justinmimbs$elm_date_extra$Date_Internal_Extract$ordinalDay(date)));
+						default:
+							return '';
+					}
+				case 'E':
+					var _p13 = _justinmimbs$elm_date_extra$Date_Internal_Format$nameForm(length);
+					switch (_p13) {
+						case 'abbreviated':
+							return A2(
+								_elm_lang$core$String$left,
+								3,
+								_justinmimbs$elm_date_extra$Date_Internal_Format$dayOfWeekName(
+									_elm_lang$core$Date$dayOfWeek(date)));
+						case 'full':
+							return _justinmimbs$elm_date_extra$Date_Internal_Format$dayOfWeekName(
+								_elm_lang$core$Date$dayOfWeek(date));
+						case 'narrow':
+							return A2(
+								_elm_lang$core$String$left,
+								1,
+								_justinmimbs$elm_date_extra$Date_Internal_Format$dayOfWeekName(
+									_elm_lang$core$Date$dayOfWeek(date)));
+						case 'short':
+							return A2(
+								_elm_lang$core$String$left,
+								2,
+								_justinmimbs$elm_date_extra$Date_Internal_Format$dayOfWeekName(
+									_elm_lang$core$Date$dayOfWeek(date)));
+						default:
+							return '';
+					}
+				case 'e':
+					var _p14 = length;
+					switch (_p14) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$weekdayNumber(date));
+						case 2:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Extract$weekdayNumber(date));
+						default:
+							var _v15 = asUtc,
+								_v16 = date,
+								_v17 = _elm_lang$core$String$toUpper(match);
+							asUtc = _v15;
+							date = _v16;
+							match = _v17;
+							continue format;
+					}
+				case 'a':
+					var p = _justinmimbs$elm_date_extra$Date_Internal_Format$dayPeriod(date);
+					var m = (_elm_lang$core$Native_Utils.eq(p, _justinmimbs$elm_date_extra$Date_Internal_Format$Midnight) || _elm_lang$core$Native_Utils.eq(p, _justinmimbs$elm_date_extra$Date_Internal_Format$AM)) ? 'A' : 'P';
+					var _p15 = _justinmimbs$elm_date_extra$Date_Internal_Format$nameForm(length);
+					switch (_p15) {
+						case 'abbreviated':
+							return A2(_elm_lang$core$Basics_ops['++'], m, 'M');
+						case 'full':
+							return A2(_elm_lang$core$Basics_ops['++'], m, '.M.');
+						case 'narrow':
+							return m;
+						default:
+							return '';
+					}
+				case 'b':
+					var _p16 = _justinmimbs$elm_date_extra$Date_Internal_Format$nameForm(length);
+					switch (_p16) {
+						case 'abbreviated':
+							var _p17 = _justinmimbs$elm_date_extra$Date_Internal_Format$dayPeriod(date);
+							switch (_p17.ctor) {
+								case 'Midnight':
+									return 'mid.';
+								case 'AM':
+									return 'am';
+								case 'Noon':
+									return 'noon';
+								default:
+									return 'pm';
+							}
+						case 'full':
+							var _p18 = _justinmimbs$elm_date_extra$Date_Internal_Format$dayPeriod(date);
+							switch (_p18.ctor) {
+								case 'Midnight':
+									return 'midnight';
+								case 'AM':
+									return 'a.m.';
+								case 'Noon':
+									return 'noon';
+								default:
+									return 'p.m.';
+							}
+						case 'narrow':
+							var _p19 = _justinmimbs$elm_date_extra$Date_Internal_Format$dayPeriod(date);
+							switch (_p19.ctor) {
+								case 'Midnight':
+									return 'md';
+								case 'AM':
+									return 'a';
+								case 'Noon':
+									return 'nn';
+								default:
+									return 'p';
+							}
+						default:
+							return '';
+					}
+				case 'h':
+					var _p20 = length;
+					switch (_p20) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_justinmimbs$elm_date_extra$Date_Internal_Format$hour12(date));
+						case 2:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								2,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_justinmimbs$elm_date_extra$Date_Internal_Format$hour12(date)));
+						default:
+							return '';
+					}
+				case 'H':
+					var _p21 = length;
+					switch (_p21) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_elm_lang$core$Date$hour(date));
+						case 2:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								2,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_elm_lang$core$Date$hour(date)));
+						default:
+							return '';
+					}
+				case 'm':
+					var _p22 = length;
+					switch (_p22) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_elm_lang$core$Date$minute(date));
+						case 2:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								2,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_elm_lang$core$Date$minute(date)));
+						default:
+							return '';
+					}
+				case 's':
+					var _p23 = length;
+					switch (_p23) {
+						case 1:
+							return _elm_lang$core$Basics$toString(
+								_elm_lang$core$Date$second(date));
+						case 2:
+							return A3(
+								_elm_lang$core$String$padLeft,
+								2,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_elm_lang$core$Date$second(date)));
+						default:
+							return '';
+					}
+				case 'S':
+					return A3(
+						_elm_lang$core$String$padRight,
+						length,
+						_elm_lang$core$Native_Utils.chr('0'),
+						A2(
+							_elm_lang$core$String$left,
+							length,
+							A3(
+								_elm_lang$core$String$padLeft,
+								3,
+								_elm_lang$core$Native_Utils.chr('0'),
+								_elm_lang$core$Basics$toString(
+									_elm_lang$core$Date$millisecond(date)))));
+				case 'X':
+					if ((_elm_lang$core$Native_Utils.cmp(length, 4) < 0) && (asUtc || _elm_lang$core$Native_Utils.eq(
+						_justinmimbs$elm_date_extra$Date_Internal_Extract$offsetFromUtc(date),
+						0))) {
+						return 'Z';
+					} else {
+						var _v27 = asUtc,
+							_v28 = date,
+							_v29 = _elm_lang$core$String$toLower(match);
+						asUtc = _v27;
+						date = _v28;
+						match = _v29;
+						continue format;
+					}
+				case 'x':
+					var offset = asUtc ? 0 : _justinmimbs$elm_date_extra$Date_Internal_Extract$offsetFromUtc(date);
+					var _p24 = length;
+					switch (_p24) {
+						case 1:
+							return A3(_justinmimbs$elm_date_extra$Date_Internal_Format$formatTimeOffset, '', true, offset);
+						case 2:
+							return A3(_justinmimbs$elm_date_extra$Date_Internal_Format$formatTimeOffset, '', false, offset);
+						case 3:
+							return A3(_justinmimbs$elm_date_extra$Date_Internal_Format$formatTimeOffset, ':', false, offset);
+						default:
+							return '';
+					}
+				case '\'':
+					return _elm_lang$core$Native_Utils.eq(match, '\'\'') ? '\'' : A4(
+						_elm_lang$core$Regex$replace,
+						_elm_lang$core$Regex$All,
+						_elm_lang$core$Regex$regex('\'\''),
+						function (_p25) {
+							return '\'';
+						},
+						A3(_elm_lang$core$String$slice, 1, -1, match));
+				default:
+					return '';
+			}
+		}
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Format$toFormattedString = F3(
+	function (asUtc, pattern, date) {
+		var date_ = asUtc ? _justinmimbs$elm_date_extra$Date_Internal_Format$toUtc(date) : date;
+		return A4(
+			_elm_lang$core$Regex$replace,
+			_elm_lang$core$Regex$All,
+			_justinmimbs$elm_date_extra$Date_Internal_Format$patternMatches,
+			function (_p26) {
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Internal_Format$format,
+					asUtc,
+					date_,
+					function (_) {
+						return _.match;
+					}(_p26));
+			},
+			pattern);
+	});
+
+var _justinmimbs$elm_date_extra$Date_Internal_Parse$isoDateRegex = function () {
+	var time = 'T(\\d{2})(?:(\\:)?(\\d{2})(?:\\10(\\d{2}))?)?(\\.\\d+)?(?:(Z)|(?:([+\\-])(\\d{2})(?:\\:?(\\d{2}))?))?';
+	var ord = '\\-?(\\d{3})';
+	var week = '(\\-)?W(\\d{2})(?:\\5(\\d))?';
+	var cal = '(\\-)?(\\d{2})(?:\\2(\\d{2}))?';
+	var year = '(\\d{4})';
+	return _elm_lang$core$Regex$regex(
+		A2(
+			_elm_lang$core$Basics_ops['++'],
+			'^',
+			A2(
+				_elm_lang$core$Basics_ops['++'],
+				year,
+				A2(
+					_elm_lang$core$Basics_ops['++'],
+					'(?:',
+					A2(
+						_elm_lang$core$Basics_ops['++'],
+						cal,
+						A2(
+							_elm_lang$core$Basics_ops['++'],
+							'|',
+							A2(
+								_elm_lang$core$Basics_ops['++'],
+								week,
+								A2(
+									_elm_lang$core$Basics_ops['++'],
+									'|',
+									A2(
+										_elm_lang$core$Basics_ops['++'],
+										ord,
+										A2(
+											_elm_lang$core$Basics_ops['++'],
+											')?',
+											A2(
+												_elm_lang$core$Basics_ops['++'],
+												'(?:',
+												A2(_elm_lang$core$Basics_ops['++'], time, ')?$'))))))))))));
+}();
+var _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToFloat = function (_p0) {
+	return _elm_lang$core$Result$toMaybe(
+		_elm_lang$core$String$toFloat(_p0));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Parse$msFromMatches = F4(
+	function (timeHH, timeMM, timeSS, timeF) {
+		var fractional = A2(
+			_elm_lang$core$Maybe$withDefault,
+			0.0,
+			A2(_elm_lang$core$Maybe$andThen, _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToFloat, timeF));
+		var _p1 = function () {
+			var _p2 = A2(
+				_elm_lang$core$List$map,
+				_elm_lang$core$Maybe$andThen(_justinmimbs$elm_date_extra$Date_Internal_Parse$stringToFloat),
+				{
+					ctor: '::',
+					_0: timeHH,
+					_1: {
+						ctor: '::',
+						_0: timeMM,
+						_1: {
+							ctor: '::',
+							_0: timeSS,
+							_1: {ctor: '[]'}
+						}
+					}
+				});
+			_v0_3:
+			do {
+				if (((_p2.ctor === '::') && (_p2._0.ctor === 'Just')) && (_p2._1.ctor === '::')) {
+					if (_p2._1._0.ctor === 'Just') {
+						if (_p2._1._1.ctor === '::') {
+							if (_p2._1._1._0.ctor === 'Just') {
+								if (_p2._1._1._1.ctor === '[]') {
+									return {ctor: '_Tuple3', _0: _p2._0._0, _1: _p2._1._0._0, _2: _p2._1._1._0._0 + fractional};
+								} else {
+									break _v0_3;
+								}
+							} else {
+								if (_p2._1._1._1.ctor === '[]') {
+									return {ctor: '_Tuple3', _0: _p2._0._0, _1: _p2._1._0._0 + fractional, _2: 0.0};
+								} else {
+									break _v0_3;
+								}
+							}
+						} else {
+							break _v0_3;
+						}
+					} else {
+						if (((_p2._1._1.ctor === '::') && (_p2._1._1._0.ctor === 'Nothing')) && (_p2._1._1._1.ctor === '[]')) {
+							return {ctor: '_Tuple3', _0: _p2._0._0 + fractional, _1: 0.0, _2: 0.0};
+						} else {
+							break _v0_3;
+						}
+					}
+				} else {
+					break _v0_3;
+				}
+			} while(false);
+			return {ctor: '_Tuple3', _0: 0.0, _1: 0.0, _2: 0.0};
+		}();
+		var hh = _p1._0;
+		var mm = _p1._1;
+		var ss = _p1._2;
+		return _elm_lang$core$Basics$round(
+			((hh * _elm_lang$core$Basics$toFloat(_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerHour)) + (mm * _elm_lang$core$Basics$toFloat(_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute))) + (ss * _elm_lang$core$Basics$toFloat(_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerSecond)));
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt = function (_p3) {
+	return _elm_lang$core$Result$toMaybe(
+		_elm_lang$core$String$toInt(_p3));
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Parse$unixTimeFromMatches = F6(
+	function (yyyy, calMM, calDD, weekWW, weekD, ordDDD) {
+		var y = A2(
+			_elm_lang$core$Maybe$withDefault,
+			1,
+			_justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt(yyyy));
+		var _p4 = {ctor: '_Tuple2', _0: calMM, _1: weekWW};
+		_v1_2:
+		do {
+			if (_p4.ctor === '_Tuple2') {
+				if (_p4._0.ctor === 'Just') {
+					if (_p4._1.ctor === 'Nothing') {
+						return A3(
+							_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromCalendarDate,
+							y,
+							_justinmimbs$elm_date_extra$Date_Extra_Facts$monthFromMonthNumber(
+								A2(
+									_elm_lang$core$Maybe$withDefault,
+									1,
+									A2(_elm_lang$core$Maybe$andThen, _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt, calMM))),
+							A2(
+								_elm_lang$core$Maybe$withDefault,
+								1,
+								A2(_elm_lang$core$Maybe$andThen, _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt, calDD)));
+					} else {
+						break _v1_2;
+					}
+				} else {
+					if (_p4._1.ctor === 'Just') {
+						return A3(
+							_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromWeekDate,
+							y,
+							A2(
+								_elm_lang$core$Maybe$withDefault,
+								1,
+								A2(_elm_lang$core$Maybe$andThen, _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt, weekWW)),
+							A2(
+								_elm_lang$core$Maybe$withDefault,
+								1,
+								A2(_elm_lang$core$Maybe$andThen, _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt, weekD)));
+					} else {
+						break _v1_2;
+					}
+				}
+			} else {
+				break _v1_2;
+			}
+		} while(false);
+		return A2(
+			_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromOrdinalDate,
+			y,
+			A2(
+				_elm_lang$core$Maybe$withDefault,
+				1,
+				A2(_elm_lang$core$Maybe$andThen, _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt, ordDDD)));
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Parse$offsetFromMatches = F4(
+	function (tzZ, tzSign, tzHH, tzMM) {
+		var _p5 = {ctor: '_Tuple2', _0: tzZ, _1: tzSign};
+		_v2_2:
+		do {
+			if (_p5.ctor === '_Tuple2') {
+				if (_p5._0.ctor === 'Just') {
+					if ((_p5._0._0 === 'Z') && (_p5._1.ctor === 'Nothing')) {
+						return _elm_lang$core$Maybe$Just(0);
+					} else {
+						break _v2_2;
+					}
+				} else {
+					if (_p5._1.ctor === 'Just') {
+						var mm = A2(
+							_elm_lang$core$Maybe$withDefault,
+							0,
+							A2(_elm_lang$core$Maybe$andThen, _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt, tzMM));
+						var hh = A2(
+							_elm_lang$core$Maybe$withDefault,
+							0,
+							A2(_elm_lang$core$Maybe$andThen, _justinmimbs$elm_date_extra$Date_Internal_Parse$stringToInt, tzHH));
+						return _elm_lang$core$Maybe$Just(
+							(_elm_lang$core$Native_Utils.eq(_p5._1._0, '+') ? 1 : -1) * ((hh * 60) + mm));
+					} else {
+						break _v2_2;
+					}
+				}
+			} else {
+				break _v2_2;
+			}
+		} while(false);
+		return _elm_lang$core$Maybe$Nothing;
+	});
+var _justinmimbs$elm_date_extra$Date_Internal_Parse$offsetTimeFromMatches = function (matches) {
+	var _p6 = matches;
+	if (((((((((((((((((((_p6.ctor === '::') && (_p6._0.ctor === 'Just')) && (_p6._1.ctor === '::')) && (_p6._1._1.ctor === '::')) && (_p6._1._1._1.ctor === '::')) && (_p6._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1.ctor === '::')) && (_p6._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1.ctor === '[]')) {
+		var offset = A4(_justinmimbs$elm_date_extra$Date_Internal_Parse$offsetFromMatches, _p6._1._1._1._1._1._1._1._1._1._1._1._1._1._0, _p6._1._1._1._1._1._1._1._1._1._1._1._1._1._1._0, _p6._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1._0, _p6._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1._1._0);
+		var timeMS = A4(_justinmimbs$elm_date_extra$Date_Internal_Parse$msFromMatches, _p6._1._1._1._1._1._1._1._1._0, _p6._1._1._1._1._1._1._1._1._1._1._0, _p6._1._1._1._1._1._1._1._1._1._1._1._0, _p6._1._1._1._1._1._1._1._1._1._1._1._1._0);
+		var dateMS = A6(_justinmimbs$elm_date_extra$Date_Internal_Parse$unixTimeFromMatches, _p6._0._0, _p6._1._1._0, _p6._1._1._1._0, _p6._1._1._1._1._1._0, _p6._1._1._1._1._1._1._0, _p6._1._1._1._1._1._1._1._0);
+		return _elm_lang$core$Maybe$Just(
+			{ctor: '_Tuple2', _0: offset, _1: dateMS + timeMS});
+	} else {
+		return _elm_lang$core$Maybe$Nothing;
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Internal_Parse$offsetTimeFromIsoString = function (s) {
+	return A2(
+		_elm_lang$core$Maybe$andThen,
+		_justinmimbs$elm_date_extra$Date_Internal_Parse$offsetTimeFromMatches,
+		A2(
+			_elm_lang$core$Maybe$map,
+			function (_) {
+				return _.submatches;
+			},
+			_elm_lang$core$List$head(
+				A3(
+					_elm_lang$core$Regex$find,
+					_elm_lang$core$Regex$AtMost(1),
+					_justinmimbs$elm_date_extra$Date_Internal_Parse$isoDateRegex,
+					s))));
+};
+
+var _justinmimbs$elm_date_extra$Date_Extra$toParts = function (date) {
+	return {
+		ctor: '_Tuple7',
+		_0: _elm_lang$core$Date$year(date),
+		_1: _elm_lang$core$Date$month(date),
+		_2: _elm_lang$core$Date$day(date),
+		_3: _elm_lang$core$Date$hour(date),
+		_4: _elm_lang$core$Date$minute(date),
+		_5: _elm_lang$core$Date$second(date),
+		_6: _elm_lang$core$Date$millisecond(date)
+	};
+};
+var _justinmimbs$elm_date_extra$Date_Extra$monthFromQuarter = function (q) {
+	var _p0 = q;
+	switch (_p0) {
+		case 1:
+			return _elm_lang$core$Date$Jan;
+		case 2:
+			return _elm_lang$core$Date$Apr;
+		case 3:
+			return _elm_lang$core$Date$Jul;
+		default:
+			return _elm_lang$core$Date$Oct;
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Extra$clamp = F3(
+	function (min, max, date) {
+		return (_elm_lang$core$Native_Utils.cmp(
+			_elm_lang$core$Date$toTime(date),
+			_elm_lang$core$Date$toTime(min)) < 0) ? min : ((_elm_lang$core$Native_Utils.cmp(
+			_elm_lang$core$Date$toTime(date),
+			_elm_lang$core$Date$toTime(max)) > 0) ? max : date);
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$comparableIsBetween = F3(
+	function (a, b, x) {
+		return ((_elm_lang$core$Native_Utils.cmp(a, x) < 1) && (_elm_lang$core$Native_Utils.cmp(x, b) < 1)) || ((_elm_lang$core$Native_Utils.cmp(b, x) < 1) && (_elm_lang$core$Native_Utils.cmp(x, a) < 1));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$isBetween = F3(
+	function (date1, date2, date) {
+		return A3(
+			_justinmimbs$elm_date_extra$Date_Extra$comparableIsBetween,
+			_elm_lang$core$Date$toTime(date1),
+			_elm_lang$core$Date$toTime(date2),
+			_elm_lang$core$Date$toTime(date));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$compare = F2(
+	function (a, b) {
+		return A2(
+			_elm_lang$core$Basics$compare,
+			_elm_lang$core$Date$toTime(a),
+			_elm_lang$core$Date$toTime(b));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$equal = F2(
+	function (a, b) {
+		return _elm_lang$core$Native_Utils.eq(
+			_elm_lang$core$Date$toTime(a),
+			_elm_lang$core$Date$toTime(b));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$offsetFromUtc = _justinmimbs$elm_date_extra$Date_Internal_Extract$offsetFromUtc;
+var _justinmimbs$elm_date_extra$Date_Extra$weekYear = _justinmimbs$elm_date_extra$Date_Internal_Extract$weekYear;
+var _justinmimbs$elm_date_extra$Date_Extra$weekNumber = _justinmimbs$elm_date_extra$Date_Internal_Extract$weekNumber;
+var _justinmimbs$elm_date_extra$Date_Extra$weekdayNumber = _justinmimbs$elm_date_extra$Date_Internal_Extract$weekdayNumber;
+var _justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek = F2(
+	function (d, date) {
+		return _elm_lang$core$Basics$negate(
+			A2(
+				_elm_lang$core$Basics_ops['%'],
+				(_justinmimbs$elm_date_extra$Date_Extra$weekdayNumber(date) - _justinmimbs$elm_date_extra$Date_Extra_Facts$weekdayNumberFromDayOfWeek(d)) + 7,
+				7));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$fractionalDay = _justinmimbs$elm_date_extra$Date_Internal_Extract$fractionalDay;
+var _justinmimbs$elm_date_extra$Date_Extra$ordinalDay = _justinmimbs$elm_date_extra$Date_Internal_Extract$ordinalDay;
+var _justinmimbs$elm_date_extra$Date_Extra$quarter = _justinmimbs$elm_date_extra$Date_Internal_Extract$quarter;
+var _justinmimbs$elm_date_extra$Date_Extra$monthNumber = _justinmimbs$elm_date_extra$Date_Internal_Extract$monthNumber;
+var _justinmimbs$elm_date_extra$Date_Extra$ordinalMonth = function (date) {
+	return (_elm_lang$core$Date$year(date) * 12) + _justinmimbs$elm_date_extra$Date_Extra$monthNumber(date);
+};
+var _justinmimbs$elm_date_extra$Date_Extra$diffMonth = F2(
+	function (date1, date2) {
+		var fractionalMonth = function (date) {
+			return (_elm_lang$core$Basics$toFloat(
+				_elm_lang$core$Date$day(date) - 1) + _justinmimbs$elm_date_extra$Date_Extra$fractionalDay(date)) / 31;
+		};
+		var ordinalMonthFloat = function (date) {
+			return _elm_lang$core$Basics$toFloat(
+				_justinmimbs$elm_date_extra$Date_Extra$ordinalMonth(date)) + fractionalMonth(date);
+		};
+		return _elm_lang$core$Basics$truncate(
+			ordinalMonthFloat(date2) - ordinalMonthFloat(date1));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$toUtcFormattedString = _justinmimbs$elm_date_extra$Date_Internal_Format$toFormattedString(true);
+var _justinmimbs$elm_date_extra$Date_Extra$toUtcIsoString = _justinmimbs$elm_date_extra$Date_Extra$toUtcFormattedString('yyyy-MM-dd\'T\'HH:mm:ss.SSSXXX');
+var _justinmimbs$elm_date_extra$Date_Extra$toFormattedString = _justinmimbs$elm_date_extra$Date_Internal_Format$toFormattedString(false);
+var _justinmimbs$elm_date_extra$Date_Extra$toIsoString = _justinmimbs$elm_date_extra$Date_Extra$toFormattedString('yyyy-MM-dd\'T\'HH:mm:ss.SSSxxx');
+var _justinmimbs$elm_date_extra$Date_Extra$fromTime = function (_p1) {
+	return _elm_lang$core$Date$fromTime(
+		_elm_lang$core$Basics$toFloat(_p1));
+};
+var _justinmimbs$elm_date_extra$Date_Extra$fromOffsetTime = function (_p2) {
+	var _p3 = _p2;
+	var _p5 = _p3._1;
+	var _p4 = _p3._0;
+	if (_p4.ctor === 'Just') {
+		return _justinmimbs$elm_date_extra$Date_Extra$fromTime(_p5 - (_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute * _p4._0));
+	} else {
+		var offset0 = _justinmimbs$elm_date_extra$Date_Extra$offsetFromUtc(
+			_justinmimbs$elm_date_extra$Date_Extra$fromTime(_p5));
+		var date1 = _justinmimbs$elm_date_extra$Date_Extra$fromTime(_p5 - (_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute * offset0));
+		var offset1 = _justinmimbs$elm_date_extra$Date_Extra$offsetFromUtc(date1);
+		if (_elm_lang$core$Native_Utils.eq(offset0, offset1)) {
+			return date1;
+		} else {
+			var date2 = _justinmimbs$elm_date_extra$Date_Extra$fromTime(_p5 - (_justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute * offset1));
+			var offset2 = _justinmimbs$elm_date_extra$Date_Extra$offsetFromUtc(date2);
+			return _elm_lang$core$Native_Utils.eq(offset1, offset2) ? date2 : date1;
+		}
+	}
+};
+var _justinmimbs$elm_date_extra$Date_Extra$fromParts = F7(
+	function (y, m, d, hh, mm, ss, ms) {
+		return _justinmimbs$elm_date_extra$Date_Extra$fromOffsetTime(
+			{
+				ctor: '_Tuple2',
+				_0: _elm_lang$core$Maybe$Nothing,
+				_1: A7(_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromParts, y, m, d, hh, mm, ss, ms)
+			});
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$addMonths = F2(
+	function (n, date) {
+		var om = (_justinmimbs$elm_date_extra$Date_Extra$ordinalMonth(date) + n) + -1;
+		var y_ = (om / 12) | 0;
+		var m_ = _justinmimbs$elm_date_extra$Date_Extra_Facts$monthFromMonthNumber(
+			A2(_elm_lang$core$Basics_ops['%'], om, 12) + 1);
+		var _p6 = _justinmimbs$elm_date_extra$Date_Extra$toParts(date);
+		var y = _p6._0;
+		var m = _p6._1;
+		var d = _p6._2;
+		var hh = _p6._3;
+		var mm = _p6._4;
+		var ss = _p6._5;
+		var ms = _p6._6;
+		var d_ = A2(
+			_elm_lang$core$Basics$min,
+			d,
+			A2(_justinmimbs$elm_date_extra$Date_Extra_Facts$daysInMonth, y_, m_));
+		return A7(_justinmimbs$elm_date_extra$Date_Extra$fromParts, y_, m_, d_, hh, mm, ss, ms);
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$add = F3(
+	function (interval, n, date) {
+		var _p7 = _justinmimbs$elm_date_extra$Date_Extra$toParts(date);
+		var y = _p7._0;
+		var m = _p7._1;
+		var d = _p7._2;
+		var hh = _p7._3;
+		var mm = _p7._4;
+		var ss = _p7._5;
+		var ms = _p7._6;
+		var _p8 = interval;
+		switch (_p8.ctor) {
+			case 'Millisecond':
+				return _elm_lang$core$Date$fromTime(
+					_elm_lang$core$Date$toTime(date) + _elm_lang$core$Basics$toFloat(n));
+			case 'Second':
+				return _elm_lang$core$Date$fromTime(
+					_elm_lang$core$Date$toTime(date) + _elm_lang$core$Basics$toFloat(n * _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerSecond));
+			case 'Minute':
+				return _elm_lang$core$Date$fromTime(
+					_elm_lang$core$Date$toTime(date) + _elm_lang$core$Basics$toFloat(n * _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute));
+			case 'Hour':
+				return _elm_lang$core$Date$fromTime(
+					_elm_lang$core$Date$toTime(date) + _elm_lang$core$Basics$toFloat(n * _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerHour));
+			case 'Day':
+				return A7(_justinmimbs$elm_date_extra$Date_Extra$fromParts, y, m, d + n, hh, mm, ss, ms);
+			case 'Month':
+				return A2(_justinmimbs$elm_date_extra$Date_Extra$addMonths, n, date);
+			case 'Year':
+				return A2(_justinmimbs$elm_date_extra$Date_Extra$addMonths, n * 12, date);
+			case 'Quarter':
+				return A2(_justinmimbs$elm_date_extra$Date_Extra$addMonths, n * 3, date);
+			case 'Week':
+				return A7(_justinmimbs$elm_date_extra$Date_Extra$fromParts, y, m, d + (n * 7), hh, mm, ss, ms);
+			default:
+				return A7(_justinmimbs$elm_date_extra$Date_Extra$fromParts, y, m, d + (n * 7), hh, mm, ss, ms);
+		}
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$rangeHelp = F5(
+	function (result, interval, step, start, date) {
+		rangeHelp:
+		while (true) {
+			if (_elm_lang$core$Native_Utils.cmp(
+				_elm_lang$core$Date$toTime(date),
+				_elm_lang$core$Date$toTime(start)) < 0) {
+				return result;
+			} else {
+				var _v4 = {ctor: '::', _0: date, _1: result},
+					_v5 = interval,
+					_v6 = step,
+					_v7 = start,
+					_v8 = A3(_justinmimbs$elm_date_extra$Date_Extra$add, interval, step, date);
+				result = _v4;
+				interval = _v5;
+				step = _v6;
+				start = _v7;
+				date = _v8;
+				continue rangeHelp;
+			}
+		}
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate = F3(
+	function (y, m, d) {
+		return _justinmimbs$elm_date_extra$Date_Extra$fromOffsetTime(
+			{
+				ctor: '_Tuple2',
+				_0: _elm_lang$core$Maybe$Nothing,
+				_1: A3(_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromCalendarDate, y, m, d)
+			});
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$floor = F2(
+	function (interval, date) {
+		var _p9 = _justinmimbs$elm_date_extra$Date_Extra$toParts(date);
+		var y = _p9._0;
+		var m = _p9._1;
+		var d = _p9._2;
+		var hh = _p9._3;
+		var mm = _p9._4;
+		var ss = _p9._5;
+		var _p10 = interval;
+		switch (_p10.ctor) {
+			case 'Millisecond':
+				return date;
+			case 'Second':
+				return A7(_justinmimbs$elm_date_extra$Date_Extra$fromParts, y, m, d, hh, mm, ss, 0);
+			case 'Minute':
+				return A7(_justinmimbs$elm_date_extra$Date_Extra$fromParts, y, m, d, hh, mm, 0, 0);
+			case 'Hour':
+				return A7(_justinmimbs$elm_date_extra$Date_Extra$fromParts, y, m, d, hh, 0, 0, 0);
+			case 'Day':
+				return A3(_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate, y, m, d);
+			case 'Month':
+				return A3(_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate, y, m, 1);
+			case 'Year':
+				return A3(_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate, y, _elm_lang$core$Date$Jan, 1);
+			case 'Quarter':
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					_justinmimbs$elm_date_extra$Date_Extra$monthFromQuarter(
+						_justinmimbs$elm_date_extra$Date_Extra$quarter(date)),
+					1);
+			case 'Week':
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					m,
+					d + A2(_justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek, _elm_lang$core$Date$Mon, date));
+			case 'Monday':
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					m,
+					d + A2(_justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek, _elm_lang$core$Date$Mon, date));
+			case 'Tuesday':
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					m,
+					d + A2(_justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek, _elm_lang$core$Date$Tue, date));
+			case 'Wednesday':
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					m,
+					d + A2(_justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek, _elm_lang$core$Date$Wed, date));
+			case 'Thursday':
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					m,
+					d + A2(_justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek, _elm_lang$core$Date$Thu, date));
+			case 'Friday':
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					m,
+					d + A2(_justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek, _elm_lang$core$Date$Fri, date));
+			case 'Saturday':
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					m,
+					d + A2(_justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek, _elm_lang$core$Date$Sat, date));
+			default:
+				return A3(
+					_justinmimbs$elm_date_extra$Date_Extra$fromCalendarDate,
+					y,
+					m,
+					d + A2(_justinmimbs$elm_date_extra$Date_Extra$daysToPreviousDayOfWeek, _elm_lang$core$Date$Sun, date));
+		}
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$ceiling = F2(
+	function (interval, date) {
+		var floored = A2(_justinmimbs$elm_date_extra$Date_Extra$floor, interval, date);
+		return _elm_lang$core$Native_Utils.eq(
+			_elm_lang$core$Date$toTime(date),
+			_elm_lang$core$Date$toTime(floored)) ? date : A3(_justinmimbs$elm_date_extra$Date_Extra$add, interval, 1, floored);
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$range = F4(
+	function (interval, step, start, end) {
+		var stepBack = _elm_lang$core$Basics$negate(
+			A2(_elm_lang$core$Basics$max, 1, step));
+		return A5(
+			_justinmimbs$elm_date_extra$Date_Extra$rangeHelp,
+			{ctor: '[]'},
+			interval,
+			stepBack,
+			start,
+			A2(
+				_justinmimbs$elm_date_extra$Date_Extra$ceiling,
+				interval,
+				A3(_justinmimbs$elm_date_extra$Date_Extra$add, interval, stepBack, end)));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$fromIsoString = function (_p11) {
+	return A2(
+		_elm_lang$core$Maybe$map,
+		_justinmimbs$elm_date_extra$Date_Extra$fromOffsetTime,
+		_justinmimbs$elm_date_extra$Date_Internal_Parse$offsetTimeFromIsoString(_p11));
+};
+var _justinmimbs$elm_date_extra$Date_Extra$fromSpec = F3(
+	function (_p14, _p13, _p12) {
+		var _p15 = _p14;
+		var _p16 = _p13;
+		var _p17 = _p12;
+		return _justinmimbs$elm_date_extra$Date_Extra$fromOffsetTime(
+			{ctor: '_Tuple2', _0: _p15._0, _1: _p17._0 + _p16._0});
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$Offset = function (a) {
+	return {ctor: 'Offset', _0: a};
+};
+var _justinmimbs$elm_date_extra$Date_Extra$utc = _justinmimbs$elm_date_extra$Date_Extra$Offset(
+	_elm_lang$core$Maybe$Just(0));
+var _justinmimbs$elm_date_extra$Date_Extra$offset = function (minutes) {
+	return _justinmimbs$elm_date_extra$Date_Extra$Offset(
+		_elm_lang$core$Maybe$Just(minutes));
+};
+var _justinmimbs$elm_date_extra$Date_Extra$local = _justinmimbs$elm_date_extra$Date_Extra$Offset(_elm_lang$core$Maybe$Nothing);
+var _justinmimbs$elm_date_extra$Date_Extra$TimeMS = function (a) {
+	return {ctor: 'TimeMS', _0: a};
+};
+var _justinmimbs$elm_date_extra$Date_Extra$noTime = _justinmimbs$elm_date_extra$Date_Extra$TimeMS(0);
+var _justinmimbs$elm_date_extra$Date_Extra$atTime = F4(
+	function (hh, mm, ss, ms) {
+		return _justinmimbs$elm_date_extra$Date_Extra$TimeMS(
+			A4(_justinmimbs$elm_date_extra$Date_Internal_Core$msFromTimeParts, hh, mm, ss, ms));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$DateMS = function (a) {
+	return {ctor: 'DateMS', _0: a};
+};
+var _justinmimbs$elm_date_extra$Date_Extra$calendarDate = F3(
+	function (y, m, d) {
+		return _justinmimbs$elm_date_extra$Date_Extra$DateMS(
+			A3(_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromCalendarDate, y, m, d));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$ordinalDate = F2(
+	function (y, d) {
+		return _justinmimbs$elm_date_extra$Date_Extra$DateMS(
+			A2(_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromOrdinalDate, y, d));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$weekDate = F3(
+	function (y, w, d) {
+		return _justinmimbs$elm_date_extra$Date_Extra$DateMS(
+			A3(_justinmimbs$elm_date_extra$Date_Internal_Core$unixTimeFromWeekDate, y, w, d));
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$Sunday = {ctor: 'Sunday'};
+var _justinmimbs$elm_date_extra$Date_Extra$Saturday = {ctor: 'Saturday'};
+var _justinmimbs$elm_date_extra$Date_Extra$Friday = {ctor: 'Friday'};
+var _justinmimbs$elm_date_extra$Date_Extra$Thursday = {ctor: 'Thursday'};
+var _justinmimbs$elm_date_extra$Date_Extra$Wednesday = {ctor: 'Wednesday'};
+var _justinmimbs$elm_date_extra$Date_Extra$Tuesday = {ctor: 'Tuesday'};
+var _justinmimbs$elm_date_extra$Date_Extra$Monday = {ctor: 'Monday'};
+var _justinmimbs$elm_date_extra$Date_Extra$Week = {ctor: 'Week'};
+var _justinmimbs$elm_date_extra$Date_Extra$Quarter = {ctor: 'Quarter'};
+var _justinmimbs$elm_date_extra$Date_Extra$Year = {ctor: 'Year'};
+var _justinmimbs$elm_date_extra$Date_Extra$Month = {ctor: 'Month'};
+var _justinmimbs$elm_date_extra$Date_Extra$Day = {ctor: 'Day'};
+var _justinmimbs$elm_date_extra$Date_Extra$diff = F3(
+	function (interval, date1, date2) {
+		var diffMS = _elm_lang$core$Basics$floor(
+			_elm_lang$core$Date$toTime(date2) - _elm_lang$core$Date$toTime(date1));
+		var _p18 = interval;
+		switch (_p18.ctor) {
+			case 'Millisecond':
+				return diffMS;
+			case 'Second':
+				return (diffMS / _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerSecond) | 0;
+			case 'Minute':
+				return (diffMS / _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerMinute) | 0;
+			case 'Hour':
+				return (diffMS / _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerHour) | 0;
+			case 'Day':
+				return (diffMS / _justinmimbs$elm_date_extra$Date_Extra_Facts$msPerDay) | 0;
+			case 'Month':
+				return A2(_justinmimbs$elm_date_extra$Date_Extra$diffMonth, date1, date2);
+			case 'Year':
+				return (A2(_justinmimbs$elm_date_extra$Date_Extra$diffMonth, date1, date2) / 12) | 0;
+			case 'Quarter':
+				return (A2(_justinmimbs$elm_date_extra$Date_Extra$diffMonth, date1, date2) / 3) | 0;
+			case 'Week':
+				return (A3(_justinmimbs$elm_date_extra$Date_Extra$diff, _justinmimbs$elm_date_extra$Date_Extra$Day, date1, date2) / 7) | 0;
+			default:
+				var _p19 = _p18;
+				return (A3(
+					_justinmimbs$elm_date_extra$Date_Extra$diff,
+					_justinmimbs$elm_date_extra$Date_Extra$Day,
+					A2(_justinmimbs$elm_date_extra$Date_Extra$floor, _p19, date1),
+					A2(_justinmimbs$elm_date_extra$Date_Extra$floor, _p19, date2)) / 7) | 0;
+		}
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$Hour = {ctor: 'Hour'};
+var _justinmimbs$elm_date_extra$Date_Extra$Minute = {ctor: 'Minute'};
+var _justinmimbs$elm_date_extra$Date_Extra$equalBy = F3(
+	function (interval, date1, date2) {
+		equalBy:
+		while (true) {
+			var _p20 = interval;
+			switch (_p20.ctor) {
+				case 'Millisecond':
+					return _elm_lang$core$Native_Utils.eq(
+						_elm_lang$core$Date$toTime(date1),
+						_elm_lang$core$Date$toTime(date2));
+				case 'Second':
+					return _elm_lang$core$Native_Utils.eq(
+						_elm_lang$core$Date$second(date1),
+						_elm_lang$core$Date$second(date2)) && A3(_justinmimbs$elm_date_extra$Date_Extra$equalBy, _justinmimbs$elm_date_extra$Date_Extra$Minute, date1, date2);
+				case 'Minute':
+					return _elm_lang$core$Native_Utils.eq(
+						_elm_lang$core$Date$minute(date1),
+						_elm_lang$core$Date$minute(date2)) && A3(_justinmimbs$elm_date_extra$Date_Extra$equalBy, _justinmimbs$elm_date_extra$Date_Extra$Hour, date1, date2);
+				case 'Hour':
+					return _elm_lang$core$Native_Utils.eq(
+						_elm_lang$core$Date$hour(date1),
+						_elm_lang$core$Date$hour(date2)) && A3(_justinmimbs$elm_date_extra$Date_Extra$equalBy, _justinmimbs$elm_date_extra$Date_Extra$Day, date1, date2);
+				case 'Day':
+					return _elm_lang$core$Native_Utils.eq(
+						_elm_lang$core$Date$day(date1),
+						_elm_lang$core$Date$day(date2)) && A3(_justinmimbs$elm_date_extra$Date_Extra$equalBy, _justinmimbs$elm_date_extra$Date_Extra$Month, date1, date2);
+				case 'Month':
+					return _elm_lang$core$Native_Utils.eq(
+						_elm_lang$core$Date$month(date1),
+						_elm_lang$core$Date$month(date2)) && A3(_justinmimbs$elm_date_extra$Date_Extra$equalBy, _justinmimbs$elm_date_extra$Date_Extra$Year, date1, date2);
+				case 'Year':
+					return _elm_lang$core$Native_Utils.eq(
+						_elm_lang$core$Date$year(date1),
+						_elm_lang$core$Date$year(date2));
+				case 'Quarter':
+					return _elm_lang$core$Native_Utils.eq(
+						_justinmimbs$elm_date_extra$Date_Extra$quarter(date1),
+						_justinmimbs$elm_date_extra$Date_Extra$quarter(date2)) && A3(_justinmimbs$elm_date_extra$Date_Extra$equalBy, _justinmimbs$elm_date_extra$Date_Extra$Year, date1, date2);
+				case 'Week':
+					return _elm_lang$core$Native_Utils.eq(
+						_justinmimbs$elm_date_extra$Date_Extra$weekNumber(date1),
+						_justinmimbs$elm_date_extra$Date_Extra$weekNumber(date2)) && _elm_lang$core$Native_Utils.eq(
+						_justinmimbs$elm_date_extra$Date_Extra$weekYear(date1),
+						_justinmimbs$elm_date_extra$Date_Extra$weekYear(date2));
+				default:
+					var _p21 = _p20;
+					var _v15 = _justinmimbs$elm_date_extra$Date_Extra$Day,
+						_v16 = A2(_justinmimbs$elm_date_extra$Date_Extra$floor, _p21, date1),
+						_v17 = A2(_justinmimbs$elm_date_extra$Date_Extra$floor, _p21, date2);
+					interval = _v15;
+					date1 = _v16;
+					date2 = _v17;
+					continue equalBy;
+			}
+		}
+	});
+var _justinmimbs$elm_date_extra$Date_Extra$Second = {ctor: 'Second'};
+var _justinmimbs$elm_date_extra$Date_Extra$Millisecond = {ctor: 'Millisecond'};
+
 var _krisajenkins$remotedata$RemoteData$isNotAsked = function (data) {
 	var _p0 = data;
 	if (_p0.ctor === 'NotAsked') {
@@ -12853,6 +14548,20 @@ var _user$project$Messages$CurrentWeatherResponse = function (a) {
 	return {ctor: 'CurrentWeatherResponse', _0: a};
 };
 
+var _user$project$Utils$getDateFromMaybe = function (h) {
+	var _p0 = h;
+	if (_p0.ctor === 'Just') {
+		return A2(_justinmimbs$elm_date_extra$Date_Extra$toFormattedString, 'E, h:mm a', _p0._0);
+	} else {
+		return '';
+	}
+};
+var _user$project$Utils$getHour = function (timeInt) {
+	return _user$project$Utils$getDateFromMaybe(
+		_justinmimbs$elm_date_extra$Date_Extra$fromIsoString(
+			_Bogdanp$elm_time$Time_DateTime$toISO8601(
+				_Bogdanp$elm_time$Time_DateTime$fromTimestamp(timeInt * 1000))));
+};
 var _user$project$Utils$getDay = function (timeInt) {
 	return _elm_lang$core$Basics$toString(
 		_Bogdanp$elm_time$Time_DateTime$weekday(
@@ -12920,7 +14629,7 @@ var _user$project$Current_View$currentView = function (current) {
 				_elm_lang$html$Html$div,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$id('current-card'),
+					_0: _elm_lang$html$Html_Attributes$id('currently-card'),
 					_1: {
 						ctor: '::',
 						_0: _elm_lang$html$Html_Attributes$class('col-12 md-col-6 flex flex-column items-center justify-center'),
@@ -12952,7 +14661,7 @@ var _user$project$Current_View$currentView = function (current) {
 									_elm_lang$html$Html$span,
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$id('current-card__icon'),
+										_0: _elm_lang$html$Html_Attributes$id('currently-card__icon'),
 										_1: {
 											ctor: '::',
 											_0: _elm_lang$html$Html_Attributes$classList(
@@ -12986,7 +14695,7 @@ var _user$project$Current_View$currentView = function (current) {
 										_elm_lang$html$Html$span,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$id('current-card__temp'),
+											_0: _elm_lang$html$Html_Attributes$id('currently-card__temp'),
 											_1: {ctor: '[]'}
 										},
 										{
@@ -13161,7 +14870,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 		_elm_lang$html$Html$li,
 		{
 			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$class('weather-card col-12 sm-col-12 md-col-6 lg-col-3 p1'),
+			_0: _elm_lang$html$Html_Attributes$class('daily-card col-12 sm-col-12 md-col-6 lg-col-3 p1'),
 			_1: {ctor: '[]'}
 		},
 		{
@@ -13170,7 +14879,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 				_elm_lang$html$Html$div,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('weather-card__inner'),
+					_0: _elm_lang$html$Html_Attributes$class('daily-card__inner'),
 					_1: {ctor: '[]'}
 				},
 				{
@@ -13179,7 +14888,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('weather-card__time mb2 h3'),
+							_0: _elm_lang$html$Html_Attributes$class('daily-card__time mb2 h3'),
 							_1: {ctor: '[]'}
 						},
 						{
@@ -13194,7 +14903,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 							_elm_lang$html$Html$div,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('weather-card__icon'),
+								_0: _elm_lang$html$Html_Attributes$class('daily-card__icon'),
 								_1: {ctor: '[]'}
 							},
 							{
@@ -13224,7 +14933,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 								_elm_lang$html$Html$p,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('weather-card__summary mt1'),
+									_0: _elm_lang$html$Html_Attributes$class('daily-card__summary mt1'),
 									_1: {ctor: '[]'}
 								},
 								{
@@ -13233,7 +14942,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 										_elm_lang$html$Html$span,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$class('weather-card__summary__low'),
+											_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__low'),
 											_1: {ctor: '[]'}
 										},
 										{
@@ -13249,7 +14958,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 											_elm_lang$html$Html$span,
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html_Attributes$class('weather-card__summary__slash'),
+												_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__slash'),
 												_1: {ctor: '[]'}
 											},
 											{
@@ -13263,7 +14972,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 												_elm_lang$html$Html$span,
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$class('weather-card__summary__high'),
+													_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__high'),
 													_1: {ctor: '[]'}
 												},
 												{
@@ -13733,6 +15442,88 @@ var _user$project$Hourly_Commands$fetchHourlyWeather = F2(
 					_user$project$Hourly_Decoder$hourlyListDecoder)));
 	});
 
+var _user$project$Hourly_View$hourRow = function (hour) {
+	return A2(
+		_elm_lang$html$Html$li,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('hourly-card col-12 p1'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('hourly-card__inner'),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('hourly-card__time h3'),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text(
+								_user$project$Utils$getHour(hour.time)),
+							_1: {ctor: '[]'}
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$div,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('hourly-card__icon'),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$span,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$classList(
+											{
+												ctor: '::',
+												_0: {
+													ctor: '_Tuple2',
+													_0: _user$project$Commands$iconClass(hour.icon),
+													_1: true
+												},
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									},
+									{ctor: '[]'}),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
+				}),
+			_1: {ctor: '[]'}
+		});
+};
+var _user$project$Hourly_View$hourlyList = function (hours) {
+	return A2(
+		_elm_lang$html$Html$ul,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('weather-card-list'),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('list-reset mt0 mb0 flex flex-wrap p1'),
+				_1: {ctor: '[]'}
+			}
+		},
+		A2(_elm_lang$core$List$map, _user$project$Hourly_View$hourRow, hours));
+};
 var _user$project$Hourly_View$page = function (current) {
 	var _p0 = current;
 	switch (_p0.ctor) {
@@ -13777,10 +15568,7 @@ var _user$project$Hourly_View$page = function (current) {
 					_1: {ctor: '[]'}
 				});
 		default:
-			return A2(
-				_elm_lang$html$Html$div,
-				{ctor: '[]'},
-				{ctor: '[]'});
+			return _user$project$Hourly_View$hourlyList(_p0._0);
 	}
 };
 var _user$project$Hourly_View$view = function (model) {
