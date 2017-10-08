@@ -1,0 +1,46 @@
+.hourly-card {
+  display: flex;
+
+  &__inner {
+    background-color: $color-white;
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    border-radius: 4px;
+    color: $color-primary;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.175);
+    transition: $easeInOut;
+
+    @media screen and (max-width: $sm) {
+      padding: 0.75rem;
+    }
+  }
+
+  &__time {
+    @media screen and (max-width: $md) {
+      margin: 0;
+      font-size: 1.2em;
+    }
+  }
+
+  &__icon {
+    font-size: 3em;
+
+    @media screen and (max-width: $md) {
+      font-size: 2em;
+    }
+  }
+
+  &:first-of-type {
+    .hourly-card__inner {
+      background-color: $color-tertiary;
+    }
+  }
+
+  @media screen and (max-width: $md) {
+    padding-bottom: 0;
+  }
+}

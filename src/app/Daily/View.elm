@@ -48,14 +48,14 @@ daysList days =
 
 dayRow : DailyWeather -> Html Msg
 dayRow day =
-    li [ class "weather-card col-12 sm-col-12 md-col-6 lg-col-3 p1" ]
+    li [ class "daily-card col-12 sm-col-12 md-col-6 lg-col-3 p1" ]
         [ div
-            [ class "weather-card__inner" ]
+            [ class "daily-card__inner" ]
             [ div
-                [ class "weather-card__time mb2 h3" ]
+                [ class "daily-card__time mb2 h3" ]
                 [ text (getDay day.time) ]
             , div
-                [ class "weather-card__icon" ]
+                [ class "daily-card__icon" ]
                 [ span
                     [ classList
                         [ ( iconClass day.icon, True ) ]
@@ -63,15 +63,15 @@ dayRow day =
                     []
                 ]
             , p
-                [ class "weather-card__summary mt1" ]
+                [ class "daily-card__summary mt1" ]
                 [ span
-                    [ class "weather-card__summary__low" ]
+                    [ class "daily-card__summary__low" ]
                     [ text (toString (ceiling day.temperatureLow)) ]
                 , span
-                    [ class "weather-card__summary__slash" ]
+                    [ class "daily-card__summary__slash" ]
                     [ text "/" ]
                 , span
-                    [ class "weather-card__summary__high" ]
+                    [ class "daily-card__summary__high" ]
                     [ text (toString (ceiling day.temperatureHigh)) ]
                 ]
             ]

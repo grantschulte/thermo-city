@@ -1,4 +1,4 @@
-.weather-card {
+.daily-card {
   display: flex;
 
   &__inner {
@@ -28,7 +28,7 @@
     @media screen and (max-width: $md) {
       margin: 0;
       width: 100px;
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
   }
 
@@ -67,7 +67,7 @@
   }
 
   &:first-of-type {
-    .weather-card__inner {
+    .daily-card__inner {
       background-color: $color-tertiary;
     }
   }

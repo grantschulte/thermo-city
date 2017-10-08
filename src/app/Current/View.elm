@@ -42,7 +42,7 @@ currentView current =
     div
         [ class "flex flex-wrap p2 mt0 mb0 items-center hc100" ]
         [ div
-            [ id "current-card"
+            [ id "currently-card"
             , class "col-12 md-col-6 flex flex-column items-center justify-center"
             ]
             [ div
@@ -51,7 +51,7 @@ currentView current =
             , div
                 []
                 [ span
-                    [ id "current-card__icon"
+                    [ id "currently-card__icon"
                     , classList
                         [ ( iconClass current.icon, True ) ]
                     ]
@@ -60,7 +60,7 @@ currentView current =
             , div
                 [ class "mt3" ]
                 [ span
-                    [ id "current-card__temp" ]
+                    [ id "currently-card__temp" ]
                     [ text (toString (ceiling current.temperature))
                     , span [ property "innerHTML" (string "&deg;") ] []
                     ]

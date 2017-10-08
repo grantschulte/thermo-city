@@ -1,5 +1,6 @@
 module Hourly.View exposing (..)
 
+import Commands exposing (iconClass)
 import Hourly.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -7,6 +8,7 @@ import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
+import Utils exposing (getHour)
 
 
 view : Model -> Html Msg
@@ -31,5 +33,34 @@ page current =
         Failure error ->
             div [ class "flex items-center hc100" ] [ text (toString error) ]
 
-        Success current ->
-            div [] []
+        Success hourly ->
+            hourlyList hourly
+
+
+hourlyList : List HourlyWeather -> Html Msg
+hourlyList hours =
+    ul
+        [ id "weather-card-list"
+        , class "list-reset mt0 mb0 flex flex-wrap p1"
+        ]
+        (List.map hourRow hours)
+
+
+hourRow : HourlyWeather -> Html Msg
+hourRow hour =
+    li [ class "hourly-card col-12 p1" ]
+        [ div
+            [ class "hourly-card__inner" ]
+            [ div
+                [ class "hourly-card__time h3" ]
+                [ text (getHour hour.time) ]
+            , div
+                [ class "hourly-card__icon" ]
+                [ span
+                    [ classList
+                        [ ( iconClass hour.icon, True ) ]
+                    ]
+                    []
+                ]
+            ]
+        ]
