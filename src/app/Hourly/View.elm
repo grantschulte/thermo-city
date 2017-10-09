@@ -4,6 +4,7 @@ import Commands exposing (iconClass)
 import Hourly.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Json.Encode exposing (string)
 import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
@@ -52,13 +53,22 @@ hourRow hour =
         [ div
             [ class "hourly-card__inner" ]
             [ div
-                [ class "hourly-card__time h3" ]
+                [ class "hourly-card__time h3 mr-auto" ]
                 [ text (getHour hour.time) ]
             , div
                 [ class "hourly-card__icon" ]
                 [ span
                     [ classList
                         [ ( iconClass hour.icon, True ) ]
+                    ]
+                    []
+                ]
+            , div
+                [ class "hourly-card__temp ml2" ]
+                [ span [] [ text (toString (ceiling hour.temperature)) ]
+                , span
+                    [ class "degrees"
+                    , property "innerHTML" (string "&deg;")
                     ]
                     []
                 ]

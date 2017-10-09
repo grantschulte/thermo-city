@@ -20,18 +20,23 @@
   }
 
   &__time {
-    @media screen and (max-width: $md) {
+    font-size: 1.2em;
+  }
+
+  &__temp {
+    font-size: 1.4em;
+    width: 42px;
+    text-align: right;
+
+    .degrees {
       margin: 0;
-      font-size: 1.2em;
+      font-size: 1.4em;
     }
   }
 
   &__icon {
-    font-size: 3em;
-
-    @media screen and (max-width: $md) {
-      font-size: 2em;
-    }
+    width: 32px;
+    font-size: 2em;
   }
 
   &:first-of-type {

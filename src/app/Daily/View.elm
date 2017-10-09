@@ -4,6 +4,7 @@ import Commands exposing (iconClass)
 import Daily.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Json.Encode exposing (string)
 import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
@@ -62,17 +63,29 @@ dayRow day =
                     ]
                     []
                 ]
-            , p
+            , div
                 [ class "daily-card__summary mt1" ]
                 [ span
                     [ class "daily-card__summary__low" ]
-                    [ text (toString (ceiling day.temperatureLow)) ]
+                    [ text (toString (ceiling day.temperatureLow))
+                    , span
+                        [ class "degrees"
+                        , property "innerHTML" (string "&deg;")
+                        ]
+                        []
+                    ]
                 , span
                     [ class "daily-card__summary__slash" ]
                     [ text "/" ]
                 , span
                     [ class "daily-card__summary__high" ]
-                    [ text (toString (ceiling day.temperatureHigh)) ]
+                    [ text (toString (ceiling day.temperatureHigh))
+                    , span
+                        [ class "degrees"
+                        , property "innerHTML" (string "&deg;")
+                        ]
+                        []
+                    ]
                 ]
             ]
         ]

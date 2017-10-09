@@ -27,7 +27,7 @@
   &__time {
     @media screen and (max-width: $md) {
       margin: 0;
-      width: 100px;
+      width: 60px;
       font-size: 1.2em;
     }
   }
@@ -41,7 +41,7 @@
 
     @media screen and (max-width: $md) {
       height: auto;
-      width: 100px;
+      width: 32px;
       font-size: 2em;
     }
   }
@@ -54,9 +54,14 @@
       font-size: 2em;
     }
 
+    .degrees {
+      margin: 0;
+      font-size: 1.4em;
+    }
+
     @media screen and (max-width: $md) {
       margin: 0;
-      width: 100px;
+      width: 92px;
       text-align: right;
 
       span {
