@@ -14548,6 +14548,18 @@ var _user$project$Messages$CurrentWeatherResponse = function (a) {
 	return {ctor: 'CurrentWeatherResponse', _0: a};
 };
 
+var _user$project$Utils$tempScaleSymbol = A2(
+	_elm_lang$html$Html$span,
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$class('degrees'),
+		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html$text('°'),
+		_1: {ctor: '[]'}
+	});
 var _user$project$Utils$getDateFromMaybe = function (h) {
 	var _p0 = h;
 	if (_p0.ctor === 'Just') {
@@ -14705,17 +14717,7 @@ var _user$project$Current_View$currentView = function (current) {
 													_elm_lang$core$Basics$ceiling(current.temperature))),
 											_1: {
 												ctor: '::',
-												_0: A2(
-													_elm_lang$html$Html$span,
-													{
-														ctor: '::',
-														_0: A2(
-															_elm_lang$html$Html_Attributes$property,
-															'innerHTML',
-															_elm_lang$core$Json_Encode$string('&deg;')),
-														_1: {ctor: '[]'}
-													},
-													{ctor: '[]'}),
+												_0: _user$project$Utils$tempScaleSymbol,
 												_1: {ctor: '[]'}
 											}
 										}),
@@ -15000,21 +15002,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 															_elm_lang$core$Basics$ceiling(day.temperatureHigh))),
 													_1: {
 														ctor: '::',
-														_0: A2(
-															_elm_lang$html$Html$span,
-															{
-																ctor: '::',
-																_0: _elm_lang$html$Html_Attributes$class('degrees'),
-																_1: {
-																	ctor: '::',
-																	_0: A2(
-																		_elm_lang$html$Html_Attributes$property,
-																		'innerHTML',
-																		_elm_lang$core$Json_Encode$string('&deg;')),
-																	_1: {ctor: '[]'}
-																}
-															},
-															{ctor: '[]'}),
+														_0: _user$project$Utils$tempScaleSymbol,
 														_1: {ctor: '[]'}
 													}
 												}),
@@ -15563,21 +15551,7 @@ var _user$project$Hourly_View$hourRow = function (hour) {
 										}),
 									_1: {
 										ctor: '::',
-										_0: A2(
-											_elm_lang$html$Html$span,
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html_Attributes$class('degrees'),
-												_1: {
-													ctor: '::',
-													_0: A2(
-														_elm_lang$html$Html_Attributes$property,
-														'innerHTML',
-														_elm_lang$core$Json_Encode$string('&deg;')),
-													_1: {ctor: '[]'}
-												}
-											},
-											{ctor: '[]'}),
+										_0: _user$project$Utils$tempScaleSymbol,
 										_1: {ctor: '[]'}
 									}
 								}),
