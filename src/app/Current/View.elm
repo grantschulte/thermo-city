@@ -4,11 +4,11 @@ import Commands exposing (iconClass)
 import Current.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
-import Json.Encode exposing (string)
 import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
+import Utils exposing (tempScaleSymbol)
 
 
 view : Model -> Html Msg
@@ -62,7 +62,7 @@ currentView current =
                 [ span
                     [ id "currently-card__temp" ]
                     [ text (toString (ceiling current.temperature))
-                    , span [ property "innerHTML" (string "&deg;") ] []
+                    , tempScaleSymbol
                     ]
                 ]
             ]

@@ -3,6 +3,9 @@ module Utils exposing (..)
 import Date exposing (..)
 import Date.Extra exposing (..)
 import Geolocation exposing (..)
+import Html exposing (..)
+import Html.Attributes exposing (..)
+import Messages exposing (..)
 import Time exposing (..)
 import Time.DateTime exposing (..)
 
@@ -35,3 +38,11 @@ getDateFromMaybe h =
 
         Nothing ->
             ""
+
+
+tempScaleSymbol : Html Msg
+tempScaleSymbol =
+    span
+        [ class "degrees"
+        ]
+        [ text "°" ]

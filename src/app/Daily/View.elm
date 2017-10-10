@@ -9,7 +9,7 @@ import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
-import Utils exposing (getDay)
+import Utils exposing (getDay, tempScaleSymbol)
 
 
 view : Model -> Html Msg
@@ -80,11 +80,7 @@ dayRow day =
                 , span
                     [ class "daily-card__summary__high" ]
                     [ text (toString (ceiling day.temperatureHigh))
-                    , span
-                        [ class "degrees"
-                        , property "innerHTML" (string "&deg;")
-                        ]
-                        []
+                    , tempScaleSymbol
                     ]
                 ]
             ]
