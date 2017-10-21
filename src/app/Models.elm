@@ -12,6 +12,11 @@ import RemoteData exposing (..)
 -- TYPES
 
 
+type Scale
+    = C
+    | F
+
+
 type Page
     = CurrentPage
     | DailyPage
@@ -34,6 +39,7 @@ type alias Model =
     , hourly : WebData (List HourlyWeather)
     , location : Result Geolocation.Error (Maybe Location)
     , page : Page
+    , tempScale : Scale
     }
 
 
@@ -50,4 +56,5 @@ initialModel config =
     , hourly = RemoteData.Loading
     , location = Ok Nothing
     , page = GeoDataPage
+    , tempScale = C
     }

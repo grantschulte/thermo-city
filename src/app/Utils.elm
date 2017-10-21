@@ -46,3 +46,8 @@ tempScaleSymbol =
         [ class "degrees"
         ]
         [ text "°" ]
+
+
+toCelsius : Float -> Float
+toCelsius temp =
+    (temp - 32) / 1.8

@@ -8,7 +8,7 @@ import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
-import Utils exposing (tempScaleSymbol)
+import Utils exposing (tempScaleSymbol, toCelsius)
 
 
 view : Model -> Html Msg
@@ -17,12 +17,12 @@ view model =
         [ id "page-current"
         , class "page"
         ]
-        [ page model.current
+        [ page model.current model.tempScale
         ]
 
 
-page : WebData CurrentWeather -> Html Msg
-page current =
+page : WebData CurrentWeather -> Scale -> Html Msg
+page current tempScale =
     case current of
         NotAsked ->
             div [ class "flex items-center hc100" ] [ loader ]
@@ -34,11 +34,11 @@ page current =
             div [ class "flex items-center hc100" ] [ text (toString error) ]
 
         Success current ->
-            currentView current
+            currentView current tempScale
 
 
-currentView : CurrentWeather -> Html Msg
-currentView current =
+currentView : CurrentWeather -> Scale -> Html Msg
+currentView current tempScale =
     div
         [ class "flex flex-wrap p2 mt0 mb0 items-center hc100" ]
         [ div
@@ -61,7 +61,7 @@ currentView current =
                 [ class "mt3" ]
                 [ span
                     [ id "currently-card__temp" ]
-                    [ text (toString (ceiling current.temperature))
+                    [ text (makeTemp current.temperature tempScale)
                     , tempScaleSymbol
                     ]
                 ]
@@ -70,3 +70,18 @@ currentView current =
             [ class "col-12 md-col-6 flex items-center justify-center" ]
             []
         ]
+
+
+makeTemp : Float -> Scale -> String
+makeTemp temp tempScale =
+    case tempScale of
+        C ->
+            temp
+                |> toCelsius
+                |> ceiling
+                |> toString
+
+        F ->
+            temp
+                |> ceiling
+                |> toString
