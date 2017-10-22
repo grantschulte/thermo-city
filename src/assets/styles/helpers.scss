@@ -158,3 +158,45 @@
     color: darken($color-accent, 10%);
   }
 }
+
+// Buttons
+
+.btn-primary {
+  background-color: darken($color-primary, 5%);
+
+  &.active {
+    background-color: darken($color-primary, 15%);
+  }
+}
+
+.btn-secondary {
+  background-color: darken($color-secondary, 5%);
+
+  &.active {
+    background-color: darken($color-secondary, 15%);
+  }
+}
+
+.btn-tertiary {
+  background-color: darken($color-tertiary, 5%);
+
+  &.active {
+    background-color: darken($color-tertiary, 15%);
+  }
+}
+
+.btn-accent {
+  background-color: darken($color-accent, 5%);
+
+  &.active {
+    background-color: darken($color-accent, 15%);
+  }
+}
+
+.btn-accent2 {
+  background-color: darken($color-accent2, 5%);
+
+  &.active {
+    background-color: darken($color-accent2, 15%);
+  }
+}

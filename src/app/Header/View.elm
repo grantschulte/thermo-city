@@ -9,6 +9,7 @@ import Html.Events exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
+import Utils exposing (tempScaleSymbol)
 
 
 view : Model -> Html Msg
@@ -44,7 +45,27 @@ view model =
                 [ class "col-12 flex justify-end right-align" ]
                 [ button
                     [ classList
-                        [ ( "btn btn-small bg-primary", True )
+                        [ ( "btn btn-small btn-secondary mr1 xs-hide", True )
+                        , ( "active", model.tempScale == C )
+                        ]
+                    , onClick (SetTempScale C)
+                    ]
+                    [ text "C"
+                    , tempScaleSymbol
+                    ]
+                , button
+                    [ classList
+                        [ ( "btn btn-small btn-secondary mr1 xs-hide", True )
+                        , ( "active", model.tempScale == F )
+                        ]
+                    , onClick (SetTempScale F)
+                    ]
+                    [ text "F"
+                    , tempScaleSymbol
+                    ]
+                , button
+                    [ classList
+                        [ ( "btn btn-small btn-secondary", True )
                         , ( "active", model.page == CurrentPage )
                         ]
                     , onClick (SetPage CurrentPage)
@@ -52,7 +73,7 @@ view model =
                     [ text "Currently" ]
                 , button
                     [ classList
-                        [ ( "btn btn-small bg-primary ml1", True )
+                        [ ( "btn btn-small btn-secondary ml1", True )
                         , ( "active", model.page == DailyPage )
                         ]
                     , onClick (SetPage DailyPage)
@@ -60,7 +81,7 @@ view model =
                     [ text "Daily" ]
                 , button
                     [ classList
-                        [ ( "btn btn-small bg-primary ml1", True )
+                        [ ( "btn btn-small btn-secondary ml1", True )
                         , ( "active", model.page == HourlyPage )
                         ]
                     , onClick (SetPage HourlyPage)

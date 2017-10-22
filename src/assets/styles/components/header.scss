@@ -13,12 +13,7 @@
 
   &__buttons {
     button {
-      background-color: darken($color-secondary, 5%);
       font-size: 0.8em;
-
-      &.active {
-        background-color: darken($color-secondary, 15%);
-      }
     }
 
     @media screen and (max-width: 40em) {

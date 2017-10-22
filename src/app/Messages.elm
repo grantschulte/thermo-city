@@ -19,3 +19,4 @@ type Msg
     | GeoDataResponse (WebData GeoData)
     | HourlyWeatherResponse (WebData (List HourlyWeather))
     | SetPage Page
+    | SetTempScale Scale

@@ -52,6 +52,9 @@ update msg model =
         SetPage page ->
             ( { model | page = page }, setPageCmd model page )
 
+        SetTempScale tempScale ->
+            ( { model | tempScale = tempScale }, Cmd.none )
+
 
 setPageCmd : Model -> Page -> Cmd Msg
 setPageCmd model page =

@@ -56,5 +56,5 @@ initialModel config =
     , hourly = RemoteData.Loading
     , location = Ok Nothing
     , page = GeoDataPage
-    , tempScale = C
+    , tempScale = F
     }
