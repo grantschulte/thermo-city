@@ -9,7 +9,7 @@ import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
-import Utils exposing (getDay, tempScaleSymbol)
+import Utils exposing (getDay, makeTemp, tempScaleSymbol)
 
 
 view : Model -> Html Msg
@@ -18,12 +18,12 @@ view model =
         [ id "page-daily"
         , class "page"
         ]
-        [ page model.daily
+        [ page model.daily model.tempScale
         ]
 
 
-page : WebData (List DailyWeather) -> Html Msg
-page daily =
+page : WebData (List DailyWeather) -> Scale -> Html Msg
+page daily tempScale =
     case daily of
         NotAsked ->
             div [ class "flex items-center hc100" ] [ loader ]
@@ -35,20 +35,20 @@ page daily =
             div [ class "flex items-center hc100" ] [ text (toString error) ]
 
         Success days ->
-            daysList days
+            daysList days tempScale
 
 
-daysList : List DailyWeather -> Html Msg
-daysList days =
+daysList : List DailyWeather -> Scale -> Html Msg
+daysList days tempScale =
     ul
         [ id "weather-card-list"
         , class "list-reset mt0 mb0 flex flex-wrap p1"
         ]
-        (List.map dayRow days)
+        (List.map (dayRow tempScale) days)
 
 
-dayRow : DailyWeather -> Html Msg
-dayRow day =
+dayRow : Scale -> DailyWeather -> Html Msg
+dayRow tempScale day =
     li [ class "daily-card col-12 sm-col-12 md-col-6 lg-col-3 p1" ]
         [ div
             [ class "daily-card__inner" ]
@@ -67,7 +67,7 @@ dayRow day =
                 [ class "daily-card__summary mt1" ]
                 [ span
                     [ class "daily-card__summary__low" ]
-                    [ text (toString (ceiling day.temperatureLow))
+                    [ text (makeTemp day.temperatureLow tempScale)
                     , span
                         [ class "degrees"
                         , property "innerHTML" (string "&deg;")
@@ -79,7 +79,7 @@ dayRow day =
                     [ text "/" ]
                 , span
                     [ class "daily-card__summary__high" ]
-                    [ text (toString (ceiling day.temperatureHigh))
+                    [ text (makeTemp day.temperatureHigh tempScale)
                     , tempScaleSymbol
                     ]
                 ]

@@ -8,7 +8,7 @@ import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
-import Utils exposing (getHour, tempScaleSymbol)
+import Utils exposing (getHour, makeTemp, tempScaleSymbol)
 
 
 view : Model -> Html Msg
@@ -17,12 +17,12 @@ view model =
         [ id "page-hourly"
         , class "page"
         ]
-        [ page model.hourly
+        [ page model.hourly model.tempScale
         ]
 
 
-page : WebData (List HourlyWeather) -> Html Msg
-page current =
+page : WebData (List HourlyWeather) -> Scale -> Html Msg
+page current tempScale =
     case current of
         NotAsked ->
             div [ class "flex items-center hc100" ] [ loader ]
@@ -34,20 +34,20 @@ page current =
             div [ class "flex items-center hc100" ] [ text (toString error) ]
 
         Success hourly ->
-            hourlyList hourly
+            hourlyList hourly tempScale
 
 
-hourlyList : List HourlyWeather -> Html Msg
-hourlyList hours =
+hourlyList : List HourlyWeather -> Scale -> Html Msg
+hourlyList hours tempScale =
     ul
         [ id "weather-card-list"
         , class "list-reset mt0 mb0 flex flex-wrap p1"
         ]
-        (List.map hourRow hours)
+        (List.map (hourRow tempScale) hours)
 
 
-hourRow : HourlyWeather -> Html Msg
-hourRow hour =
+hourRow : Scale -> HourlyWeather -> Html Msg
+hourRow tempScale hour =
     li [ class "hourly-card col-12 p1" ]
         [ div
             [ class "hourly-card__inner" ]
@@ -64,7 +64,7 @@ hourRow hour =
                 ]
             , div
                 [ class "hourly-card__temp ml2" ]
-                [ span [] [ text (toString (ceiling hour.temperature)) ]
+                [ span [] [ text (makeTemp hour.temperature tempScale) ]
                 , tempScaleSymbol
                 ]
             ]

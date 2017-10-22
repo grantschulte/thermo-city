@@ -8,7 +8,7 @@ import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
-import Utils exposing (tempScaleSymbol, toCelsius)
+import Utils exposing (makeTemp, tempScaleSymbol, toCelsius)
 
 
 view : Model -> Html Msg
@@ -70,18 +70,3 @@ currentView current tempScale =
             [ class "col-12 md-col-6 flex items-center justify-center" ]
             []
         ]
-
-
-makeTemp : Float -> Scale -> String
-makeTemp temp tempScale =
-    case tempScale of
-        C ->
-            temp
-                |> toCelsius
-                |> ceiling
-                |> toString
-
-        F ->
-            temp
-                |> ceiling
-                |> toString

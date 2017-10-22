@@ -6,6 +6,7 @@ import Geolocation exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Messages exposing (..)
+import Models exposing (..)
 import Time exposing (..)
 import Time.DateTime exposing (..)
 
@@ -51,3 +52,18 @@ tempScaleSymbol =
 toCelsius : Float -> Float
 toCelsius temp =
     (temp - 32) / 1.8
+
+
+makeTemp : Float -> Scale -> String
+makeTemp temp tempScale =
+    case tempScale of
+        C ->
+            temp
+                |> toCelsius
+                |> Basics.ceiling
+                |> toString
+
+        F ->
+            temp
+                |> Basics.ceiling
+                |> toString
