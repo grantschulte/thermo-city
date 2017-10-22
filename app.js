@@ -771,7 +771,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  margin: 0;\n  padding: 0;\n  -webkit-font-smoothing: antialiased; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 16px;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  line-height: 1;\n  color: #FAFFFD;\n  background-color: #57B8FF; }\n\na {\n  text-decoration: none;\n  color: #FAFFFD;\n  transition: all 200ms ease-in-out; }\n  a:hover {\n    color: #c7ffe9;\n    text-decoration: none; }\n\n#weather-card-list {\n  height: calc(100% - 42px); }\n  @media screen and (max-width: 40em) {\n    #weather-card-list {\n      height: auto; } }\n  @media screen and (max-width: 52em) {\n    #weather-card-list {\n      padding-bottom: 1rem; } }\n\n.btn {\n  display: inline-block;\n  padding: 0.2em 1em;\n  font-size: 1em;\n  font-weight: normal;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  text-align: center;\n  border: none;\n  border-radius: 2px;\n  transition: all 200ms ease-in-out; }\n  .btn:focus, .btn:active {\n    outline: 0;\n    border: none;\n    box-shadow: none; }\n  .btn--small {\n    height: 28px;\n    font-size: 0.6em;\n    font-weight: 700; }\n  .btn--large {\n    height: 36px;\n    font-size: 1em; }\n\n.h100 {\n  height: 100%; }\n\n.hc100 {\n  height: calc(100% - 42px); }\n  @media screen and (max-width: 40em) {\n    .hc100 {\n      height: calc(100% - 84px); } }\n\n.icon--sm {\n  font-size: 1em; }\n\n.icon--md {\n  font-size: 2em; }\n\n.icon--lg {\n  font-size: 3em; }\n\n.bg-primary {\n  background-color: #342E37;\n  color: #FAFFFD; }\n  .bg-primary:hover, .bg-primary.active {\n    background-color: #272229; }\n  .bg-primary:active, .bg-primary:focus {\n    background-color: #1a171b; }\n\n.bg-secondary {\n  background-color: #57B8FF;\n  color: #FAFFFD; }\n  .bg-secondary:hover, .bg-secondary.active {\n    background-color: #3eadff; }\n  .bg-secondary:active, .bg-secondary:focus {\n    background-color: #24a2ff; }\n\n.bg-accent {\n  background-color: #FA824C;\n  color: #FAFFFD; }\n  .bg-accent:hover, .bg-accent.active {\n    background-color: #f97133; }\n  .bg-accent:active, .bg-accent:focus {\n    background-color: #f95f1a; }\n\n.border-primary {\n  border: 1px solid #342E37; }\n  .border-primary:hover, .border-primary.active {\n    border-color: #272229; }\n  .border-primary:active, .border-primary:focus {\n    border-color: #1a171b; }\n\n.border-secondary {\n  border: 1px solid #57B8FF; }\n  .border-secondary:hover, .border-secondary.active {\n    border-color: #3eadff; }\n  .border-secondary:active, .border-secondary:focus {\n    border-color: #24a2ff; }\n\n.border-accent {\n  border: 1px solid #FA824C; }\n  .border-accent:hover, .border-accent.active {\n    border-color: #f97133; }\n  .border-accent:active, .border-accent:focus {\n    border-color: #f95f1a; }\n\n.color-primary {\n  color: #342E37; }\n  .color-primary:hover, .color-primary.active {\n    color: #272229; }\n  .color-primary:active, .color-primary:focus {\n    color: #1a171b; }\n\n.color-secondary {\n  color: #57B8FF; }\n  .color-secondary:hover, .color-secondary.active {\n    color: #3eadff; }\n  .color-secondary:active, .color-secondary:focus {\n    color: #24a2ff; }\n\n.color-accent {\n  color: #FA824C; }\n  .color-accent:hover, .color-accent.active {\n    color: #f97133; }\n  .color-accent:active, .color-accent:focus {\n    color: #f95f1a; }\n\n@font-face {\n  font-family: 'climacons';\n  src: url(" + __webpack_require__(9) + ") format(\"truetype\"), url(" + __webpack_require__(10) + ") format(\"woff\"), url(" + __webpack_require__(11) + "#climacons) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n[class^=\"weather-icon-\"], [class*=\" weather-icon-\"] {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'climacons' !important;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.weather-icon-cloud-download:before {\n  content: \"\\E900\"; }\n\n.weather-icon-cloud-drizzle-alt:before {\n  content: \"\\E901\"; }\n\n.weather-icon-cloud-drizzle-moon-alt:before {\n  content: \"\\E902\"; }\n\n.weather-icon-cloud-drizzle-moon:before {\n  content: \"\\E903\"; }\n\n.weather-icon-cloud-drizzle-sun-alt:before {\n  content: \"\\E904\"; }\n\n.weather-icon-cloud-drizzle-sun:before {\n  content: \"\\E905\"; }\n\n.weather-icon-cloud-drizzle:before {\n  content: \"\\E906\"; }\n\n.weather-icon-cloud-fog-alt:before {\n  content: \"\\E907\"; }\n\n.weather-icon-cloud-fog-moon-alt:before {\n  content: \"\\E908\"; }\n\n.weather-icon-cloud-fog-moon:before {\n  content: \"\\E909\"; }\n\n.weather-icon-cloud-fog-sun-alt:before {\n  content: \"\\E90A\"; }\n\n.weather-icon-cloud-fog-sun:before {\n  content: \"\\E90B\"; }\n\n.weather-icon-cloud-fog:before {\n  content: \"\\E90C\"; }\n\n.weather-icon-cloud-hail-alt:before {\n  content: \"\\E90D\"; }\n\n.weather-icon-cloud-hail-moon-alt:before {\n  content: \"\\E90E\"; }\n\n.weather-icon-cloud-hail-moon:before {\n  content: \"\\E90F\"; }\n\n.weather-icon-cloud-hail-sun-alt:before {\n  content: \"\\E910\"; }\n\n.weather-icon-cloud-hail-sun:before {\n  content: \"\\E911\"; }\n\n.weather-icon-cloud-hail:before {\n  content: \"\\E912\"; }\n\n.weather-icon-cloud-lightning-moon:before {\n  content: \"\\E913\"; }\n\n.weather-icon-cloud-lightning-sun:before {\n  content: \"\\E914\"; }\n\n.weather-icon-cloud-lightning:before {\n  content: \"\\E915\"; }\n\n.weather-icon-cloud-moon:before {\n  content: \"\\E916\"; }\n\n.weather-icon-cloud-rain-alt:before {\n  content: \"\\E917\"; }\n\n.weather-icon-cloud-rain-moon-alt:before {\n  content: \"\\E918\"; }\n\n.weather-icon-cloud-rain-moon:before {\n  content: \"\\E919\"; }\n\n.weather-icon-cloud-rain-sun-alt:before {\n  content: \"\\E91A\"; }\n\n.weather-icon-cloud-rain-sun:before {\n  content: \"\\E91B\"; }\n\n.weather-icon-cloud-rain:before {\n  content: \"\\E91C\"; }\n\n.weather-icon-cloud-refresh:before {\n  content: \"\\E91D\"; }\n\n.weather-icon-cloud-snow-alt:before {\n  content: \"\\E91E\"; }\n\n.weather-icon-cloud-snow-moon-alt:before {\n  content: \"\\E91F\"; }\n\n.weather-icon-cloud-snow-moon:before {\n  content: \"\\E920\"; }\n\n.weather-icon-cloud-snow-sun-alt:before {\n  content: \"\\E921\"; }\n\n.weather-icon-cloud-snow-sun:before {\n  content: \"\\E922\"; }\n\n.weather-icon-cloud-snow:before {\n  content: \"\\E923\"; }\n\n.weather-icon-cloud-sun:before {\n  content: \"\\E924\"; }\n\n.weather-icon-cloud-upload:before {\n  content: \"\\E925\"; }\n\n.weather-icon-cloud-wind-moon:before {\n  content: \"\\E926\"; }\n\n.weather-icon-cloud-wind-sun:before {\n  content: \"\\E927\"; }\n\n.weather-icon-cloud-wind:before {\n  content: \"\\E928\"; }\n\n.weather-icon-cloud:before {\n  content: \"\\E929\"; }\n\n.weather-icon-compass-east:before {\n  content: \"\\E92A\"; }\n\n.weather-icon-compass-north:before {\n  content: \"\\E92B\"; }\n\n.weather-icon-compass-south:before {\n  content: \"\\E92C\"; }\n\n.weather-icon-compass-west:before {\n  content: \"\\E92D\"; }\n\n.weather-icon-compass:before {\n  content: \"\\E92E\"; }\n\n.weather-icon-degrees-celcius:before {\n  content: \"\\E92F\"; }\n\n.weather-icon-degrees-fahrenheit:before {\n  content: \"\\E930\"; }\n\n.weather-icon-moon-first-quarter:before {\n  content: \"\\E931\"; }\n\n.weather-icon-moon-full:before {\n  content: \"\\E932\"; }\n\n.weather-icon-moon-last-quarter:before {\n  content: \"\\E933\"; }\n\n.weather-icon-moon-new:before {\n  content: \"\\E934\"; }\n\n.weather-icon-moon-waning-crescent:before {\n  content: \"\\E935\"; }\n\n.weather-icon-moon-waning-gibbous:before {\n  content: \"\\E936\"; }\n\n.weather-icon-moon-waxing-crescent:before {\n  content: \"\\E937\"; }\n\n.weather-icon-moon-waxing-gibbous:before {\n  content: \"\\E938\"; }\n\n.weather-icon-moon:before {\n  content: \"\\E939\"; }\n\n.weather-icon-shades:before {\n  content: \"\\E93A\"; }\n\n.weather-icon-snowflake:before {\n  content: \"\\E93B\"; }\n\n.weather-icon-sun-low:before {\n  content: \"\\E93C\"; }\n\n.weather-icon-sun-lower:before {\n  content: \"\\E93D\"; }\n\n.weather-icon-sun:before {\n  content: \"\\E93E\"; }\n\n.weather-icon-sunrise:before {\n  content: \"\\E93F\"; }\n\n.weather-icon-sunset:before {\n  content: \"\\E940\"; }\n\n.weather-icon-thermometer-25:before {\n  content: \"\\E941\"; }\n\n.weather-icon-thermometer-50:before {\n  content: \"\\E942\"; }\n\n.weather-icon-thermometer-75:before {\n  content: \"\\E943\"; }\n\n.weather-icon-thermometer-100:before {\n  content: \"\\E944\"; }\n\n.weather-icon-thermometer-zero:before {\n  content: \"\\E945\"; }\n\n.weather-icon-thermometer:before {\n  content: \"\\E946\"; }\n\n.weather-icon-tornado:before {\n  content: \"\\E947\"; }\n\n.weather-icon-umbrella:before {\n  content: \"\\E948\"; }\n\n.weather-icon-wind:before {\n  content: \"\\E949\"; }\n\n/**\n * Components\n */\n#loader,\n#loader:after {\n  border-radius: 50%;\n  width: 10em;\n  height: 10em; }\n\n#loader {\n  margin: 30px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #FFFFFF;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear; }\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n#header__logo a {\n  overflow: hidden; }\n\n#header__logo__location-name {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\n#header__buttons button {\n  background-color: #3eadff;\n  font-size: 0.8em; }\n  #header__buttons button.active {\n    background-color: #0b98ff; }\n\n@media screen and (max-width: 40em) {\n  #header__buttons {\n    margin-top: 0.8em; }\n    #header__buttons button {\n      width: 50%;\n      height: 36px;\n      font-size: 0.9em; } }\n\n.daily-card {\n  display: flex; }\n  .daily-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .daily-card__inner {\n        padding: 0.75rem; } }\n    @media screen and (max-width: 52em) {\n      .daily-card__inner {\n        flex-direction: row;\n        justify-content: space-between; } }\n  @media screen and (max-width: 52em) {\n    .daily-card__time {\n      margin: 0;\n      width: 60px;\n      font-size: 1.2em; } }\n  .daily-card__icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100px;\n    font-size: 80px; }\n    @media screen and (max-width: 52em) {\n      .daily-card__icon {\n        height: auto;\n        width: 32px;\n        font-size: 2em; } }\n  .daily-card__summary {\n    margin-top: 1em; }\n    .daily-card__summary span {\n      margin: 0.2em;\n      font-size: 2em; }\n    .daily-card__summary .degrees {\n      margin: 0;\n      font-size: 1.4em; }\n    @media screen and (max-width: 52em) {\n      .daily-card__summary {\n        margin: 0;\n        width: 92px;\n        text-align: right; }\n        .daily-card__summary span {\n          margin: 0;\n          font-size: 1.4em; } }\n  .daily-card:first-of-type .daily-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .daily-card {\n      padding-bottom: 0; } }\n\n.hourly-card {\n  display: flex; }\n  .hourly-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .hourly-card__inner {\n        padding: 0.75rem; } }\n  .hourly-card__time {\n    font-size: 1.2em; }\n  .hourly-card__temp {\n    font-size: 1.4em;\n    width: 42px;\n    text-align: right; }\n    .hourly-card__temp .degrees {\n      margin: 0;\n      font-size: 1.4em; }\n  .hourly-card__icon {\n    width: 32px;\n    font-size: 2em; }\n  .hourly-card:first-of-type .hourly-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .hourly-card {\n      padding-bottom: 0; } }\n\n#currently-card {\n  background-color: #FAFFFD;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  padding: 1em;\n  border-radius: 4px;\n  color: #342E37;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n  transition: all 200ms ease-in-out; }\n  #currently-card__icon {\n    font-size: 8em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__icon {\n        font-size: 12em; } }\n  #currently-card__temp {\n    font-size: 4em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__temp {\n        font-size: 6em; } }\n  @media screen and (max-width: 40em) {\n    #currently-card {\n      padding: 0.75rem; } }\n\n/**\n * Themes\n */\n#wrapper.theme-night {\n  background-color: #342E37; }\n  #wrapper.theme-night a:hover {\n    color: #57B8FF; }\n  #wrapper.theme-night #header button {\n    background-color: #1a171b; }\n    #wrapper.theme-night #header button.active {\n      background-color: #24a2ff; }\n", ""]);
+exports.push([module.i, "/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  margin: 0;\n  padding: 0;\n  -webkit-font-smoothing: antialiased; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 16px;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  line-height: 1;\n  color: #FAFFFD;\n  background-color: #57B8FF; }\n\na {\n  text-decoration: none;\n  color: #FAFFFD;\n  transition: all 200ms ease-in-out; }\n  a:hover {\n    color: #c7ffe9;\n    text-decoration: none; }\n\n#weather-card-list {\n  height: calc(100% - 42px); }\n  @media screen and (max-width: 40em) {\n    #weather-card-list {\n      height: auto; } }\n  @media screen and (max-width: 52em) {\n    #weather-card-list {\n      padding-bottom: 1rem; } }\n\n.btn {\n  display: inline-block;\n  padding: 0.2em 1em;\n  font-size: 1em;\n  font-weight: normal;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  text-align: center;\n  border: none;\n  border-radius: 2px;\n  transition: all 200ms ease-in-out; }\n  .btn:focus, .btn:active {\n    outline: 0;\n    border: none;\n    box-shadow: none; }\n  .btn--small {\n    height: 28px;\n    font-size: 0.6em;\n    font-weight: 700; }\n  .btn--large {\n    height: 36px;\n    font-size: 1em; }\n\n.h100 {\n  height: 100%; }\n\n.hc100 {\n  height: calc(100% - 42px); }\n  @media screen and (max-width: 40em) {\n    .hc100 {\n      height: calc(100% - 84px); } }\n\n.icon--sm {\n  font-size: 1em; }\n\n.icon--md {\n  font-size: 2em; }\n\n.icon--lg {\n  font-size: 3em; }\n\n.bg-primary {\n  background-color: #342E37;\n  color: #FAFFFD; }\n  .bg-primary:hover, .bg-primary.active {\n    background-color: #272229; }\n  .bg-primary:active, .bg-primary:focus {\n    background-color: #1a171b; }\n\n.bg-secondary {\n  background-color: #57B8FF;\n  color: #FAFFFD; }\n  .bg-secondary:hover, .bg-secondary.active {\n    background-color: #3eadff; }\n  .bg-secondary:active, .bg-secondary:focus {\n    background-color: #24a2ff; }\n\n.bg-accent {\n  background-color: #FA824C;\n  color: #FAFFFD; }\n  .bg-accent:hover, .bg-accent.active {\n    background-color: #f97133; }\n  .bg-accent:active, .bg-accent:focus {\n    background-color: #f95f1a; }\n\n.border-primary {\n  border: 1px solid #342E37; }\n  .border-primary:hover, .border-primary.active {\n    border-color: #272229; }\n  .border-primary:active, .border-primary:focus {\n    border-color: #1a171b; }\n\n.border-secondary {\n  border: 1px solid #57B8FF; }\n  .border-secondary:hover, .border-secondary.active {\n    border-color: #3eadff; }\n  .border-secondary:active, .border-secondary:focus {\n    border-color: #24a2ff; }\n\n.border-accent {\n  border: 1px solid #FA824C; }\n  .border-accent:hover, .border-accent.active {\n    border-color: #f97133; }\n  .border-accent:active, .border-accent:focus {\n    border-color: #f95f1a; }\n\n.color-primary {\n  color: #342E37; }\n  .color-primary:hover, .color-primary.active {\n    color: #272229; }\n  .color-primary:active, .color-primary:focus {\n    color: #1a171b; }\n\n.color-secondary {\n  color: #57B8FF; }\n  .color-secondary:hover, .color-secondary.active {\n    color: #3eadff; }\n  .color-secondary:active, .color-secondary:focus {\n    color: #24a2ff; }\n\n.color-accent {\n  color: #FA824C; }\n  .color-accent:hover, .color-accent.active {\n    color: #f97133; }\n  .color-accent:active, .color-accent:focus {\n    color: #f95f1a; }\n\n.btn-primary {\n  background-color: #272229; }\n  .btn-primary.active {\n    background-color: #0d0b0d; }\n\n.btn-secondary {\n  background-color: #3eadff; }\n  .btn-secondary.active {\n    background-color: #0b98ff; }\n\n.btn-tertiary {\n  background-color: #ffe433; }\n  .btn-tertiary.active {\n    background-color: #ffdc00; }\n\n.btn-accent {\n  background-color: #f97133; }\n  .btn-accent.active {\n    background-color: #f35007; }\n\n.btn-accent2 {\n  background-color: #f2e356; }\n  .btn-accent2.active {\n    background-color: #efdb27; }\n\n@font-face {\n  font-family: 'climacons';\n  src: url(" + __webpack_require__(9) + ") format(\"truetype\"), url(" + __webpack_require__(10) + ") format(\"woff\"), url(" + __webpack_require__(11) + "#climacons) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n[class^=\"weather-icon-\"], [class*=\" weather-icon-\"] {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'climacons' !important;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.weather-icon-cloud-download:before {\n  content: \"\\E900\"; }\n\n.weather-icon-cloud-drizzle-alt:before {\n  content: \"\\E901\"; }\n\n.weather-icon-cloud-drizzle-moon-alt:before {\n  content: \"\\E902\"; }\n\n.weather-icon-cloud-drizzle-moon:before {\n  content: \"\\E903\"; }\n\n.weather-icon-cloud-drizzle-sun-alt:before {\n  content: \"\\E904\"; }\n\n.weather-icon-cloud-drizzle-sun:before {\n  content: \"\\E905\"; }\n\n.weather-icon-cloud-drizzle:before {\n  content: \"\\E906\"; }\n\n.weather-icon-cloud-fog-alt:before {\n  content: \"\\E907\"; }\n\n.weather-icon-cloud-fog-moon-alt:before {\n  content: \"\\E908\"; }\n\n.weather-icon-cloud-fog-moon:before {\n  content: \"\\E909\"; }\n\n.weather-icon-cloud-fog-sun-alt:before {\n  content: \"\\E90A\"; }\n\n.weather-icon-cloud-fog-sun:before {\n  content: \"\\E90B\"; }\n\n.weather-icon-cloud-fog:before {\n  content: \"\\E90C\"; }\n\n.weather-icon-cloud-hail-alt:before {\n  content: \"\\E90D\"; }\n\n.weather-icon-cloud-hail-moon-alt:before {\n  content: \"\\E90E\"; }\n\n.weather-icon-cloud-hail-moon:before {\n  content: \"\\E90F\"; }\n\n.weather-icon-cloud-hail-sun-alt:before {\n  content: \"\\E910\"; }\n\n.weather-icon-cloud-hail-sun:before {\n  content: \"\\E911\"; }\n\n.weather-icon-cloud-hail:before {\n  content: \"\\E912\"; }\n\n.weather-icon-cloud-lightning-moon:before {\n  content: \"\\E913\"; }\n\n.weather-icon-cloud-lightning-sun:before {\n  content: \"\\E914\"; }\n\n.weather-icon-cloud-lightning:before {\n  content: \"\\E915\"; }\n\n.weather-icon-cloud-moon:before {\n  content: \"\\E916\"; }\n\n.weather-icon-cloud-rain-alt:before {\n  content: \"\\E917\"; }\n\n.weather-icon-cloud-rain-moon-alt:before {\n  content: \"\\E918\"; }\n\n.weather-icon-cloud-rain-moon:before {\n  content: \"\\E919\"; }\n\n.weather-icon-cloud-rain-sun-alt:before {\n  content: \"\\E91A\"; }\n\n.weather-icon-cloud-rain-sun:before {\n  content: \"\\E91B\"; }\n\n.weather-icon-cloud-rain:before {\n  content: \"\\E91C\"; }\n\n.weather-icon-cloud-refresh:before {\n  content: \"\\E91D\"; }\n\n.weather-icon-cloud-snow-alt:before {\n  content: \"\\E91E\"; }\n\n.weather-icon-cloud-snow-moon-alt:before {\n  content: \"\\E91F\"; }\n\n.weather-icon-cloud-snow-moon:before {\n  content: \"\\E920\"; }\n\n.weather-icon-cloud-snow-sun-alt:before {\n  content: \"\\E921\"; }\n\n.weather-icon-cloud-snow-sun:before {\n  content: \"\\E922\"; }\n\n.weather-icon-cloud-snow:before {\n  content: \"\\E923\"; }\n\n.weather-icon-cloud-sun:before {\n  content: \"\\E924\"; }\n\n.weather-icon-cloud-upload:before {\n  content: \"\\E925\"; }\n\n.weather-icon-cloud-wind-moon:before {\n  content: \"\\E926\"; }\n\n.weather-icon-cloud-wind-sun:before {\n  content: \"\\E927\"; }\n\n.weather-icon-cloud-wind:before {\n  content: \"\\E928\"; }\n\n.weather-icon-cloud:before {\n  content: \"\\E929\"; }\n\n.weather-icon-compass-east:before {\n  content: \"\\E92A\"; }\n\n.weather-icon-compass-north:before {\n  content: \"\\E92B\"; }\n\n.weather-icon-compass-south:before {\n  content: \"\\E92C\"; }\n\n.weather-icon-compass-west:before {\n  content: \"\\E92D\"; }\n\n.weather-icon-compass:before {\n  content: \"\\E92E\"; }\n\n.weather-icon-degrees-celcius:before {\n  content: \"\\E92F\"; }\n\n.weather-icon-degrees-fahrenheit:before {\n  content: \"\\E930\"; }\n\n.weather-icon-moon-first-quarter:before {\n  content: \"\\E931\"; }\n\n.weather-icon-moon-full:before {\n  content: \"\\E932\"; }\n\n.weather-icon-moon-last-quarter:before {\n  content: \"\\E933\"; }\n\n.weather-icon-moon-new:before {\n  content: \"\\E934\"; }\n\n.weather-icon-moon-waning-crescent:before {\n  content: \"\\E935\"; }\n\n.weather-icon-moon-waning-gibbous:before {\n  content: \"\\E936\"; }\n\n.weather-icon-moon-waxing-crescent:before {\n  content: \"\\E937\"; }\n\n.weather-icon-moon-waxing-gibbous:before {\n  content: \"\\E938\"; }\n\n.weather-icon-moon:before {\n  content: \"\\E939\"; }\n\n.weather-icon-shades:before {\n  content: \"\\E93A\"; }\n\n.weather-icon-snowflake:before {\n  content: \"\\E93B\"; }\n\n.weather-icon-sun-low:before {\n  content: \"\\E93C\"; }\n\n.weather-icon-sun-lower:before {\n  content: \"\\E93D\"; }\n\n.weather-icon-sun:before {\n  content: \"\\E93E\"; }\n\n.weather-icon-sunrise:before {\n  content: \"\\E93F\"; }\n\n.weather-icon-sunset:before {\n  content: \"\\E940\"; }\n\n.weather-icon-thermometer-25:before {\n  content: \"\\E941\"; }\n\n.weather-icon-thermometer-50:before {\n  content: \"\\E942\"; }\n\n.weather-icon-thermometer-75:before {\n  content: \"\\E943\"; }\n\n.weather-icon-thermometer-100:before {\n  content: \"\\E944\"; }\n\n.weather-icon-thermometer-zero:before {\n  content: \"\\E945\"; }\n\n.weather-icon-thermometer:before {\n  content: \"\\E946\"; }\n\n.weather-icon-tornado:before {\n  content: \"\\E947\"; }\n\n.weather-icon-umbrella:before {\n  content: \"\\E948\"; }\n\n.weather-icon-wind:before {\n  content: \"\\E949\"; }\n\n/**\n * Components\n */\n#loader,\n#loader:after {\n  border-radius: 50%;\n  width: 10em;\n  height: 10em; }\n\n#loader {\n  margin: 30px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #FFFFFF;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear; }\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n#header__logo a {\n  overflow: hidden; }\n\n#header__logo__location-name {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\n#header__buttons button {\n  font-size: 0.8em; }\n\n@media screen and (max-width: 40em) {\n  #header__buttons {\n    margin-top: 0.8em; }\n    #header__buttons button {\n      width: 50%;\n      height: 36px;\n      font-size: 0.9em; } }\n\n.daily-card {\n  display: flex; }\n  .daily-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .daily-card__inner {\n        padding: 0.75rem; } }\n    @media screen and (max-width: 52em) {\n      .daily-card__inner {\n        flex-direction: row;\n        justify-content: space-between; } }\n  @media screen and (max-width: 52em) {\n    .daily-card__time {\n      margin: 0;\n      width: 60px;\n      font-size: 1.2em; } }\n  .daily-card__icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100px;\n    font-size: 80px; }\n    @media screen and (max-width: 52em) {\n      .daily-card__icon {\n        height: auto;\n        width: 32px;\n        font-size: 2em; } }\n  .daily-card__summary {\n    margin-top: 1em; }\n    .daily-card__summary span {\n      margin: 0.2em;\n      font-size: 2em; }\n    .daily-card__summary .degrees {\n      margin: 0;\n      font-size: 1.4em; }\n    @media screen and (max-width: 52em) {\n      .daily-card__summary {\n        margin: 0;\n        width: 92px;\n        text-align: right; }\n        .daily-card__summary span {\n          margin: 0;\n          font-size: 1.4em; } }\n  .daily-card:first-of-type .daily-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .daily-card {\n      padding-bottom: 0; } }\n\n.hourly-card {\n  display: flex; }\n  .hourly-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .hourly-card__inner {\n        padding: 0.75rem; } }\n  .hourly-card__time {\n    font-size: 1.2em; }\n  .hourly-card__temp {\n    font-size: 1.4em;\n    width: 42px;\n    text-align: right; }\n    .hourly-card__temp .degrees {\n      margin: 0;\n      font-size: 1.4em; }\n  .hourly-card__icon {\n    width: 32px;\n    font-size: 2em; }\n  .hourly-card:first-of-type .hourly-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .hourly-card {\n      padding-bottom: 0; } }\n\n#currently-card {\n  background-color: #FAFFFD;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  padding: 1em;\n  border-radius: 4px;\n  color: #342E37;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n  transition: all 200ms ease-in-out; }\n  #currently-card__icon {\n    font-size: 8em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__icon {\n        font-size: 12em; } }\n  #currently-card__temp {\n    font-size: 4em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__temp {\n        font-size: 6em; } }\n  @media screen and (max-width: 40em) {\n    #currently-card {\n      padding: 0.75rem; } }\n\n/**\n * Themes\n */\n#wrapper.theme-night {\n  background-color: #342E37; }\n  #wrapper.theme-night a:hover {\n    color: #57B8FF; }\n  #wrapper.theme-night #header button {\n    background-color: #1a171b; }\n    #wrapper.theme-night #header button.active {\n      background-color: #24a2ff; }\n", ""]);
 
 // exports
 
@@ -14482,10 +14482,12 @@ var _user$project$Models$Config = F2(
 	function (a, b) {
 		return {apiUrl: a, nodeEnv: b};
 	});
-var _user$project$Models$Model = F7(
-	function (a, b, c, d, e, f, g) {
-		return {config: a, current: b, daily: c, geoData: d, hourly: e, location: f, page: g};
+var _user$project$Models$Model = F8(
+	function (a, b, c, d, e, f, g, h) {
+		return {config: a, current: b, daily: c, geoData: d, hourly: e, location: f, page: g, tempScale: h};
 	});
+var _user$project$Models$F = {ctor: 'F'};
+var _user$project$Models$C = {ctor: 'C'};
 var _user$project$Models$GeoDataPage = {ctor: 'GeoDataPage'};
 var _user$project$Models$initialModel = function (config) {
 	return {
@@ -14495,7 +14497,8 @@ var _user$project$Models$initialModel = function (config) {
 		geoData: _krisajenkins$remotedata$RemoteData$Loading,
 		hourly: _krisajenkins$remotedata$RemoteData$Loading,
 		location: _elm_lang$core$Result$Ok(_elm_lang$core$Maybe$Nothing),
-		page: _user$project$Models$GeoDataPage
+		page: _user$project$Models$GeoDataPage,
+		tempScale: _user$project$Models$F
 	};
 };
 var _user$project$Models$ErrorPage = {ctor: 'ErrorPage'};
@@ -14529,6 +14532,9 @@ var _user$project$Current_Decoder$currentWeatherDecoder = A3(
 						_elm_lang$core$Json_Decode$float,
 						_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_user$project$Current_Models$CurrentWeather)))))));
 
+var _user$project$Messages$SetTempScale = function (a) {
+	return {ctor: 'SetTempScale', _0: a};
+};
 var _user$project$Messages$SetPage = function (a) {
 	return {ctor: 'SetPage', _0: a};
 };
@@ -14548,6 +14554,21 @@ var _user$project$Messages$CurrentWeatherResponse = function (a) {
 	return {ctor: 'CurrentWeatherResponse', _0: a};
 };
 
+var _user$project$Utils$toCelsius = function (temp) {
+	return (temp - 32) / 1.8;
+};
+var _user$project$Utils$makeTemp = F2(
+	function (temp, tempScale) {
+		var _p0 = tempScale;
+		if (_p0.ctor === 'C') {
+			return _elm_lang$core$Basics$toString(
+				_elm_lang$core$Basics$ceiling(
+					_user$project$Utils$toCelsius(temp)));
+		} else {
+			return _elm_lang$core$Basics$toString(
+				_elm_lang$core$Basics$ceiling(temp));
+		}
+	});
 var _user$project$Utils$tempScaleSymbol = A2(
 	_elm_lang$html$Html$span,
 	{
@@ -14561,9 +14582,9 @@ var _user$project$Utils$tempScaleSymbol = A2(
 		_1: {ctor: '[]'}
 	});
 var _user$project$Utils$getDateFromMaybe = function (h) {
-	var _p0 = h;
-	if (_p0.ctor === 'Just') {
-		return A2(_justinmimbs$elm_date_extra$Date_Extra$toFormattedString, 'E, h:mm a', _p0._0);
+	var _p1 = h;
+	if (_p1.ctor === 'Just') {
+		return A2(_justinmimbs$elm_date_extra$Date_Extra$toFormattedString, 'E, h:mm a', _p1._0);
 	} else {
 		return '';
 	}
@@ -14627,167 +14648,168 @@ var _user$project$Loader_View$loader = A2(
 		_1: {ctor: '[]'}
 	});
 
-var _user$project$Current_View$currentView = function (current) {
-	return A2(
-		_elm_lang$html$Html$div,
-		{
-			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$class('flex flex-wrap p2 mt0 mb0 items-center hc100'),
-			_1: {ctor: '[]'}
-		},
-		{
-			ctor: '::',
-			_0: A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$id('currently-card'),
-					_1: {
+var _user$project$Current_View$currentView = F2(
+	function (current, tempScale) {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('flex flex-wrap p2 mt0 mb0 items-center hc100'),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
 						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$class('col-12 md-col-6 flex flex-column items-center justify-center'),
-						_1: {ctor: '[]'}
-					}
-				},
-				{
-					ctor: '::',
-					_0: A2(
-						_elm_lang$html$Html$div,
-						{
+						_0: _elm_lang$html$Html_Attributes$id('currently-card'),
+						_1: {
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('mb3 h3'),
+							_0: _elm_lang$html$Html_Attributes$class('col-12 md-col-6 flex flex-column items-center justify-center'),
 							_1: {ctor: '[]'}
-						},
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html$text(current.summary),
-							_1: {ctor: '[]'}
-						}),
-					_1: {
+						}
+					},
+					{
 						ctor: '::',
 						_0: A2(
 							_elm_lang$html$Html$div,
-							{ctor: '[]'},
 							{
 								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$span,
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$id('currently-card__icon'),
-										_1: {
-											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$classList(
-												{
-													ctor: '::',
-													_0: {
-														ctor: '_Tuple2',
-														_0: _user$project$Commands$iconClass(current.icon),
-														_1: true
-													},
-													_1: {ctor: '[]'}
-												}),
-											_1: {ctor: '[]'}
-										}
-									},
-									{ctor: '[]'}),
+								_0: _elm_lang$html$Html_Attributes$class('mb3 h3'),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text(current.summary),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
 							ctor: '::',
 							_0: A2(
 								_elm_lang$html$Html$div,
-								{
-									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('mt3'),
-									_1: {ctor: '[]'}
-								},
+								{ctor: '[]'},
 								{
 									ctor: '::',
 									_0: A2(
 										_elm_lang$html$Html$span,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$id('currently-card__temp'),
-											_1: {ctor: '[]'}
-										},
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html$text(
-												_elm_lang$core$Basics$toString(
-													_elm_lang$core$Basics$ceiling(current.temperature))),
+											_0: _elm_lang$html$Html_Attributes$id('currently-card__icon'),
 											_1: {
 												ctor: '::',
-												_0: _user$project$Utils$tempScaleSymbol,
+												_0: _elm_lang$html$Html_Attributes$classList(
+													{
+														ctor: '::',
+														_0: {
+															ctor: '_Tuple2',
+															_0: _user$project$Commands$iconClass(current.icon),
+															_1: true
+														},
+														_1: {ctor: '[]'}
+													}),
 												_1: {ctor: '[]'}
 											}
-										}),
+										},
+										{ctor: '[]'}),
 									_1: {ctor: '[]'}
 								}),
-							_1: {ctor: '[]'}
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('mt3'),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$span,
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$id('currently-card__temp'),
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(
+													A2(_user$project$Utils$makeTemp, current.temperature, tempScale)),
+												_1: {
+													ctor: '::',
+													_0: _user$project$Utils$tempScaleSymbol,
+													_1: {ctor: '[]'}
+												}
+											}),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
 						}
-					}
-				}),
-			_1: {
-				ctor: '::',
-				_0: A2(
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('col-12 md-col-6 flex items-center justify-center'),
+							_1: {ctor: '[]'}
+						},
+						{ctor: '[]'}),
+					_1: {ctor: '[]'}
+				}
+			});
+	});
+var _user$project$Current_View$page = F2(
+	function (current, tempScale) {
+		var _p0 = current;
+		switch (_p0.ctor) {
+			case 'NotAsked':
+				return A2(
 					_elm_lang$html$Html$div,
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$class('col-12 md-col-6 flex items-center justify-center'),
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
 						_1: {ctor: '[]'}
 					},
-					{ctor: '[]'}),
-				_1: {ctor: '[]'}
-			}
-		});
-};
-var _user$project$Current_View$page = function (current) {
-	var _p0 = current;
-	switch (_p0.ctor) {
-		case 'NotAsked':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _user$project$Loader_View$loader,
-					_1: {ctor: '[]'}
-				});
-		case 'Loading':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _user$project$Loader_View$loader,
-					_1: {ctor: '[]'}
-				});
-		case 'Failure':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html$text(
-						_elm_lang$core$Basics$toString(_p0._0)),
-					_1: {ctor: '[]'}
-				});
-		default:
-			return _user$project$Current_View$currentView(_p0._0);
-	}
-};
+					{
+						ctor: '::',
+						_0: _user$project$Loader_View$loader,
+						_1: {ctor: '[]'}
+					});
+			case 'Loading':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$Loader_View$loader,
+						_1: {ctor: '[]'}
+					});
+			case 'Failure':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text(
+							_elm_lang$core$Basics$toString(_p0._0)),
+						_1: {ctor: '[]'}
+					});
+			default:
+				return A2(_user$project$Current_View$currentView, _p0._0, tempScale);
+		}
+	});
 var _user$project$Current_View$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
@@ -14802,7 +14824,7 @@ var _user$project$Current_View$view = function (model) {
 		},
 		{
 			ctor: '::',
-			_0: _user$project$Current_View$page(model.current),
+			_0: A2(_user$project$Current_View$page, model.current, model.tempScale),
 			_1: {ctor: '[]'}
 		});
 };
@@ -14867,66 +14889,37 @@ var _user$project$Daily_Commands$fetchDailyWeather = F2(
 					_user$project$Daily_Decoder$dailyWeatherDecoder)));
 	});
 
-var _user$project$Daily_View$dayRow = function (day) {
-	return A2(
-		_elm_lang$html$Html$li,
-		{
-			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$class('daily-card col-12 sm-col-12 md-col-6 lg-col-3 p1'),
-			_1: {ctor: '[]'}
-		},
-		{
-			ctor: '::',
-			_0: A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('daily-card__inner'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: A2(
-						_elm_lang$html$Html$div,
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('daily-card__time mb2 h3'),
-							_1: {ctor: '[]'}
-						},
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html$text(
-								_user$project$Utils$getDay(day.time)),
-							_1: {ctor: '[]'}
-						}),
-					_1: {
+var _user$project$Daily_View$dayRow = F2(
+	function (tempScale, day) {
+		return A2(
+			_elm_lang$html$Html$li,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('daily-card col-12 sm-col-12 md-col-6 lg-col-3 p1'),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('daily-card__inner'),
+						_1: {ctor: '[]'}
+					},
+					{
 						ctor: '::',
 						_0: A2(
 							_elm_lang$html$Html$div,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('daily-card__icon'),
+								_0: _elm_lang$html$Html_Attributes$class('daily-card__time mb2 h3'),
 								_1: {ctor: '[]'}
 							},
 							{
 								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$span,
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$classList(
-											{
-												ctor: '::',
-												_0: {
-													ctor: '_Tuple2',
-													_0: _user$project$Commands$iconClass(day.icon),
-													_1: true
-												},
-												_1: {ctor: '[]'}
-											}),
-										_1: {ctor: '[]'}
-									},
-									{ctor: '[]'}),
+								_0: _elm_lang$html$Html$text(
+									_user$project$Utils$getDay(day.time)),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
@@ -14935,7 +14928,7 @@ var _user$project$Daily_View$dayRow = function (day) {
 								_elm_lang$html$Html$div,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('daily-card__summary mt1'),
+									_0: _elm_lang$html$Html_Attributes$class('daily-card__icon'),
 									_1: {ctor: '[]'}
 								},
 								{
@@ -14944,47 +14937,62 @@ var _user$project$Daily_View$dayRow = function (day) {
 										_elm_lang$html$Html$span,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__low'),
+											_0: _elm_lang$html$Html_Attributes$classList(
+												{
+													ctor: '::',
+													_0: {
+														ctor: '_Tuple2',
+														_0: _user$project$Commands$iconClass(day.icon),
+														_1: true
+													},
+													_1: {ctor: '[]'}
+												}),
 											_1: {ctor: '[]'}
 										},
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html$text(
-												_elm_lang$core$Basics$toString(
-													_elm_lang$core$Basics$ceiling(day.temperatureLow))),
-											_1: {
-												ctor: '::',
-												_0: A2(
-													_elm_lang$html$Html$span,
-													{
-														ctor: '::',
-														_0: _elm_lang$html$Html_Attributes$class('degrees'),
-														_1: {
-															ctor: '::',
-															_0: A2(
-																_elm_lang$html$Html_Attributes$property,
-																'innerHTML',
-																_elm_lang$core$Json_Encode$string('&deg;')),
-															_1: {ctor: '[]'}
-														}
-													},
-													{ctor: '[]'}),
-												_1: {ctor: '[]'}
-											}
-										}),
-									_1: {
+										{ctor: '[]'}),
+									_1: {ctor: '[]'}
+								}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('daily-card__summary mt1'),
+										_1: {ctor: '[]'}
+									},
+									{
 										ctor: '::',
 										_0: A2(
 											_elm_lang$html$Html$span,
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__slash'),
+												_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__low'),
 												_1: {ctor: '[]'}
 											},
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html$text('/'),
-												_1: {ctor: '[]'}
+												_0: _elm_lang$html$Html$text(
+													A2(_user$project$Utils$makeTemp, day.temperatureLow, tempScale)),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_elm_lang$html$Html$span,
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html_Attributes$class('degrees'),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_elm_lang$html$Html_Attributes$property,
+																	'innerHTML',
+																	_elm_lang$core$Json_Encode$string('&deg;')),
+																_1: {ctor: '[]'}
+															}
+														},
+														{ctor: '[]'}),
+													_1: {ctor: '[]'}
+												}
 											}),
 										_1: {
 											ctor: '::',
@@ -14992,92 +15000,110 @@ var _user$project$Daily_View$dayRow = function (day) {
 												_elm_lang$html$Html$span,
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__high'),
+													_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__slash'),
 													_1: {ctor: '[]'}
 												},
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html$text(
-														_elm_lang$core$Basics$toString(
-															_elm_lang$core$Basics$ceiling(day.temperatureHigh))),
-													_1: {
-														ctor: '::',
-														_0: _user$project$Utils$tempScaleSymbol,
-														_1: {ctor: '[]'}
-													}
+													_0: _elm_lang$html$Html$text('/'),
+													_1: {ctor: '[]'}
 												}),
-											_1: {ctor: '[]'}
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$span,
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html_Attributes$class('daily-card__summary__high'),
+														_1: {ctor: '[]'}
+													},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text(
+															A2(_user$project$Utils$makeTemp, day.temperatureHigh, tempScale)),
+														_1: {
+															ctor: '::',
+															_0: _user$project$Utils$tempScaleSymbol,
+															_1: {ctor: '[]'}
+														}
+													}),
+												_1: {ctor: '[]'}
+											}
 										}
-									}
-								}),
-							_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
 						}
-					}
-				}),
-			_1: {ctor: '[]'}
-		});
-};
-var _user$project$Daily_View$daysList = function (days) {
-	return A2(
-		_elm_lang$html$Html$ul,
-		{
-			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$id('weather-card-list'),
-			_1: {
-				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$class('list-reset mt0 mb0 flex flex-wrap p1'),
+					}),
 				_1: {ctor: '[]'}
-			}
-		},
-		A2(_elm_lang$core$List$map, _user$project$Daily_View$dayRow, days));
-};
-var _user$project$Daily_View$page = function (daily) {
-	var _p0 = daily;
-	switch (_p0.ctor) {
-		case 'NotAsked':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
+			});
+	});
+var _user$project$Daily_View$daysList = F2(
+	function (days, tempScale) {
+		return A2(
+			_elm_lang$html$Html$ul,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$id('weather-card-list'),
+				_1: {
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+					_0: _elm_lang$html$Html_Attributes$class('list-reset mt0 mb0 flex flex-wrap p1'),
 					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _user$project$Loader_View$loader,
-					_1: {ctor: '[]'}
-				});
-		case 'Loading':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _user$project$Loader_View$loader,
-					_1: {ctor: '[]'}
-				});
-		case 'Failure':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html$text(
-						_elm_lang$core$Basics$toString(_p0._0)),
-					_1: {ctor: '[]'}
-				});
-		default:
-			return _user$project$Daily_View$daysList(_p0._0);
-	}
-};
+				}
+			},
+			A2(
+				_elm_lang$core$List$map,
+				_user$project$Daily_View$dayRow(tempScale),
+				days));
+	});
+var _user$project$Daily_View$page = F2(
+	function (daily, tempScale) {
+		var _p0 = daily;
+		switch (_p0.ctor) {
+			case 'NotAsked':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$Loader_View$loader,
+						_1: {ctor: '[]'}
+					});
+			case 'Loading':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$Loader_View$loader,
+						_1: {ctor: '[]'}
+					});
+			case 'Failure':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text(
+							_elm_lang$core$Basics$toString(_p0._0)),
+						_1: {ctor: '[]'}
+					});
+			default:
+				return A2(_user$project$Daily_View$daysList, _p0._0, tempScale);
+		}
+	});
 var _user$project$Daily_View$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
@@ -15092,7 +15118,7 @@ var _user$project$Daily_View$view = function (model) {
 		},
 		{
 			ctor: '::',
-			_0: _user$project$Daily_View$page(model.daily),
+			_0: A2(_user$project$Daily_View$page, model.daily, model.tempScale),
 			_1: {ctor: '[]'}
 		});
 };
@@ -15312,13 +15338,13 @@ var _user$project$Header_View$view = function (model) {
 										_0: _elm_lang$html$Html_Attributes$classList(
 											{
 												ctor: '::',
-												_0: {ctor: '_Tuple2', _0: 'btn btn-small bg-primary', _1: true},
+												_0: {ctor: '_Tuple2', _0: 'btn btn-small btn-secondary mr1 xs-hide', _1: true},
 												_1: {
 													ctor: '::',
 													_0: {
 														ctor: '_Tuple2',
 														_0: 'active',
-														_1: _elm_lang$core$Native_Utils.eq(model.page, _user$project$Models$CurrentPage)
+														_1: _elm_lang$core$Native_Utils.eq(model.tempScale, _user$project$Models$C)
 													},
 													_1: {ctor: '[]'}
 												}
@@ -15326,14 +15352,18 @@ var _user$project$Header_View$view = function (model) {
 										_1: {
 											ctor: '::',
 											_0: _elm_lang$html$Html_Events$onClick(
-												_user$project$Messages$SetPage(_user$project$Models$CurrentPage)),
+												_user$project$Messages$SetTempScale(_user$project$Models$C)),
 											_1: {ctor: '[]'}
 										}
 									},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Currently'),
-										_1: {ctor: '[]'}
+										_0: _elm_lang$html$Html$text('C'),
+										_1: {
+											ctor: '::',
+											_0: _user$project$Utils$tempScaleSymbol,
+											_1: {ctor: '[]'}
+										}
 									}),
 								_1: {
 									ctor: '::',
@@ -15344,13 +15374,13 @@ var _user$project$Header_View$view = function (model) {
 											_0: _elm_lang$html$Html_Attributes$classList(
 												{
 													ctor: '::',
-													_0: {ctor: '_Tuple2', _0: 'btn btn-small bg-primary ml1', _1: true},
+													_0: {ctor: '_Tuple2', _0: 'btn btn-small btn-secondary mr1 xs-hide', _1: true},
 													_1: {
 														ctor: '::',
 														_0: {
 															ctor: '_Tuple2',
 															_0: 'active',
-															_1: _elm_lang$core$Native_Utils.eq(model.page, _user$project$Models$DailyPage)
+															_1: _elm_lang$core$Native_Utils.eq(model.tempScale, _user$project$Models$F)
 														},
 														_1: {ctor: '[]'}
 													}
@@ -15358,14 +15388,18 @@ var _user$project$Header_View$view = function (model) {
 											_1: {
 												ctor: '::',
 												_0: _elm_lang$html$Html_Events$onClick(
-													_user$project$Messages$SetPage(_user$project$Models$DailyPage)),
+													_user$project$Messages$SetTempScale(_user$project$Models$F)),
 												_1: {ctor: '[]'}
 											}
 										},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('Daily'),
-											_1: {ctor: '[]'}
+											_0: _elm_lang$html$Html$text('F'),
+											_1: {
+												ctor: '::',
+												_0: _user$project$Utils$tempScaleSymbol,
+												_1: {ctor: '[]'}
+											}
 										}),
 									_1: {
 										ctor: '::',
@@ -15376,13 +15410,13 @@ var _user$project$Header_View$view = function (model) {
 												_0: _elm_lang$html$Html_Attributes$classList(
 													{
 														ctor: '::',
-														_0: {ctor: '_Tuple2', _0: 'btn btn-small bg-primary ml1', _1: true},
+														_0: {ctor: '_Tuple2', _0: 'btn btn-small btn-secondary', _1: true},
 														_1: {
 															ctor: '::',
 															_0: {
 																ctor: '_Tuple2',
 																_0: 'active',
-																_1: _elm_lang$core$Native_Utils.eq(model.page, _user$project$Models$HourlyPage)
+																_1: _elm_lang$core$Native_Utils.eq(model.page, _user$project$Models$CurrentPage)
 															},
 															_1: {ctor: '[]'}
 														}
@@ -15390,16 +15424,82 @@ var _user$project$Header_View$view = function (model) {
 												_1: {
 													ctor: '::',
 													_0: _elm_lang$html$Html_Events$onClick(
-														_user$project$Messages$SetPage(_user$project$Models$HourlyPage)),
+														_user$project$Messages$SetPage(_user$project$Models$CurrentPage)),
 													_1: {ctor: '[]'}
 												}
 											},
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html$text('Hourly'),
+												_0: _elm_lang$html$Html$text('Currently'),
 												_1: {ctor: '[]'}
 											}),
-										_1: {ctor: '[]'}
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$button,
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html_Attributes$classList(
+														{
+															ctor: '::',
+															_0: {ctor: '_Tuple2', _0: 'btn btn-small btn-secondary ml1', _1: true},
+															_1: {
+																ctor: '::',
+																_0: {
+																	ctor: '_Tuple2',
+																	_0: 'active',
+																	_1: _elm_lang$core$Native_Utils.eq(model.page, _user$project$Models$DailyPage)
+																},
+																_1: {ctor: '[]'}
+															}
+														}),
+													_1: {
+														ctor: '::',
+														_0: _elm_lang$html$Html_Events$onClick(
+															_user$project$Messages$SetPage(_user$project$Models$DailyPage)),
+														_1: {ctor: '[]'}
+													}
+												},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text('Daily'),
+													_1: {ctor: '[]'}
+												}),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$button,
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html_Attributes$classList(
+															{
+																ctor: '::',
+																_0: {ctor: '_Tuple2', _0: 'btn btn-small btn-secondary ml1', _1: true},
+																_1: {
+																	ctor: '::',
+																	_0: {
+																		ctor: '_Tuple2',
+																		_0: 'active',
+																		_1: _elm_lang$core$Native_Utils.eq(model.page, _user$project$Models$HourlyPage)
+																	},
+																	_1: {ctor: '[]'}
+																}
+															}),
+														_1: {
+															ctor: '::',
+															_0: _elm_lang$html$Html_Events$onClick(
+																_user$project$Messages$SetPage(_user$project$Models$HourlyPage)),
+															_1: {ctor: '[]'}
+														}
+													},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text('Hourly'),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}
+										}
 									}
 								}
 							}),
@@ -15466,66 +15566,37 @@ var _user$project$Hourly_Commands$fetchHourlyWeather = F2(
 					_user$project$Hourly_Decoder$hourlyListDecoder)));
 	});
 
-var _user$project$Hourly_View$hourRow = function (hour) {
-	return A2(
-		_elm_lang$html$Html$li,
-		{
-			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$class('hourly-card col-12 p1'),
-			_1: {ctor: '[]'}
-		},
-		{
-			ctor: '::',
-			_0: A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('hourly-card__inner'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: A2(
-						_elm_lang$html$Html$div,
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('hourly-card__time h3 mr-auto'),
-							_1: {ctor: '[]'}
-						},
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html$text(
-								_user$project$Utils$getHour(hour.time)),
-							_1: {ctor: '[]'}
-						}),
-					_1: {
+var _user$project$Hourly_View$hourRow = F2(
+	function (tempScale, hour) {
+		return A2(
+			_elm_lang$html$Html$li,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('hourly-card col-12 p1'),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('hourly-card__inner'),
+						_1: {ctor: '[]'}
+					},
+					{
 						ctor: '::',
 						_0: A2(
 							_elm_lang$html$Html$div,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('hourly-card__icon'),
+								_0: _elm_lang$html$Html_Attributes$class('hourly-card__time h3 mr-auto'),
 								_1: {ctor: '[]'}
 							},
 							{
 								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$span,
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$classList(
-											{
-												ctor: '::',
-												_0: {
-													ctor: '_Tuple2',
-													_0: _user$project$Commands$iconClass(hour.icon),
-													_1: true
-												},
-												_1: {ctor: '[]'}
-											}),
-										_1: {ctor: '[]'}
-									},
-									{ctor: '[]'}),
+								_0: _elm_lang$html$Html$text(
+									_user$project$Utils$getHour(hour.time)),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
@@ -15534,95 +15605,129 @@ var _user$project$Hourly_View$hourRow = function (hour) {
 								_elm_lang$html$Html$div,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('hourly-card__temp ml2'),
+									_0: _elm_lang$html$Html_Attributes$class('hourly-card__icon'),
 									_1: {ctor: '[]'}
 								},
 								{
 									ctor: '::',
 									_0: A2(
 										_elm_lang$html$Html$span,
-										{ctor: '[]'},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text(
-												_elm_lang$core$Basics$toString(
-													_elm_lang$core$Basics$ceiling(hour.temperature))),
+											_0: _elm_lang$html$Html_Attributes$classList(
+												{
+													ctor: '::',
+													_0: {
+														ctor: '_Tuple2',
+														_0: _user$project$Commands$iconClass(hour.icon),
+														_1: true
+													},
+													_1: {ctor: '[]'}
+												}),
 											_1: {ctor: '[]'}
-										}),
-									_1: {
-										ctor: '::',
-										_0: _user$project$Utils$tempScaleSymbol,
-										_1: {ctor: '[]'}
-									}
+										},
+										{ctor: '[]'}),
+									_1: {ctor: '[]'}
 								}),
-							_1: {ctor: '[]'}
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('hourly-card__temp ml2'),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$span,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(
+													A2(_user$project$Utils$makeTemp, hour.temperature, tempScale)),
+												_1: {ctor: '[]'}
+											}),
+										_1: {
+											ctor: '::',
+											_0: _user$project$Utils$tempScaleSymbol,
+											_1: {ctor: '[]'}
+										}
+									}),
+								_1: {ctor: '[]'}
+							}
 						}
-					}
-				}),
-			_1: {ctor: '[]'}
-		});
-};
-var _user$project$Hourly_View$hourlyList = function (hours) {
-	return A2(
-		_elm_lang$html$Html$ul,
-		{
-			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$id('weather-card-list'),
-			_1: {
-				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$class('list-reset mt0 mb0 flex flex-wrap p1'),
+					}),
 				_1: {ctor: '[]'}
-			}
-		},
-		A2(_elm_lang$core$List$map, _user$project$Hourly_View$hourRow, hours));
-};
-var _user$project$Hourly_View$page = function (current) {
-	var _p0 = current;
-	switch (_p0.ctor) {
-		case 'NotAsked':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
+			});
+	});
+var _user$project$Hourly_View$hourlyList = F2(
+	function (hours, tempScale) {
+		return A2(
+			_elm_lang$html$Html$ul,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$id('weather-card-list'),
+				_1: {
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+					_0: _elm_lang$html$Html_Attributes$class('list-reset mt0 mb0 flex flex-wrap p1'),
 					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _user$project$Loader_View$loader,
-					_1: {ctor: '[]'}
-				});
-		case 'Loading':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _user$project$Loader_View$loader,
-					_1: {ctor: '[]'}
-				});
-		case 'Failure':
-			return A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html$text(
-						_elm_lang$core$Basics$toString(_p0._0)),
-					_1: {ctor: '[]'}
-				});
-		default:
-			return _user$project$Hourly_View$hourlyList(_p0._0);
-	}
-};
+				}
+			},
+			A2(
+				_elm_lang$core$List$map,
+				_user$project$Hourly_View$hourRow(tempScale),
+				hours));
+	});
+var _user$project$Hourly_View$page = F2(
+	function (current, tempScale) {
+		var _p0 = current;
+		switch (_p0.ctor) {
+			case 'NotAsked':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$Loader_View$loader,
+						_1: {ctor: '[]'}
+					});
+			case 'Loading':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$Loader_View$loader,
+						_1: {ctor: '[]'}
+					});
+			case 'Failure':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('flex items-center hc100'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text(
+							_elm_lang$core$Basics$toString(_p0._0)),
+						_1: {ctor: '[]'}
+					});
+			default:
+				return A2(_user$project$Hourly_View$hourlyList, _p0._0, tempScale);
+		}
+	});
 var _user$project$Hourly_View$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
@@ -15637,7 +15742,7 @@ var _user$project$Hourly_View$view = function (model) {
 		},
 		{
 			ctor: '::',
-			_0: _user$project$Hourly_View$page(model.hourly),
+			_0: A2(_user$project$Hourly_View$page, model.hourly, model.tempScale),
 			_1: {ctor: '[]'}
 		});
 };
@@ -15730,7 +15835,7 @@ var _user$project$Update$update = F2(
 						{hourly: _p1._0}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
-			default:
+			case 'SetPage':
 				var _p3 = _p1._0;
 				return {
 					ctor: '_Tuple2',
@@ -15738,6 +15843,14 @@ var _user$project$Update$update = F2(
 						model,
 						{page: _p3}),
 					_1: A2(_user$project$Update$setPageCmd, model, _p3)
+				};
+			default:
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{tempScale: _p1._0}),
+					_1: _elm_lang$core$Platform_Cmd$none
 				};
 		}
 	});
