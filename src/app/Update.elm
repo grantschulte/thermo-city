@@ -53,7 +53,28 @@ update msg model =
             ( { model | page = page }, setPageCmd model page )
 
         SetTempScale tempScale ->
-            ( { model | tempScale = tempScale }, Cmd.none )
+            ( { model
+                | tempScale = tempScale
+                , menus = { tempScale = False, view = False }
+              }
+            , Cmd.none
+            )
+
+        ToggleMenu menu ->
+            ( { model | menus = toggleMenu menu model.menus }, Cmd.none )
+
+
+toggleMenu : String -> Menus -> Menus
+toggleMenu menu menus =
+    case menu of
+        "tempScale" ->
+            { menus | tempScale = not menus.tempScale }
+
+        "view" ->
+            { menus | view = not menus.view }
+
+        _ ->
+            menus
 
 
 setPageCmd : Model -> Page -> Cmd Msg

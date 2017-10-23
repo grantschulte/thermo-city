@@ -17,6 +17,31 @@ type Scale
     | F
 
 
+type alias Menus =
+    { tempScale : Bool
+    , view : Bool
+    }
+
+
+
+-- type alias Menus =
+--     { tempScale : TempScaleMenu
+--     , view : ViewMenu
+--     }
+-- type alias TempScaleMenu =
+--     { active : Bool
+--     , selected : Scale
+--     , options : List Scale
+--     }
+--
+--
+-- type alias ViewMenu =
+--     { active : Bool
+--     , selected : Page
+--     , options : List Page
+--     }
+
+
 type Page
     = CurrentPage
     | DailyPage
@@ -38,6 +63,7 @@ type alias Model =
     , geoData : WebData GeoData
     , hourly : WebData (List HourlyWeather)
     , location : Result Geolocation.Error (Maybe Location)
+    , menus : Menus
     , page : Page
     , tempScale : Scale
     }
@@ -55,6 +81,7 @@ initialModel config =
     , geoData = RemoteData.Loading
     , hourly = RemoteData.Loading
     , location = Ok Nothing
+    , menus = Menus False False
     , page = GeoDataPage
     , tempScale = F
     }

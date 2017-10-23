@@ -20,3 +20,4 @@ type Msg
     | HourlyWeatherResponse (WebData (List HourlyWeather))
     | SetPage Page
     | SetTempScale Scale
+    | ToggleMenu String

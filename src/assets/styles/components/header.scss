@@ -8,21 +8,52 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media screen and (max-width: $sm) {
+        font-size: 16px;
+      }
+    }
+
+    @media screen and (max-width: $sm) {
+      padding-top: 0;
     }
   }
 
-  &__buttons {
-    button {
-      font-size: 0.8em;
+  &__menu {
+    .material-icons {
+      line-height: 0;
     }
 
-    @media screen and (max-width: 40em) {
-      margin-top: 0.8em;
+    .menu-options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      margin-top: 2px;
+      overflow: hidden;
+      display: none;
+      font-size: 14px;
 
-      button {
-        width: 50%;
-        height: 36px;
-        font-size: 0.9em;
+      &.active {
+        display: block;
+      }
+
+      &__title {
+        font-size: 14px;
+      }
+
+      &__option {
+        font-size: 14px;
+
+        &:first-child {
+          border-top-right-radius: $border-radius;
+          border-top-left-radius: $border-radius;
+        }
+
+        &:last-child {
+          border-bottom-right-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+        }
       }
     }
   }
