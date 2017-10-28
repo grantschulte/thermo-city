@@ -26,10 +26,9 @@
 
     .menu-options {
       position: absolute;
-      top: 100%;
+      top: 105%;
       left: 0;
       width: 100%;
-      margin-top: 2px;
       overflow: hidden;
       display: none;
       font-size: 14px;
@@ -44,6 +43,8 @@
 
       &__option {
         font-size: 14px;
+        border-bottom: 1px solid darken($color-primary, 15%);
+        border-radius: 0;
 
         &:first-child {
           border-top-right-radius: $border-radius;

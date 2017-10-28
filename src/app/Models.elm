@@ -6,48 +6,13 @@ import GeoData.Models exposing (..)
 import Geolocation exposing (Location)
 import Hourly.Models exposing (..)
 import Http exposing (..)
+import Menu.Models exposing (..)
+import Page.Models exposing (..)
 import RemoteData exposing (..)
+import Scale.Models exposing (..)
 
 
 -- TYPES
-
-
-type Scale
-    = C
-    | F
-
-
-type alias Menus =
-    { tempScale : Bool
-    , view : Bool
-    }
-
-
-
--- type alias Menus =
---     { tempScale : TempScaleMenu
---     , view : ViewMenu
---     }
--- type alias TempScaleMenu =
---     { active : Bool
---     , selected : Scale
---     , options : List Scale
---     }
---
---
--- type alias ViewMenu =
---     { active : Bool
---     , selected : Page
---     , options : List Page
---     }
-
-
-type Page
-    = CurrentPage
-    | DailyPage
-    | HourlyPage
-    | ErrorPage
-    | GeoDataPage
 
 
 type alias Config =
@@ -81,7 +46,7 @@ initialModel config =
     , geoData = RemoteData.Loading
     , hourly = RemoteData.Loading
     , location = Ok Nothing
-    , menus = Menus False False
+    , menus = Menus initTempScaleMenu initViewMenu
     , page = GeoDataPage
     , tempScale = F
     }

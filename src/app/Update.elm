@@ -5,8 +5,12 @@ import Daily.Commands exposing (..)
 import GeoData.Commands exposing (..)
 import Geolocation
 import Hourly.Commands exposing (..)
+import Menu.Models exposing (..)
+import Menu.Update exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
+import Page.Models exposing (..)
+import Scale.Models exposing (..)
 import Task
 
 
@@ -50,31 +54,23 @@ update msg model =
             ( { model | hourly = response }, Cmd.none )
 
         SetPage page ->
-            ( { model | page = page }, setPageCmd model page )
+            ( { model
+                | page = page
+                , menus = toggleMenu "view" model.menus
+              }
+            , setPageCmd model page
+            )
 
         SetTempScale tempScale ->
             ( { model
                 | tempScale = tempScale
-                , menus = { tempScale = False, view = False }
+                , menus = toggleMenu "tempScale" model.menus
               }
             , Cmd.none
             )
 
         ToggleMenu menu ->
             ( { model | menus = toggleMenu menu model.menus }, Cmd.none )
-
-
-toggleMenu : String -> Menus -> Menus
-toggleMenu menu menus =
-    case menu of
-        "tempScale" ->
-            { menus | tempScale = not menus.tempScale }
-
-        "view" ->
-            { menus | view = not menus.view }
-
-        _ ->
-            menus
 
 
 setPageCmd : Model -> Page -> Cmd Msg

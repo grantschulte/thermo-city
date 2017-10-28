@@ -7,6 +7,8 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
+import Page.Models exposing (..)
+import Scale.Models exposing (..)
 import Time exposing (..)
 import Time.DateTime exposing (..)
 

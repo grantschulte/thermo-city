@@ -3,8 +3,11 @@ module Menu.View exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
+import Menu.Models exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
+import Page.Models exposing (..)
+import Scale.Models exposing (..)
 
 
 view : Model -> Html Msg
@@ -18,15 +21,22 @@ view model =
             [ scaleMenu model
             , div
                 [ classList
-                    [ ( "active", model.menus.tempScale == True )
+                    [ ( "active", model.menus.tempScale.active == True )
                     ]
                 , class "menu-options pr1"
                 ]
                 [ scaleMenuOptions model ]
             ]
         , div
-            [ class "col-6 pl1" ]
+            [ class "col-6 pl1 relative" ]
             [ viewMenu model
+            , div
+                [ classList
+                    [ ( "active", model.menus.view.active == True )
+                    ]
+                , class "menu-options pl1"
+                ]
+                (viewMenuOptions model)
             ]
         ]
 
@@ -45,6 +55,27 @@ viewMenu model =
             [ class "material-icons" ]
             [ text "more_horiz" ]
         ]
+
+
+viewMenuOptions : Model -> List (Html Msg)
+viewMenuOptions model =
+    model.menus.view.options
+        |> List.filter (isInactiveView model.page)
+        |> List.map viewMenuItem
+
+
+viewMenuItem : ViewMenuItem -> Html Msg
+viewMenuItem item =
+    div
+        [ class "menu-options__option p2 btn-primary"
+        , onClick (SetPage item.page)
+        ]
+        [ text item.name ]
+
+
+isInactiveView : Page -> ViewMenuItem -> Bool
+isInactiveView activePage menuItem =
+    activePage /= menuItem.page
 
 
 scaleMenu : Model -> Html Msg
@@ -68,14 +99,14 @@ scaleMenuOptions model =
     case model.tempScale of
         F ->
             div
-                [ class "menu-options__option p2 btn-secondary"
+                [ class "menu-options__option p2 btn-primary"
                 , onClick (SetTempScale C)
                 ]
                 [ text "Celsius" ]
 
         C ->
             div
-                [ class "menu-options__option p2 btn-secondary"
+                [ class "menu-options__option p2 btn-primary"
                 , onClick (SetTempScale F)
                 ]
                 [ text "Fahrenheit" ]

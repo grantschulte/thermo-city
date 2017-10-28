@@ -10,6 +10,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
+import Page.Models exposing (..)
 
 
 view : Model -> Html Msg

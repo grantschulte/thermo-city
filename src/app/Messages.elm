@@ -6,7 +6,9 @@ import GeoData.Models exposing (..)
 import Geolocation exposing (..)
 import Hourly.Models exposing (..)
 import Models exposing (..)
+import Page.Models exposing (..)
 import RemoteData exposing (..)
+import Scale.Models exposing (..)
 
 
 -- MESSAGES

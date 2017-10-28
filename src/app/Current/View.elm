@@ -8,6 +8,7 @@ import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
 import RemoteData exposing (..)
+import Scale.Models exposing (..)
 import Utils exposing (makeTemp, tempScaleSymbol, toCelsius)
 
 

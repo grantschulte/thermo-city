@@ -7,7 +7,9 @@ import Html.Attributes exposing (..)
 import Loader.View exposing (loader)
 import Messages exposing (..)
 import Models exposing (..)
+import Page.Models exposing (..)
 import RemoteData exposing (..)
+import Scale.Models exposing (..)
 import Utils exposing (getHour, makeTemp, tempScaleSymbol)
 
 
