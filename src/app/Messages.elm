@@ -1,5 +1,6 @@
 module Messages exposing (..)
 
+import Alerts.Models exposing (..)
 import Current.Models exposing (..)
 import Daily.Models exposing (..)
 import GeoData.Models exposing (..)
@@ -15,7 +16,8 @@ import Scale.Models exposing (..)
 
 
 type Msg
-    = CurrentWeatherResponse (WebData CurrentWeather)
+    = AlertsResponse (WebData (List Alert))
+    | CurrentWeatherResponse (WebData CurrentWeather)
     | DailyWeatherResponse (WebData (List DailyWeather))
     | FetchLocation (Result Geolocation.Error Location)
     | GeoDataResponse (WebData GeoData)

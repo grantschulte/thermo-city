@@ -1,5 +1,6 @@
 module Models exposing (..)
 
+import Alerts.Models exposing (..)
 import Current.Models exposing (..)
 import Daily.Models exposing (..)
 import GeoData.Models exposing (..)
@@ -22,7 +23,8 @@ type alias Config =
 
 
 type alias Model =
-    { config : Config
+    { alerts : WebData (List Alert)
+    , config : Config
     , current : WebData CurrentWeather
     , daily : WebData (List DailyWeather)
     , geoData : WebData GeoData
@@ -40,7 +42,8 @@ type alias Model =
 
 initialModel : Config -> Model
 initialModel config =
-    { config = config
+    { alerts = RemoteData.Loading
+    , config = config
     , current = RemoteData.Loading
     , daily = RemoteData.Loading
     , geoData = RemoteData.Loading
