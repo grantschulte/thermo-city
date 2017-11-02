@@ -1,5 +1,6 @@
 module View exposing (..)
 
+import Alerts.View exposing (..)
 import Current.View
 import Daily.View exposing (..)
 import Error.View exposing (..)
@@ -26,7 +27,9 @@ view model =
             [ id "container"
             , class "p0"
             ]
-            [ page model ]
+            [ page model
+            , Alerts.View.view model
+            ]
         ]
 
 

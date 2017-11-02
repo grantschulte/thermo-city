@@ -24,8 +24,8 @@ view model =
 
 
 page : WebData (List HourlyWeather) -> Scale -> Html Msg
-page current tempScale =
-    case current of
+page hourly tempScale =
+    case hourly of
         NotAsked ->
             div [ class "flex items-center hc100" ] [ loader ]
 
@@ -35,8 +35,8 @@ page current tempScale =
         Failure error ->
             div [ class "flex items-center hc100" ] [ text (toString error) ]
 
-        Success hourly ->
-            hourlyList hourly tempScale
+        Success hourlyWeather ->
+            hourlyList hourlyWeather tempScale
 
 
 hourlyList : List HourlyWeather -> Scale -> Html Msg
