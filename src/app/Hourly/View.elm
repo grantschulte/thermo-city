@@ -50,7 +50,7 @@ hourlyList hours tempScale =
 
 hourRow : Scale -> HourlyWeather -> Html Msg
 hourRow tempScale hour =
-    li [ class "hourly-card col-12 p1" ]
+    li [ class "hourly-card col-12 px1 pt1" ]
         [ div
             [ class "hourly-card__inner" ]
             [ div
