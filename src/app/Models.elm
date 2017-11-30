@@ -24,6 +24,7 @@ type alias Config =
 
 type alias Model =
     { alerts : WebData (List Alert)
+    , alertsOverlay : Bool
     , config : Config
     , current : WebData CurrentWeather
     , daily : WebData (List DailyWeather)
@@ -43,6 +44,7 @@ type alias Model =
 initialModel : Config -> Model
 initialModel config =
     { alerts = RemoteData.Loading
+    , alertsOverlay = False
     , config = config
     , current = RemoteData.Loading
     , daily = RemoteData.Loading

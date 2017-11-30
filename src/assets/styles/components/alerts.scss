@@ -1,8 +1,39 @@
 #alerts {
   position: fixed;
-  bottom: 0;
+  top: calc(100% - 56px);
   left: 0;
+  height: 100%;
   width: 100%;
   color: $color-white;
   background-color: $color-accent;
+  transition: 200ms all ease-in-out;
+  box-shadow: 0 0 4px 0px rgba(0,0,0,0.2);
+
+  #alerts-body {
+    display: none;
+    background-color: $color-black;
+    height: calc(100% - 56px);
+    overflow: hidden;
+  }
+
+  .alert-single {
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid $color-white;
+
+    h4 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  &.active {
+    top: 0;
+
+    #alerts-body {
+      display: flex;
+    }
+  }
 }
