@@ -771,7 +771,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  margin: 0;\n  padding: 0;\n  -webkit-font-smoothing: antialiased; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 16px;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  line-height: 1;\n  color: #FAFFFD;\n  background-color: #57B8FF; }\n\na {\n  text-decoration: none;\n  color: #FAFFFD;\n  transition: all 200ms ease-in-out; }\n  a:hover {\n    color: #c7ffe9;\n    text-decoration: none; }\n\n#weather-card-list {\n  height: calc(100% - 62px); }\n  @media screen and (max-width: 40em) {\n    #weather-card-list {\n      height: auto; } }\n  @media screen and (max-width: 52em) {\n    #weather-card-list {\n      padding-bottom: 1rem; } }\n\n.btn {\n  display: inline-block;\n  padding: 0.2em 1em;\n  font-size: 1em;\n  font-weight: normal;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  text-align: center;\n  border: none;\n  border-radius: 2px;\n  transition: all 200ms ease-in-out; }\n  .btn:focus, .btn:active {\n    outline: 0;\n    border: none;\n    box-shadow: none; }\n  .btn--small {\n    height: 28px;\n    font-size: 0.6em;\n    font-weight: 700; }\n  .btn--large {\n    height: 36px;\n    font-size: 1em; }\n\n.h100 {\n  height: 100%; }\n\n.hc100 {\n  height: calc(100% - 62px); }\n  @media screen and (max-width: 40em) {\n    .hc100 {\n      height: calc(100% - 94px); } }\n\n.radius {\n  border-radius: 4px; }\n\n.icon--sm {\n  font-size: 1em; }\n\n.icon--md {\n  font-size: 2em; }\n\n.icon--lg {\n  font-size: 3em; }\n\n.bg-primary {\n  background-color: #342E37;\n  color: #FAFFFD; }\n  .bg-primary:hover, .bg-primary.active {\n    background-color: #272229; }\n  .bg-primary:active, .bg-primary:focus {\n    background-color: #1a171b; }\n\n.bg-secondary {\n  background-color: #57B8FF;\n  color: #FAFFFD; }\n  .bg-secondary:hover, .bg-secondary.active {\n    background-color: #3eadff; }\n  .bg-secondary:active, .bg-secondary:focus {\n    background-color: #24a2ff; }\n\n.bg-accent {\n  background-color: #FA824C;\n  color: #FAFFFD; }\n  .bg-accent:hover, .bg-accent.active {\n    background-color: #f97133; }\n  .bg-accent:active, .bg-accent:focus {\n    background-color: #f95f1a; }\n\n.border-primary {\n  border: 1px solid #342E37; }\n  .border-primary:hover, .border-primary.active {\n    border-color: #272229; }\n  .border-primary:active, .border-primary:focus {\n    border-color: #1a171b; }\n\n.border-secondary {\n  border: 1px solid #57B8FF; }\n  .border-secondary:hover, .border-secondary.active {\n    border-color: #3eadff; }\n  .border-secondary:active, .border-secondary:focus {\n    border-color: #24a2ff; }\n\n.border-accent {\n  border: 1px solid #FA824C; }\n  .border-accent:hover, .border-accent.active {\n    border-color: #f97133; }\n  .border-accent:active, .border-accent:focus {\n    border-color: #f95f1a; }\n\n.color-primary {\n  color: #342E37; }\n  .color-primary:hover, .color-primary.active {\n    color: #272229; }\n  .color-primary:active, .color-primary:focus {\n    color: #1a171b; }\n\n.color-secondary {\n  color: #57B8FF; }\n  .color-secondary:hover, .color-secondary.active {\n    color: #3eadff; }\n  .color-secondary:active, .color-secondary:focus {\n    color: #24a2ff; }\n\n.color-accent {\n  color: #FA824C; }\n  .color-accent:hover, .color-accent.active {\n    color: #f97133; }\n  .color-accent:active, .color-accent:focus {\n    color: #f95f1a; }\n\n.btn-primary {\n  background-color: #272229; }\n  .btn-primary.active {\n    background-color: #0d0b0d; }\n\n.btn-secondary {\n  background-color: #3eadff; }\n  .btn-secondary.active {\n    background-color: #0b98ff; }\n\n.btn-tertiary {\n  background-color: #ffe433; }\n  .btn-tertiary.active {\n    background-color: #ffdc00; }\n\n.btn-accent {\n  background-color: #f97133; }\n  .btn-accent.active {\n    background-color: #f35007; }\n\n.btn-accent2 {\n  background-color: #f2e356; }\n  .btn-accent2.active {\n    background-color: #efdb27; }\n\n@font-face {\n  font-family: 'climacons';\n  src: url(" + __webpack_require__(9) + ") format(\"truetype\"), url(" + __webpack_require__(10) + ") format(\"woff\"), url(" + __webpack_require__(11) + "#climacons) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n[class^=\"weather-icon-\"], [class*=\" weather-icon-\"] {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'climacons' !important;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.weather-icon-cloud-download:before {\n  content: \"\\E900\"; }\n\n.weather-icon-cloud-drizzle-alt:before {\n  content: \"\\E901\"; }\n\n.weather-icon-cloud-drizzle-moon-alt:before {\n  content: \"\\E902\"; }\n\n.weather-icon-cloud-drizzle-moon:before {\n  content: \"\\E903\"; }\n\n.weather-icon-cloud-drizzle-sun-alt:before {\n  content: \"\\E904\"; }\n\n.weather-icon-cloud-drizzle-sun:before {\n  content: \"\\E905\"; }\n\n.weather-icon-cloud-drizzle:before {\n  content: \"\\E906\"; }\n\n.weather-icon-cloud-fog-alt:before {\n  content: \"\\E907\"; }\n\n.weather-icon-cloud-fog-moon-alt:before {\n  content: \"\\E908\"; }\n\n.weather-icon-cloud-fog-moon:before {\n  content: \"\\E909\"; }\n\n.weather-icon-cloud-fog-sun-alt:before {\n  content: \"\\E90A\"; }\n\n.weather-icon-cloud-fog-sun:before {\n  content: \"\\E90B\"; }\n\n.weather-icon-cloud-fog:before {\n  content: \"\\E90C\"; }\n\n.weather-icon-cloud-hail-alt:before {\n  content: \"\\E90D\"; }\n\n.weather-icon-cloud-hail-moon-alt:before {\n  content: \"\\E90E\"; }\n\n.weather-icon-cloud-hail-moon:before {\n  content: \"\\E90F\"; }\n\n.weather-icon-cloud-hail-sun-alt:before {\n  content: \"\\E910\"; }\n\n.weather-icon-cloud-hail-sun:before {\n  content: \"\\E911\"; }\n\n.weather-icon-cloud-hail:before {\n  content: \"\\E912\"; }\n\n.weather-icon-cloud-lightning-moon:before {\n  content: \"\\E913\"; }\n\n.weather-icon-cloud-lightning-sun:before {\n  content: \"\\E914\"; }\n\n.weather-icon-cloud-lightning:before {\n  content: \"\\E915\"; }\n\n.weather-icon-cloud-moon:before {\n  content: \"\\E916\"; }\n\n.weather-icon-cloud-rain-alt:before {\n  content: \"\\E917\"; }\n\n.weather-icon-cloud-rain-moon-alt:before {\n  content: \"\\E918\"; }\n\n.weather-icon-cloud-rain-moon:before {\n  content: \"\\E919\"; }\n\n.weather-icon-cloud-rain-sun-alt:before {\n  content: \"\\E91A\"; }\n\n.weather-icon-cloud-rain-sun:before {\n  content: \"\\E91B\"; }\n\n.weather-icon-cloud-rain:before {\n  content: \"\\E91C\"; }\n\n.weather-icon-cloud-refresh:before {\n  content: \"\\E91D\"; }\n\n.weather-icon-cloud-snow-alt:before {\n  content: \"\\E91E\"; }\n\n.weather-icon-cloud-snow-moon-alt:before {\n  content: \"\\E91F\"; }\n\n.weather-icon-cloud-snow-moon:before {\n  content: \"\\E920\"; }\n\n.weather-icon-cloud-snow-sun-alt:before {\n  content: \"\\E921\"; }\n\n.weather-icon-cloud-snow-sun:before {\n  content: \"\\E922\"; }\n\n.weather-icon-cloud-snow:before {\n  content: \"\\E923\"; }\n\n.weather-icon-cloud-sun:before {\n  content: \"\\E924\"; }\n\n.weather-icon-cloud-upload:before {\n  content: \"\\E925\"; }\n\n.weather-icon-cloud-wind-moon:before {\n  content: \"\\E926\"; }\n\n.weather-icon-cloud-wind-sun:before {\n  content: \"\\E927\"; }\n\n.weather-icon-cloud-wind:before {\n  content: \"\\E928\"; }\n\n.weather-icon-cloud:before {\n  content: \"\\E929\"; }\n\n.weather-icon-compass-east:before {\n  content: \"\\E92A\"; }\n\n.weather-icon-compass-north:before {\n  content: \"\\E92B\"; }\n\n.weather-icon-compass-south:before {\n  content: \"\\E92C\"; }\n\n.weather-icon-compass-west:before {\n  content: \"\\E92D\"; }\n\n.weather-icon-compass:before {\n  content: \"\\E92E\"; }\n\n.weather-icon-degrees-celcius:before {\n  content: \"\\E92F\"; }\n\n.weather-icon-degrees-fahrenheit:before {\n  content: \"\\E930\"; }\n\n.weather-icon-moon-first-quarter:before {\n  content: \"\\E931\"; }\n\n.weather-icon-moon-full:before {\n  content: \"\\E932\"; }\n\n.weather-icon-moon-last-quarter:before {\n  content: \"\\E933\"; }\n\n.weather-icon-moon-new:before {\n  content: \"\\E934\"; }\n\n.weather-icon-moon-waning-crescent:before {\n  content: \"\\E935\"; }\n\n.weather-icon-moon-waning-gibbous:before {\n  content: \"\\E936\"; }\n\n.weather-icon-moon-waxing-crescent:before {\n  content: \"\\E937\"; }\n\n.weather-icon-moon-waxing-gibbous:before {\n  content: \"\\E938\"; }\n\n.weather-icon-moon:before {\n  content: \"\\E939\"; }\n\n.weather-icon-shades:before {\n  content: \"\\E93A\"; }\n\n.weather-icon-snowflake:before {\n  content: \"\\E93B\"; }\n\n.weather-icon-sun-low:before {\n  content: \"\\E93C\"; }\n\n.weather-icon-sun-lower:before {\n  content: \"\\E93D\"; }\n\n.weather-icon-sun:before {\n  content: \"\\E93E\"; }\n\n.weather-icon-sunrise:before {\n  content: \"\\E93F\"; }\n\n.weather-icon-sunset:before {\n  content: \"\\E940\"; }\n\n.weather-icon-thermometer-25:before {\n  content: \"\\E941\"; }\n\n.weather-icon-thermometer-50:before {\n  content: \"\\E942\"; }\n\n.weather-icon-thermometer-75:before {\n  content: \"\\E943\"; }\n\n.weather-icon-thermometer-100:before {\n  content: \"\\E944\"; }\n\n.weather-icon-thermometer-zero:before {\n  content: \"\\E945\"; }\n\n.weather-icon-thermometer:before {\n  content: \"\\E946\"; }\n\n.weather-icon-tornado:before {\n  content: \"\\E947\"; }\n\n.weather-icon-umbrella:before {\n  content: \"\\E948\"; }\n\n.weather-icon-wind:before {\n  content: \"\\E949\"; }\n\n/**\n * Components\n */\n#loader,\n#loader:after {\n  border-radius: 50%;\n  width: 10em;\n  height: 10em; }\n\n#loader {\n  margin: 30px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #FFFFFF;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear; }\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n#header__logo a {\n  overflow: hidden; }\n\n#header__logo__location-name {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n  @media screen and (max-width: 40em) {\n    #header__logo__location-name {\n      font-size: 16px; } }\n\n@media screen and (max-width: 40em) {\n  #header__logo {\n    padding-top: 0; } }\n\n#header__menu .material-icons {\n  line-height: 0; }\n\n#header__menu .menu-options {\n  position: absolute;\n  top: 105%;\n  left: 0;\n  width: 100%;\n  overflow: hidden;\n  display: none;\n  font-size: 14px; }\n  #header__menu .menu-options.active {\n    display: block; }\n  #header__menu .menu-options__title {\n    font-size: 14px; }\n  #header__menu .menu-options__option {\n    font-size: 14px;\n    border-bottom: 1px solid #0d0b0d;\n    border-radius: 0; }\n    #header__menu .menu-options__option:first-child {\n      border-top-right-radius: 4px;\n      border-top-left-radius: 4px; }\n    #header__menu .menu-options__option:last-child {\n      border-bottom-right-radius: 4px;\n      border-bottom-left-radius: 4px; }\n\n.daily-card {\n  display: flex; }\n  .daily-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .daily-card__inner {\n        padding: 0.75rem; } }\n    @media screen and (max-width: 52em) {\n      .daily-card__inner {\n        flex-direction: row;\n        justify-content: space-between; } }\n  @media screen and (max-width: 52em) {\n    .daily-card__time {\n      margin: 0;\n      width: 60px;\n      font-size: 1.2em; } }\n  .daily-card__icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100px;\n    font-size: 80px; }\n    @media screen and (max-width: 52em) {\n      .daily-card__icon {\n        height: auto;\n        width: 32px;\n        font-size: 2em; } }\n  .daily-card__summary {\n    margin-top: 1em; }\n    .daily-card__summary span {\n      margin: 0.2em;\n      font-size: 2em; }\n    .daily-card__summary .degrees {\n      margin: 0;\n      font-size: 1.4em; }\n    @media screen and (max-width: 52em) {\n      .daily-card__summary {\n        margin: 0;\n        width: 92px;\n        text-align: right; }\n        .daily-card__summary span {\n          margin: 0;\n          font-size: 1.4em; } }\n  .daily-card:first-of-type .daily-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .daily-card {\n      padding-bottom: 0; } }\n\n.hourly-card {\n  display: flex; }\n  .hourly-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .hourly-card__inner {\n        padding: 0.75rem; } }\n  .hourly-card__time {\n    font-size: 1.2em; }\n  .hourly-card__temp {\n    font-size: 1.4em;\n    width: 42px;\n    text-align: right; }\n    .hourly-card__temp .degrees {\n      margin: 0;\n      font-size: 1.4em; }\n  .hourly-card__icon {\n    width: 32px;\n    font-size: 2em; }\n  .hourly-card:first-of-type .hourly-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .hourly-card {\n      padding-bottom: 0; } }\n\n#currently-card {\n  background-color: #FAFFFD;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  padding: 1em;\n  border-radius: 4px;\n  color: #342E37;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n  transition: all 200ms ease-in-out; }\n  #currently-card__icon {\n    font-size: 8em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__icon {\n        font-size: 12em; } }\n  #currently-card__temp {\n    font-size: 4em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__temp {\n        font-size: 6em; } }\n  @media screen and (max-width: 40em) {\n    #currently-card {\n      padding: 0.75rem; } }\n\n/**\n * Themes\n */\n#wrapper.theme-night {\n  background-color: #342E37; }\n  #wrapper.theme-night a:hover {\n    color: #57B8FF; }\n  #wrapper.theme-night #header button {\n    background-color: #1a171b; }\n    #wrapper.theme-night #header button.active {\n      background-color: #24a2ff; }\n", ""]);
+exports.push([module.i, "/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n/*\n * Theme: Colors\n *\n */\n/*\n * Theme: Fonts\n *\n */\n/*\n * Theme: Elements\n *\n */\n/*\n * Theme: Breakpoints\n *\n */\n/*\n * Theme: Transitions\n *\n */\n* {\n  box-sizing: border-box; }\n\nhtml {\n  margin: 0;\n  padding: 0;\n  -webkit-font-smoothing: antialiased; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 16px;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  line-height: 1;\n  color: #FAFFFD;\n  background-color: #57B8FF; }\n\na {\n  text-decoration: none;\n  color: #FAFFFD;\n  transition: all 200ms ease-in-out; }\n  a:hover {\n    color: #c7ffe9;\n    text-decoration: none; }\n\n#weather-card-list {\n  height: calc(100% - 62px); }\n  @media screen and (max-width: 40em) {\n    #weather-card-list {\n      height: auto; } }\n  @media screen and (max-width: 52em) {\n    #weather-card-list {\n      padding-bottom: 1rem; } }\n\n.btn {\n  display: inline-block;\n  padding: 0.2em 1em;\n  font-size: 1em;\n  font-weight: normal;\n  font-family: \"Rubik\", Helvetica, sans-serif;\n  text-align: center;\n  border: none;\n  border-radius: 2px;\n  transition: all 200ms ease-in-out; }\n  .btn:focus, .btn:active {\n    outline: 0;\n    border: none;\n    box-shadow: none; }\n  .btn--small {\n    height: 28px;\n    font-size: 0.6em;\n    font-weight: 700; }\n  .btn--large {\n    height: 36px;\n    font-size: 1em; }\n\n.h100 {\n  height: 100%; }\n\n.hc100 {\n  height: calc(100% - 62px); }\n  @media screen and (max-width: 40em) {\n    .hc100 {\n      height: calc(100% - 94px); } }\n\n.radius {\n  border-radius: 4px; }\n\n.icon--sm {\n  font-size: 1em; }\n\n.icon--md {\n  font-size: 2em; }\n\n.icon--lg {\n  font-size: 3em; }\n\n.bg-primary {\n  background-color: #342E37;\n  color: #FAFFFD; }\n  .bg-primary:hover, .bg-primary.active {\n    background-color: #272229; }\n  .bg-primary:active, .bg-primary:focus {\n    background-color: #1a171b; }\n\n.bg-secondary {\n  background-color: #57B8FF;\n  color: #FAFFFD; }\n  .bg-secondary:hover, .bg-secondary.active {\n    background-color: #3eadff; }\n  .bg-secondary:active, .bg-secondary:focus {\n    background-color: #24a2ff; }\n\n.bg-accent {\n  background-color: #FA824C;\n  color: #FAFFFD; }\n  .bg-accent:hover, .bg-accent.active {\n    background-color: #f97133; }\n  .bg-accent:active, .bg-accent:focus {\n    background-color: #f95f1a; }\n\n.border-primary {\n  border: 1px solid #342E37; }\n  .border-primary:hover, .border-primary.active {\n    border-color: #272229; }\n  .border-primary:active, .border-primary:focus {\n    border-color: #1a171b; }\n\n.border-secondary {\n  border: 1px solid #57B8FF; }\n  .border-secondary:hover, .border-secondary.active {\n    border-color: #3eadff; }\n  .border-secondary:active, .border-secondary:focus {\n    border-color: #24a2ff; }\n\n.border-accent {\n  border: 1px solid #FA824C; }\n  .border-accent:hover, .border-accent.active {\n    border-color: #f97133; }\n  .border-accent:active, .border-accent:focus {\n    border-color: #f95f1a; }\n\n.color-primary {\n  color: #342E37; }\n  .color-primary:hover, .color-primary.active {\n    color: #272229; }\n  .color-primary:active, .color-primary:focus {\n    color: #1a171b; }\n\n.color-secondary {\n  color: #57B8FF; }\n  .color-secondary:hover, .color-secondary.active {\n    color: #3eadff; }\n  .color-secondary:active, .color-secondary:focus {\n    color: #24a2ff; }\n\n.color-accent {\n  color: #FA824C; }\n  .color-accent:hover, .color-accent.active {\n    color: #f97133; }\n  .color-accent:active, .color-accent:focus {\n    color: #f95f1a; }\n\n.btn-primary {\n  background-color: #272229; }\n  .btn-primary.active {\n    background-color: #0d0b0d; }\n\n.btn-secondary {\n  background-color: #3eadff; }\n  .btn-secondary.active {\n    background-color: #0b98ff; }\n\n.btn-tertiary {\n  background-color: #ffe433; }\n  .btn-tertiary.active {\n    background-color: #ffdc00; }\n\n.btn-accent {\n  background-color: #f97133; }\n  .btn-accent.active {\n    background-color: #f35007; }\n\n.btn-accent2 {\n  background-color: #f2e356; }\n  .btn-accent2.active {\n    background-color: #efdb27; }\n\n@font-face {\n  font-family: 'climacons';\n  src: url(" + __webpack_require__(9) + ") format(\"truetype\"), url(" + __webpack_require__(10) + ") format(\"woff\"), url(" + __webpack_require__(11) + "#climacons) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n[class^=\"weather-icon-\"], [class*=\" weather-icon-\"] {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'climacons' !important;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.weather-icon-cloud-download:before {\n  content: \"\\E900\"; }\n\n.weather-icon-cloud-drizzle-alt:before {\n  content: \"\\E901\"; }\n\n.weather-icon-cloud-drizzle-moon-alt:before {\n  content: \"\\E902\"; }\n\n.weather-icon-cloud-drizzle-moon:before {\n  content: \"\\E903\"; }\n\n.weather-icon-cloud-drizzle-sun-alt:before {\n  content: \"\\E904\"; }\n\n.weather-icon-cloud-drizzle-sun:before {\n  content: \"\\E905\"; }\n\n.weather-icon-cloud-drizzle:before {\n  content: \"\\E906\"; }\n\n.weather-icon-cloud-fog-alt:before {\n  content: \"\\E907\"; }\n\n.weather-icon-cloud-fog-moon-alt:before {\n  content: \"\\E908\"; }\n\n.weather-icon-cloud-fog-moon:before {\n  content: \"\\E909\"; }\n\n.weather-icon-cloud-fog-sun-alt:before {\n  content: \"\\E90A\"; }\n\n.weather-icon-cloud-fog-sun:before {\n  content: \"\\E90B\"; }\n\n.weather-icon-cloud-fog:before {\n  content: \"\\E90C\"; }\n\n.weather-icon-cloud-hail-alt:before {\n  content: \"\\E90D\"; }\n\n.weather-icon-cloud-hail-moon-alt:before {\n  content: \"\\E90E\"; }\n\n.weather-icon-cloud-hail-moon:before {\n  content: \"\\E90F\"; }\n\n.weather-icon-cloud-hail-sun-alt:before {\n  content: \"\\E910\"; }\n\n.weather-icon-cloud-hail-sun:before {\n  content: \"\\E911\"; }\n\n.weather-icon-cloud-hail:before {\n  content: \"\\E912\"; }\n\n.weather-icon-cloud-lightning-moon:before {\n  content: \"\\E913\"; }\n\n.weather-icon-cloud-lightning-sun:before {\n  content: \"\\E914\"; }\n\n.weather-icon-cloud-lightning:before {\n  content: \"\\E915\"; }\n\n.weather-icon-cloud-moon:before {\n  content: \"\\E916\"; }\n\n.weather-icon-cloud-rain-alt:before {\n  content: \"\\E917\"; }\n\n.weather-icon-cloud-rain-moon-alt:before {\n  content: \"\\E918\"; }\n\n.weather-icon-cloud-rain-moon:before {\n  content: \"\\E919\"; }\n\n.weather-icon-cloud-rain-sun-alt:before {\n  content: \"\\E91A\"; }\n\n.weather-icon-cloud-rain-sun:before {\n  content: \"\\E91B\"; }\n\n.weather-icon-cloud-rain:before {\n  content: \"\\E91C\"; }\n\n.weather-icon-cloud-refresh:before {\n  content: \"\\E91D\"; }\n\n.weather-icon-cloud-snow-alt:before {\n  content: \"\\E91E\"; }\n\n.weather-icon-cloud-snow-moon-alt:before {\n  content: \"\\E91F\"; }\n\n.weather-icon-cloud-snow-moon:before {\n  content: \"\\E920\"; }\n\n.weather-icon-cloud-snow-sun-alt:before {\n  content: \"\\E921\"; }\n\n.weather-icon-cloud-snow-sun:before {\n  content: \"\\E922\"; }\n\n.weather-icon-cloud-snow:before {\n  content: \"\\E923\"; }\n\n.weather-icon-cloud-sun:before {\n  content: \"\\E924\"; }\n\n.weather-icon-cloud-upload:before {\n  content: \"\\E925\"; }\n\n.weather-icon-cloud-wind-moon:before {\n  content: \"\\E926\"; }\n\n.weather-icon-cloud-wind-sun:before {\n  content: \"\\E927\"; }\n\n.weather-icon-cloud-wind:before {\n  content: \"\\E928\"; }\n\n.weather-icon-cloud:before {\n  content: \"\\E929\"; }\n\n.weather-icon-compass-east:before {\n  content: \"\\E92A\"; }\n\n.weather-icon-compass-north:before {\n  content: \"\\E92B\"; }\n\n.weather-icon-compass-south:before {\n  content: \"\\E92C\"; }\n\n.weather-icon-compass-west:before {\n  content: \"\\E92D\"; }\n\n.weather-icon-compass:before {\n  content: \"\\E92E\"; }\n\n.weather-icon-degrees-celcius:before {\n  content: \"\\E92F\"; }\n\n.weather-icon-degrees-fahrenheit:before {\n  content: \"\\E930\"; }\n\n.weather-icon-moon-first-quarter:before {\n  content: \"\\E931\"; }\n\n.weather-icon-moon-full:before {\n  content: \"\\E932\"; }\n\n.weather-icon-moon-last-quarter:before {\n  content: \"\\E933\"; }\n\n.weather-icon-moon-new:before {\n  content: \"\\E934\"; }\n\n.weather-icon-moon-waning-crescent:before {\n  content: \"\\E935\"; }\n\n.weather-icon-moon-waning-gibbous:before {\n  content: \"\\E936\"; }\n\n.weather-icon-moon-waxing-crescent:before {\n  content: \"\\E937\"; }\n\n.weather-icon-moon-waxing-gibbous:before {\n  content: \"\\E938\"; }\n\n.weather-icon-moon:before {\n  content: \"\\E939\"; }\n\n.weather-icon-shades:before {\n  content: \"\\E93A\"; }\n\n.weather-icon-snowflake:before {\n  content: \"\\E93B\"; }\n\n.weather-icon-sun-low:before {\n  content: \"\\E93C\"; }\n\n.weather-icon-sun-lower:before {\n  content: \"\\E93D\"; }\n\n.weather-icon-sun:before {\n  content: \"\\E93E\"; }\n\n.weather-icon-sunrise:before {\n  content: \"\\E93F\"; }\n\n.weather-icon-sunset:before {\n  content: \"\\E940\"; }\n\n.weather-icon-thermometer-25:before {\n  content: \"\\E941\"; }\n\n.weather-icon-thermometer-50:before {\n  content: \"\\E942\"; }\n\n.weather-icon-thermometer-75:before {\n  content: \"\\E943\"; }\n\n.weather-icon-thermometer-100:before {\n  content: \"\\E944\"; }\n\n.weather-icon-thermometer-zero:before {\n  content: \"\\E945\"; }\n\n.weather-icon-thermometer:before {\n  content: \"\\E946\"; }\n\n.weather-icon-tornado:before {\n  content: \"\\E947\"; }\n\n.weather-icon-umbrella:before {\n  content: \"\\E948\"; }\n\n.weather-icon-wind:before {\n  content: \"\\E949\"; }\n\n/**\n * Components\n */\n#loader,\n#loader:after {\n  border-radius: 50%;\n  width: 10em;\n  height: 10em; }\n\n#loader {\n  margin: 30px auto;\n  font-size: 10px;\n  position: relative;\n  text-indent: -9999em;\n  border-top: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-right: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);\n  border-left: 1.1em solid #FFFFFF;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load8 1.1s infinite linear;\n  animation: load8 1.1s infinite linear; }\n\n@-webkit-keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes load8 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n#header__logo a {\n  overflow: hidden; }\n\n#header__logo__location-name {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n  @media screen and (max-width: 40em) {\n    #header__logo__location-name {\n      font-size: 16px; } }\n\n@media screen and (max-width: 40em) {\n  #header__logo {\n    padding-top: 0; } }\n\n#header__menu .material-icons {\n  line-height: 0; }\n\n#header__menu .menu-options {\n  position: absolute;\n  top: 105%;\n  left: 0;\n  width: 100%;\n  overflow: hidden;\n  display: none;\n  font-size: 14px; }\n  #header__menu .menu-options.active {\n    display: block; }\n  #header__menu .menu-options__title {\n    font-size: 14px; }\n  #header__menu .menu-options__option {\n    font-size: 14px;\n    border-bottom: 1px solid #0d0b0d;\n    border-radius: 0; }\n    #header__menu .menu-options__option:first-child {\n      border-top-right-radius: 4px;\n      border-top-left-radius: 4px; }\n    #header__menu .menu-options__option:last-child {\n      border-bottom-right-radius: 4px;\n      border-bottom-left-radius: 4px; }\n\n.daily-card {\n  display: flex; }\n  .daily-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .daily-card__inner {\n        padding: 0.75rem; } }\n    @media screen and (max-width: 52em) {\n      .daily-card__inner {\n        flex-direction: row;\n        justify-content: space-between; } }\n  @media screen and (max-width: 52em) {\n    .daily-card__time {\n      margin: 0;\n      width: 60px;\n      font-size: 1.2em; } }\n  .daily-card__icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 100px;\n    font-size: 80px; }\n    @media screen and (max-width: 52em) {\n      .daily-card__icon {\n        height: auto;\n        width: 32px;\n        font-size: 2em; } }\n  .daily-card__summary {\n    margin-top: 1em; }\n    .daily-card__summary span {\n      margin: 0.2em;\n      font-size: 2em; }\n    .daily-card__summary .degrees {\n      margin: 0;\n      font-size: 1.4em; }\n    @media screen and (max-width: 52em) {\n      .daily-card__summary {\n        margin: 0;\n        width: 92px;\n        text-align: right; }\n        .daily-card__summary span {\n          margin: 0;\n          font-size: 1.4em; } }\n  .daily-card:first-of-type .daily-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .daily-card {\n      padding-bottom: 0; } }\n\n.hourly-card {\n  display: flex; }\n  .hourly-card__inner {\n    background-color: #FAFFFD;\n    display: flex;\n    width: 100%;\n    padding: 1em;\n    border-radius: 4px;\n    color: #342E37;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n    transition: all 200ms ease-in-out; }\n    @media screen and (max-width: 40em) {\n      .hourly-card__inner {\n        padding: 0.75rem; } }\n  .hourly-card__time {\n    font-size: 1.2em; }\n  .hourly-card__temp {\n    font-size: 1.4em;\n    width: 42px;\n    text-align: right; }\n    .hourly-card__temp .degrees {\n      margin: 0;\n      font-size: 1.4em; }\n  .hourly-card__icon {\n    width: 32px;\n    font-size: 2em; }\n  .hourly-card:first-of-type .hourly-card__inner {\n    background-color: #FFE74C; }\n  @media screen and (max-width: 52em) {\n    .hourly-card {\n      padding-bottom: 0; } }\n\n#currently-card {\n  background-color: #FAFFFD;\n  display: flex;\n  width: 100%;\n  height: 100%;\n  padding: 1em;\n  border-radius: 4px;\n  color: #342E37;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.175);\n  transition: all 200ms ease-in-out; }\n  #currently-card__icon {\n    font-size: 8em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__icon {\n        font-size: 12em; } }\n  #currently-card__temp {\n    font-size: 4em; }\n    @media screen and (min-width: 52em) {\n      #currently-card__temp {\n        font-size: 6em; } }\n  @media screen and (max-width: 40em) {\n    #currently-card {\n      padding: 0.75rem; } }\n\n#alerts {\n  position: fixed;\n  top: calc(100% - 56px);\n  left: 0;\n  height: 100%;\n  width: 100%;\n  color: #FAFFFD;\n  background-color: #FA824C;\n  transition: 200ms all ease-in-out;\n  box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2); }\n  #alerts__top-row {\n    cursor: pointer; }\n  #alerts__body {\n    display: none;\n    background-color: #342E37;\n    height: calc(100% - 56px);\n    overflow: hidden; }\n  #alerts .alert-single {\n    margin-bottom: 1.25rem;\n    border-bottom: 1px solid #FAFFFD; }\n    #alerts .alert-single h4 {\n      margin-top: 0; }\n    #alerts .alert-single p {\n      margin-top: 0;\n      font-size: 0.85rem;\n      line-height: 1.4; }\n  #alerts.active {\n    top: 0; }\n    #alerts.active #alerts__body {\n      display: flex; }\n\n/**\n * Themes\n */\n#wrapper.theme-night {\n  background-color: #342E37; }\n  #wrapper.theme-night a:hover {\n    color: #57B8FF; }\n  #wrapper.theme-night #header button {\n    background-color: #1a171b; }\n    #wrapper.theme-night #header button.active {\n      background-color: #24a2ff; }\n", ""]);
 
 // exports
 
@@ -14431,33 +14431,10 @@ var _krisajenkins$remotedata$RemoteData$update = F2(
 		}
 	});
 
-var _user$project$Commands$iconClass = function (name) {
-	var _p0 = name;
-	switch (_p0) {
-		case 'clear-day':
-			return 'weather-icon-sun';
-		case 'clear-night':
-			return 'weather-icon-moon';
-		case 'rain':
-			return 'weather-icon-cloud-rain';
-		case 'snow':
-			return 'weather-icon-cloud-snow';
-		case 'sleet':
-			return 'weather-icon-cloud-drizzle';
-		case 'wind':
-			return 'weather-icon-wind';
-		case 'fog':
-			return 'weather-icon-cloud-fog';
-		case 'cloudy':
-			return 'weather-icon-cloud';
-		case 'partly-cloudy-day':
-			return 'weather-icon-cloud-sun';
-		case 'partly-cloudy-night':
-			return 'weather-icon-cloud-moon';
-		default:
-			return 'weather-icon-cloud';
-	}
-};
+var _user$project$Alerts_Models$Alert = F5(
+	function (a, b, c, d, e) {
+		return {description: a, regions: b, severity: c, time: d, title: e};
+	});
 
 var _user$project$Current_Models$CurrentWeather = F6(
 	function (a, b, c, d, e, f) {
@@ -14486,6 +14463,35 @@ var _user$project$Page_Models$CurrentPage = {ctor: 'CurrentPage'};
 
 var _user$project$Scale_Models$F = {ctor: 'F'};
 var _user$project$Scale_Models$C = {ctor: 'C'};
+
+var _user$project$Messages$ToggleMenu = function (a) {
+	return {ctor: 'ToggleMenu', _0: a};
+};
+var _user$project$Messages$ToggleAlerts = {ctor: 'ToggleAlerts'};
+var _user$project$Messages$SetTempScale = function (a) {
+	return {ctor: 'SetTempScale', _0: a};
+};
+var _user$project$Messages$SetPage = function (a) {
+	return {ctor: 'SetPage', _0: a};
+};
+var _user$project$Messages$HourlyWeatherResponse = function (a) {
+	return {ctor: 'HourlyWeatherResponse', _0: a};
+};
+var _user$project$Messages$GeoDataResponse = function (a) {
+	return {ctor: 'GeoDataResponse', _0: a};
+};
+var _user$project$Messages$FetchLocation = function (a) {
+	return {ctor: 'FetchLocation', _0: a};
+};
+var _user$project$Messages$DailyWeatherResponse = function (a) {
+	return {ctor: 'DailyWeatherResponse', _0: a};
+};
+var _user$project$Messages$CurrentWeatherResponse = function (a) {
+	return {ctor: 'CurrentWeatherResponse', _0: a};
+};
+var _user$project$Messages$AlertsResponse = function (a) {
+	return {ctor: 'AlertsResponse', _0: a};
+};
 
 var _user$project$Menu_Models$viewMenuItems = {
 	ctor: '::',
@@ -14521,6 +14527,8 @@ var _user$project$Menu_Models$ViewMenuItem = F2(
 
 var _user$project$Models$initialModel = function (config) {
 	return {
+		alerts: _krisajenkins$remotedata$RemoteData$Loading,
+		alertsOverlay: false,
 		config: config,
 		current: _krisajenkins$remotedata$RemoteData$Loading,
 		daily: _krisajenkins$remotedata$RemoteData$Loading,
@@ -14536,10 +14544,225 @@ var _user$project$Models$Config = F2(
 	function (a, b) {
 		return {apiUrl: a, nodeEnv: b};
 	});
-var _user$project$Models$Model = F9(
-	function (a, b, c, d, e, f, g, h, i) {
-		return {config: a, current: b, daily: c, geoData: d, hourly: e, location: f, menus: g, page: h, tempScale: i};
+var _user$project$Models$Model = function (a) {
+	return function (b) {
+		return function (c) {
+			return function (d) {
+				return function (e) {
+					return function (f) {
+						return function (g) {
+							return function (h) {
+								return function (i) {
+									return function (j) {
+										return function (k) {
+											return {alerts: a, alertsOverlay: b, config: c, current: d, daily: e, geoData: f, hourly: g, location: h, menus: i, page: j, tempScale: k};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+	};
+};
+
+var _user$project$Alerts_View$alertRow = function (alert) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('alert-single'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$h4,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('mb1'),
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text(alert.title),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$p,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('bold'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text(
+							A2(_elm_lang$core$String$join, ', ', alert.regions)),
+						_1: {ctor: '[]'}
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$p,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text(alert.description),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+};
+var _user$project$Alerts_View$alertsDiv = F2(
+	function (alerts, model) {
+		var _p0 = _elm_lang$core$List$length(alerts);
+		if (_p0 === 0) {
+			return _elm_lang$html$Html$text('');
+		} else {
+			return A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$id('alerts'),
+					_1: {
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$classList(
+							{
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'active', _1: model.alertsOverlay},
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$id('alerts__top-row'),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('flex items-center p2'),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Events$onClick(_user$project$Messages$ToggleAlerts),
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$span,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('material-icons mr1'),
+									_1: {ctor: '[]'}
+								},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('warning'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$span,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('mr-auto'),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Alerts'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$span,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$class('material-icons'),
+											_1: {ctor: '[]'}
+										},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('more_horiz'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}
+							}
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$div,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$id('alerts__body'),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('flex flex-column px2 py3'),
+									_1: {ctor: '[]'}
+								}
+							},
+							A2(_elm_lang$core$List$map, _user$project$Alerts_View$alertRow, alerts)),
+						_1: {ctor: '[]'}
+					}
+				});
+		}
 	});
+var _user$project$Alerts_View$view = function (model) {
+	var _p1 = model.alerts;
+	if (_p1.ctor === 'Success') {
+		return A2(_user$project$Alerts_View$alertsDiv, _p1._0, model);
+	} else {
+		return A2(
+			_user$project$Alerts_View$alertsDiv,
+			{ctor: '[]'},
+			model);
+	}
+};
+
+var _user$project$Commands$iconClass = function (name) {
+	var _p0 = name;
+	switch (_p0) {
+		case 'clear-day':
+			return 'weather-icon-sun';
+		case 'clear-night':
+			return 'weather-icon-moon';
+		case 'rain':
+			return 'weather-icon-cloud-rain';
+		case 'snow':
+			return 'weather-icon-cloud-snow';
+		case 'sleet':
+			return 'weather-icon-cloud-drizzle';
+		case 'wind':
+			return 'weather-icon-wind';
+		case 'fog':
+			return 'weather-icon-cloud-fog';
+		case 'cloudy':
+			return 'weather-icon-cloud';
+		case 'partly-cloudy-day':
+			return 'weather-icon-cloud-sun';
+		case 'partly-cloudy-night':
+			return 'weather-icon-cloud-moon';
+		default:
+			return 'weather-icon-cloud';
+	}
+};
 
 var _user$project$Current_Decoder$currentWeatherDecoder = A3(
 	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
@@ -14566,31 +14789,6 @@ var _user$project$Current_Decoder$currentWeatherDecoder = A3(
 						'humidity',
 						_elm_lang$core$Json_Decode$float,
 						_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_user$project$Current_Models$CurrentWeather)))))));
-
-var _user$project$Messages$ToggleMenu = function (a) {
-	return {ctor: 'ToggleMenu', _0: a};
-};
-var _user$project$Messages$SetTempScale = function (a) {
-	return {ctor: 'SetTempScale', _0: a};
-};
-var _user$project$Messages$SetPage = function (a) {
-	return {ctor: 'SetPage', _0: a};
-};
-var _user$project$Messages$HourlyWeatherResponse = function (a) {
-	return {ctor: 'HourlyWeatherResponse', _0: a};
-};
-var _user$project$Messages$GeoDataResponse = function (a) {
-	return {ctor: 'GeoDataResponse', _0: a};
-};
-var _user$project$Messages$FetchLocation = function (a) {
-	return {ctor: 'FetchLocation', _0: a};
-};
-var _user$project$Messages$DailyWeatherResponse = function (a) {
-	return {ctor: 'DailyWeatherResponse', _0: a};
-};
-var _user$project$Messages$CurrentWeatherResponse = function (a) {
-	return {ctor: 'CurrentWeatherResponse', _0: a};
-};
 
 var _user$project$Utils$toCelsius = function (temp) {
 	return (temp - 32) / 1.8;
@@ -15709,7 +15907,7 @@ var _user$project$Hourly_View$hourRow = F2(
 			_elm_lang$html$Html$li,
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$class('hourly-card col-12 p1'),
+				_0: _elm_lang$html$Html_Attributes$class('hourly-card col-12 px1 pt1'),
 				_1: {ctor: '[]'}
 			},
 			{
@@ -15818,8 +16016,8 @@ var _user$project$Hourly_View$hourlyList = F2(
 				hours));
 	});
 var _user$project$Hourly_View$page = F2(
-	function (current, tempScale) {
-		var _p0 = current;
+	function (hourly, tempScale) {
+		var _p0 = hourly;
 		switch (_p0.ctor) {
 			case 'NotAsked':
 				return A2(
@@ -15923,6 +16121,14 @@ var _user$project$Update$update = F2(
 	function (msg, model) {
 		var _p1 = msg;
 		switch (_p1.ctor) {
+			case 'AlertsResponse':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{alerts: _p1._0}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
 			case 'CurrentWeatherResponse':
 				return {
 					ctor: '_Tuple2',
@@ -16021,6 +16227,14 @@ var _user$project$Update$update = F2(
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
+			case 'ToggleAlerts':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{alertsOverlay: !model.alertsOverlay}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
 			default:
 				return {
 					ctor: '_Tuple2',
@@ -16110,7 +16324,11 @@ var _user$project$View$view = function (model) {
 					{
 						ctor: '::',
 						_0: _user$project$View$page(model),
-						_1: {ctor: '[]'}
+						_1: {
+							ctor: '::',
+							_0: _user$project$Alerts_View$view(model),
+							_1: {ctor: '[]'}
+						}
 					}),
 				_1: {ctor: '[]'}
 			}
