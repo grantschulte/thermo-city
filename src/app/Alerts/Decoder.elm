@@ -9,6 +9,7 @@ alert : Decode.Decoder Alert
 alert =
     decode Alert
         |> required "description" Decode.string
+        |> required "regions" Decode.list
         |> required "severity" Decode.string
         |> required "time" Decode.float
         |> required "title" Decode.string

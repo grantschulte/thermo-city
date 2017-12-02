@@ -2,6 +2,7 @@ module Alerts.View exposing (..)
 
 import Alerts.Models exposing (..)
 import Html exposing (..)
+import Html.Events exposing (onClick)
 import Html.Attributes exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
@@ -21,33 +22,37 @@ view model =
 alertsDiv : List Alert -> Model -> Html Msg
 alertsDiv alerts model =
     case List.length alerts of
+        0 ->
+            text ""
+
         _ ->
             div
                 [ id "alerts"
                 , classList
-                    [ ( "active", True ) ]
+                    [ ( "active", model.alertsOverlay ) ]
                 ]
                 [ div
-                    [ id "alerts-top-row"
+                    [ id "alerts__top-row"
                     , class "flex items-center p2"
+                    , onClick ToggleAlerts
                     ]
                     [ span [ class "material-icons mr1" ] [ text "warning" ]
                     , span [ class "mr-auto" ] [ text "Alerts" ]
                     , span [ class "material-icons" ] [ text "more_horiz" ]
                     ]
                 , div
-                    [ id "alerts-body"
+                    [ id "alerts__body"
                     , class "flex flex-column px2 py3"
                     ]
-                    [ div
-                        [ class "alert-single" ]
-                        [ h4 [ class "mb1" ] [ text "This is an alert heading" ]
-                        , p [] [ text "This is an alert body." ]
-                        ]
-                    , div
-                        [ class "alert-single" ]
-                        [ h4 [ class "mb1" ] [ text "This is an alert heading" ]
-                        , p [] [ text "This is an alert body." ]
-                        ]
-                    ]
+                    (List.map alertRow alerts)
                 ]
+
+
+alertRow : Alert -> Html Msg
+alertRow alert =
+    div
+        [ class "alert-single" ]
+        [ h4 [ class "mb1" ] [ text alert.title ]
+        , p [ class "bold" ] [ text (String.join ", " alert.regions) ]
+        , p [] [ text alert.description ]
+        ]

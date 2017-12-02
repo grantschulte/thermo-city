@@ -3,7 +3,6 @@ module Current.Decoder exposing (..)
 import Current.Models exposing (..)
 import Json.Decode as Decode
 import Json.Decode.Pipeline exposing (decode, required)
-import Models exposing (..)
 
 
 currentWeatherDecoder : Decode.Decoder CurrentWeather

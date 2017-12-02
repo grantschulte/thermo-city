@@ -5,12 +5,10 @@ import Daily.Commands exposing (..)
 import GeoData.Commands exposing (..)
 import Geolocation
 import Hourly.Commands exposing (..)
-import Menu.Models exposing (..)
 import Menu.Update exposing (..)
 import Messages exposing (..)
 import Models exposing (..)
 import Page.Models exposing (..)
-import Scale.Models exposing (..)
 import Task
 
 
@@ -68,6 +66,13 @@ update msg model =
             ( { model
                 | tempScale = tempScale
                 , menus = toggleMenu "tempScale" model.menus
+              }
+            , Cmd.none
+            )
+
+        ToggleAlerts ->
+            ( { model
+                | alertsOverlay = not model.alertsOverlay
               }
             , Cmd.none
             )

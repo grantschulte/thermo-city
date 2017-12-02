@@ -5,7 +5,6 @@ import Current.Models exposing (..)
 import GeoData.Models exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
-import Html.Events exposing (..)
 import Menu.View
 import Messages exposing (..)
 import Models exposing (..)

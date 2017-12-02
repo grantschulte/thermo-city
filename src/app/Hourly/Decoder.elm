@@ -3,7 +3,6 @@ module Hourly.Decoder exposing (..)
 import Hourly.Models exposing (..)
 import Json.Decode as Decode
 import Json.Decode.Pipeline exposing (decode, required)
-import Models exposing (..)
 
 
 hourlyDecoder : Decode.Decoder HourlyWeather

@@ -9,7 +9,11 @@
   transition: 200ms all ease-in-out;
   box-shadow: 0 0 4px 0px rgba(0,0,0,0.2);
 
-  #alerts-body {
+  &__top-row {
+    cursor: pointer;
+  }
+
+  &__body {
     display: none;
     background-color: $color-black;
     height: calc(100% - 56px);
@@ -26,13 +30,15 @@
 
     p {
       margin-top: 0;
+      font-size: 0.85rem;
+      line-height: 1.4;
     }
   }
 
   &.active {
     top: 0;
 
-    #alerts-body {
+    #alerts__body {
       display: flex;
     }
   }

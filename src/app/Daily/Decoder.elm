@@ -3,7 +3,6 @@ module Daily.Decoder exposing (..)
 import Daily.Models exposing (..)
 import Json.Decode as Decode
 import Json.Decode.Pipeline exposing (decode, required)
-import Models exposing (..)
 
 
 dailyWeather : Decode.Decoder DailyWeather
