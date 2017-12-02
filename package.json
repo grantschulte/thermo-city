@@ -1,6 +1,6 @@
 {
   "name": "thermo-city",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A geolocating weather app focused on essential weather data and a sleek UI.",
   "main": "./src/index.js",
   "author": "Grant J. Schulte <schulte.grant@gmail.com>",
